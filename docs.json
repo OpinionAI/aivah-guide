@@ -16,20 +16,44 @@
           {
             "group": "Get Started",
             "pages": [
-              "index",
               "quickstart",
-              "development"
+              "your-first-agent",
+              "best-practices"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Using Aivah",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "interacting",
+              "chat-mode",
+              "voice-mode",
+              "scene-switching",
+              "agent-selection"
+            ]
+          },
+          {
+            "group": "Team",
+            "pages": [
+              "manage",
+              "usage",
+              "settings"
+            ]
+          },
+          {
+            "group": "AI Avatar Agent",
+            "pages": [
+              "playground",
+              "activity",
+              "analytics",
+              "knowledge-sources"
+            ]
+          },
+          {
+            "group": "Actions & Integrations",
+            "pages": [
+              "connect",
+              "custom-commands",
+              "model-comparison"
             ]
           }
         ]
@@ -83,20 +107,20 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:hi@aivah.ai"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.aivah.ai"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/aivah_ai",
+      "github": "https://github.com/aivah-ai",
+      "linkedin": "https://linkedin.com/company/aivah-ai"
     }
   }
 }
