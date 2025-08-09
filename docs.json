@@ -9,66 +9,69 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "User Guide",
-        "groups": [
+        "group": "Get Started",
+        "icon": "rocket",
+        "pages": [
+          "quickstart",
+          "your-first-agent",
+          "best-practices"
+        ]
+      },
+      {
+        "group": "Using Aivah",
+        "icon": "message-square",
+        "pages": [
+          "interacting",
           {
-            "group": "Get Started",
+            "group": "Interaction Modes",
+            "icon": "sliders-horizontal",
             "pages": [
-              "quickstart",
-              "your-first-agent",
-              "best-practices"
-            ]
-          },
-          {
-            "group": "Using Aivah",
-            "pages": [
-              "interacting",
               "chat-mode",
               "voice-mode",
               "scene-switching",
               "agent-selection"
             ]
-          },
-          {
-            "group": "Team",
-            "pages": [
-              "manage",
-              "usage",
-              "settings"
-            ]
-          },
-          {
-            "group": "AI Avatar Agent",
-            "pages": [
-              "playground",
-              "activity",
-              "analytics",
-              "knowledge-sources"
-            ]
-          },
-          {
-            "group": "Actions & Integrations",
-            "pages": [
-              "connect",
-              "custom-commands",
-              "model-comparison"
-            ]
           }
         ]
       },
       {
-        "tab": "Quick Start",
-        "groups": [
+        "group": "Team",
+        "icon": "users",
+        "pages": [
+          "manage",
+          "usage",
+          "settings"
+        ]
+      },
+      {
+        "group": "AI Avatar Agent",
+        "icon": "bot",
+        "pages": [
+          "playground",
+          "activity",
+          "analytics",
+          "knowledge-sources"
+        ]
+      },
+      {
+        "group": "Actions & Integrations",
+        "icon": "plug-zap",
+        "pages": [
+          "connect",
+          "custom-commands",
+          "model-comparison"
+        ]
+      },
+      {
+        "group": "API",
+        "icon": "book",
+        "pages": [
+          "api-reference/introduction",
           {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
+            "group": "Endpoints",
+            "icon": "code",
             "pages": [
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
@@ -78,26 +81,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
