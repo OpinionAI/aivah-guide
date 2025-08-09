@@ -16,44 +16,44 @@
           {
             "group": "Get Started",
             "pages": [
-              { "page": "quickstart",        "icon": "rocket" },
-              { "page": "your-first-agent",  "icon": "sparkles" },
-              { "page": "best-practices",    "icon": "check-circle" }
+              "quickstart",
+              "your-first-agent",
+              "best-practices"
             ]
           },
           {
             "group": "Using Aivah",
             "pages": [
-              { "page": "interacting",       "icon": "message-square" },
-              { "page": "chat-mode",         "icon": "message-dots" },
-              { "page": "voice-mode",        "icon": "headphones" },
-              { "page": "scene-switching",   "icon": "image" },
-              { "page": "agent-selection",   "icon": "bot" }
+              "interacting",
+              "chat-mode",
+              "voice-mode",
+              "scene-switching",
+              "agent-selection"
             ]
           },
           {
             "group": "Team",
             "pages": [
-              { "page": "manage",            "icon": "users" },
-              { "page": "usage",             "icon": "activity" },
-              { "page": "settings",          "icon": "settings" }
+              "manage",
+              "usage",
+              "settings"
             ]
           },
           {
             "group": "AI Avatar Agent",
             "pages": [
-              { "page": "playground",        "icon": "joystick" },
-              { "page": "activity",          "icon": "timeline" },
-              { "page": "analytics",         "icon": "bar-chart-3" },
-              { "page": "knowledge-sources", "icon": "book-open" }
+              "playground",
+              "activity",
+              "analytics",
+              "knowledge-sources"
             ]
           },
           {
             "group": "Actions & Integrations",
             "pages": [
-              { "page": "connect",           "icon": "plug-zap" },
-              { "page": "custom-commands",   "icon": "terminal" },
-              { "page": "model-comparison",  "icon": "scale" }
+              "connect",
+              "custom-commands",
+              "model-comparison"
             ]
           }
         ]
@@ -64,23 +64,39 @@
           {
             "group": "API Documentation",
             "pages": [
-              { "page": "api-reference/introduction", "icon": "book" }
+              "api-reference/introduction"
             ]
           },
           {
             "group": "Endpoint Examples",
             "pages": [
-              { "page": "api-reference/endpoint/get",      "icon": "download" },
-              { "page": "api-reference/endpoint/create",   "icon": "plus-square" },
-              { "page": "api-reference/endpoint/delete",   "icon": "trash-2" },
-              { "page": "api-reference/endpoint/webhook",  "icon": "webhook" }
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete",
+              "api-reference/endpoint/webhook"
             ]
           }
         ]
       }
     ],
     "global": {
-      "anchors": []
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "href": "https://mintlify.com/docs",
+          "icon": "book-open-cover"
+        },
+        {
+          "anchor": "Community",
+          "href": "https://mintlify.com/community",
+          "icon": "slack"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://mintlify.com/blog",
+          "icon": "newspaper"
+        }
+      ]
     }
   },
   "logo": {
@@ -89,7 +105,10 @@
   },
   "navbar": {
     "links": [
-      { "label": "Support", "href": "mailto:hi@aivah.ai" }
+      {
+        "label": "Support",
+        "href": "mailto:hi@aivah.ai"
+      }
     ],
     "primary": {
       "type": "button",
