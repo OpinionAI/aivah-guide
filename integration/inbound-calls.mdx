@@ -3,4 +3,181 @@ title: "Inbound Calls"
 description: "Inbound calls guide"
 ---
 
-Inbound calls content here.
+# Inbound Calls
+
+Handle incoming phone calls with intelligent AI agents that provide natural, conversational experiences. AIVAH's inbound call system automatically processes incoming calls through your Twilio integration, providing seamless voice interactions.
+
+## 📞 How Inbound Calls Work
+
+When someone calls your Twilio number, AIVAH automatically:
+
+1. **Call Reception**: Receives and accepts the incoming call
+2. **Voice Recognition**: Converts speech to text in real-time
+3. **Intent Processing**: Understands caller intent and context
+4. **Knowledge Retrieval**: Accesses relevant information from your knowledge base
+5. **Response Generation**: Creates appropriate responses using your selected LLM
+6. **Voice Synthesis**: Converts text responses back to natural speech
+7. **Memory Storage**: Remembers important information from the conversation
+8. **Call Logging**: Records call details and transcriptions
+
+## 🎯 Call Flow Configuration
+
+### Voice Settings
+Configure how your agent sounds and responds:
+- **Voice Selection**: Choose from 8 high-quality voice options
+- **Speaking Rate**: Adjust how fast your agent speaks
+- **Tone and Style**: Configure personality and communication style
+- **Language Settings**: Support for multiple languages and accents
+
+### Knowledge Integration
+Connect your knowledge base for intelligent responses:
+- **Knowledge Agent Selection**: Choose specialized agents for different call types
+- **Context Awareness**: Agent understands conversation history and context
+- **Dynamic Retrieval**: Real-time access to updated information
+- **Fallback Handling**: Graceful handling when information isn't available
+
+### LLM Model Selection
+Choose the appropriate language model for your use case:
+- **GPT-4o Realtime**: Premium quality with advanced reasoning capabilities
+- **GPT-4o Mini Realtime**: Faster responses with good quality for high-volume scenarios
+- **Custom Models**: Integration with your own trained models (enterprise)
+
+## 🛠️ Setup and Configuration
+
+### Prerequisites
+Before enabling inbound calls, ensure you have:
+- ✅ Active Twilio account with purchased phone number
+- ✅ Twilio Account SID and Auth Token
+- ✅ AIVAH agent configured with knowledge base
+- ✅ Selected voice and LLM model preferences
+
+### Configuration Steps
+
+#### Step 1: Twilio Integration
+1. Navigate to **Workflows** → **Twilio Integration**
+2. Enter your Twilio Account SID
+3. Provide your Twilio Auth Token
+4. Specify your Twilio phone number
+5. Test connection to verify setup
+
+#### Step 2: Agent Configuration
+1. Select your preferred **Voice** from available options
+2. Choose your **Knowledge Agent** for call handling
+3. Select your **LLM Model** based on performance needs
+4. Configure any custom parameters or instructions
+
+#### Step 3: Call Routing
+1. Set up call routing rules in Twilio Console
+2. Point your phone number webhook to AIVAH endpoint
+3. Configure call timeout and fallback settings
+4. Test inbound call functionality
+
+## 📊 Call Management Features
+
+### Real-time Call Monitoring
+- **Live Call Status**: Monitor active calls in real-time
+- **Call Queue**: View waiting calls and estimated wait times  
+- **Performance Metrics**: Track response times and call quality
+- **Agent Availability**: Monitor agent capacity and utilization
+
+### Call Analytics
+- **Call Volume**: Track incoming call patterns and trends
+- **Duration Analysis**: Average call length and distribution
+- **Success Rates**: Percentage of successfully handled calls
+- **Caller Satisfaction**: Track user feedback and ratings
+
+### Call Logs and Transcriptions
+- **Complete Transcriptions**: Full text records of all conversations
+- **Call Recordings**: Audio recordings for quality and training
+- **Caller Information**: Track repeat callers and conversation history
+- **Searchable Archives**: Find specific calls or conversation topics
+
+## 🎨 Customization Options
+
+### Greeting Configuration
+- **Custom Welcome Messages**: Personalized greetings for different call types
+- **Business Hours**: Different messages for business hours vs. after-hours
+- **Holiday Greetings**: Special messages for holidays and events
+- **Caller Recognition**: Personalized greetings for known callers
+
+### Conversation Flow
+- **Call Menus**: Interactive voice menus for call routing
+- **Escalation Rules**: When to transfer to human agents
+- **Hold Music**: Custom hold music and messaging
+- **Call Completion**: Professional call ending and follow-up options
+
+### Integration Actions
+- **CRM Updates**: Automatically update customer records
+- **Ticket Creation**: Generate support tickets from calls
+- **Appointment Scheduling**: Book appointments directly through voice
+- **Follow-up Actions**: Send emails, SMS, or create tasks after calls
+
+## 🚀 Advanced Features
+
+### Multi-Language Support
+- **Language Detection**: Automatically detect caller's language
+- **Multi-Language Responses**: Respond in the caller's preferred language
+- **Translation Services**: Real-time translation for multilingual support
+- **Cultural Adaptation**: Adjust responses for cultural context
+
+### Intelligent Call Routing
+- **Skills-Based Routing**: Route calls to specialized knowledge agents
+- **Load Balancing**: Distribute calls across multiple agents
+- **Priority Queuing**: Handle VIP callers with priority
+- **Overflow Handling**: Manage high call volumes effectively
+
+### Integration Workflows
+- **Pre-Call Preparation**: Gather caller information before connection
+- **During-Call Actions**: Real-time actions based on conversation context
+- **Post-Call Processing**: Automated follow-up and data processing
+- **Multi-System Updates**: Update multiple systems based on call outcomes
+
+## 📈 Performance Optimization
+
+### Call Quality
+- **Audio Quality**: High-definition voice processing
+- **Latency Optimization**: Minimize response delays
+- **Error Handling**: Graceful handling of audio issues
+- **Quality Monitoring**: Continuous monitoring and improvement
+
+### Scalability
+- **Concurrent Calls**: Handle multiple simultaneous calls
+- **Auto-Scaling**: Automatic capacity adjustment based on demand
+- **Load Distribution**: Efficient distribution of call processing
+- **Resource Management**: Optimal use of computing resources
+
+## 🛡️ Security and Compliance
+
+### Data Protection
+- **Call Encryption**: End-to-end encryption for all calls
+- **Secure Storage**: Encrypted storage of recordings and transcriptions
+- **Access Controls**: Role-based access to call data
+- **Data Retention**: Configurable retention policies
+
+### Compliance Features
+- **Recording Consent**: Automatic consent gathering for call recording
+- **PCI Compliance**: Secure handling of payment information
+- **HIPAA Support**: Healthcare information protection (enterprise)
+- **GDPR Compliance**: European data protection compliance
+
+## 🔧 Troubleshooting
+
+### Common Issues
+- **Call Quality Issues**: Check internet connection and Twilio status
+- **Recognition Errors**: Verify microphone quality and background noise
+- **Response Delays**: Consider upgrading LLM model or optimizing knowledge base
+- **Connection Problems**: Verify Twilio webhook configuration
+
+### Diagnostics Tools
+- **Call Logs**: Detailed logs of all call activities
+- **Audio Analysis**: Quality analysis of incoming and outgoing audio
+- **Performance Metrics**: Real-time performance monitoring
+- **Error Reporting**: Comprehensive error tracking and resolution
+
+### Support Resources
+- **Documentation**: Comprehensive setup and troubleshooting guides  
+- **Community Forums**: Connect with other AIVAH users
+- **Support Tickets**: Direct technical support for complex issues
+- **Training Resources**: Best practices and optimization guides
+
+Transform your phone system into an intelligent, always-available customer service and business automation tool with AIVAH's inbound call capabilities.

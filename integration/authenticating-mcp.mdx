@@ -3,4 +3,261 @@ title: "Authenticating MCP"
 description: "MCP authentication guide"
 ---
 
-MCP authentication content here.
+# Authenticating MCP Integrations
+
+Secure authentication setup for Model Context Protocol (MCP) integrations. This guide covers the various authentication methods supported by AIVAH and how to configure secure connections to your external applications and services.
+
+## 🔐 Authentication Methods
+
+### OAuth 2.0 Authentication
+The most common and secure method for modern applications:
+
+**Supported Flows:**
+- **Authorization Code Flow**: Most secure for web applications
+- **Client Credentials Flow**: For server-to-server communication
+- **Device Code Flow**: For devices without web browsers
+- **Refresh Token Flow**: For maintaining long-term access
+
+**Configuration Steps:**
+1. Register your AIVAH application in the service provider's developer portal
+2. Obtain Client ID and Client Secret
+3. Configure redirect URIs for OAuth callbacks
+4. Set appropriate scopes for required permissions
+5. Test the authentication flow
+
+### API Key Authentication
+Simple authentication method for services that support API keys:
+
+**Types Supported:**
+- **Header-based**: API key sent in request headers
+- **Query Parameter**: API key included in URL parameters
+- **Bearer Token**: Token-based authentication in Authorization header
+- **Custom Authentication**: Service-specific authentication schemes
+
+**Security Best Practices:**
+- Store API keys securely in encrypted format
+- Rotate keys regularly according to security policies
+- Use environment-specific keys (development, staging, production)
+- Monitor key usage and implement rate limiting
+
+### Basic Authentication
+Username and password authentication for legacy systems:
+
+**Configuration:**
+- Secure credential storage with encryption
+- Support for both username/password and email/password formats
+- Optional domain specification for enterprise systems
+- Automatic credential validation and testing
+
+### Custom Authentication Schemes
+Support for proprietary authentication methods:
+
+**Custom Headers:**
+- Configure custom authentication headers
+- Support for multiple authentication parameters
+- Dynamic token generation and renewal
+- Service-specific authentication workflows
+
+## 🛠️ Service-Specific Setup
+
+### Gmail Integration
+**Authentication Type:** OAuth 2.0
+**Required Scopes:**
+- `https://www.googleapis.com/auth/gmail.readonly` - Read emails
+- `https://www.googleapis.com/auth/gmail.send` - Send emails
+- `https://www.googleapis.com/auth/gmail.modify` - Modify emails
+
+**Setup Steps:**
+1. Create project in Google Cloud Console
+2. Enable Gmail API
+3. Create OAuth 2.0 credentials
+4. Configure authorized redirect URIs
+5. Download client configuration
+6. Test connection in AIVAH
+
+### Slack Integration
+**Authentication Type:** OAuth 2.0 with Bot Tokens
+**Required Scopes:**
+- `chat:write` - Send messages
+- `channels:read` - Read channel information
+- `files:write` - Upload files
+- `users:read` - Read user information
+
+**Setup Process:**
+1. Create Slack app in Slack API portal
+2. Configure OAuth & Permissions
+3. Install app to workspace
+4. Copy Bot User OAuth Token
+5. Configure webhook URLs (if needed)
+6. Test bot functionality
+
+### GitHub Integration
+**Authentication Type:** Personal Access Token or OAuth App
+**Token Permissions:**
+- `repo` - Repository access
+- `issues` - Issue management
+- `pull_requests` - PR operations
+- `actions` - GitHub Actions access
+
+**Configuration:**
+1. Generate Personal Access Token in GitHub settings
+2. Select appropriate scopes based on intended use
+3. Configure token in AIVAH integration settings
+4. Test repository access and operations
+5. Set up webhooks for real-time updates
+
+### Notion Integration
+**Authentication Type:** OAuth 2.0 with Internal Integration
+**Setup Requirements:**
+1. Create internal integration in Notion
+2. Configure integration capabilities
+3. Share databases and pages with integration
+4. Copy integration token
+5. Configure in AIVAH with appropriate permissions
+
+## 🔒 Security Best Practices
+
+### Credential Management
+**Secure Storage:**
+- All credentials encrypted at rest using AES-256
+- Separate encryption keys for different environments
+- Regular key rotation and credential updates
+- Secure backup and recovery procedures
+
+**Access Controls:**
+- Role-based access to authentication credentials
+- Audit logging for all credential access
+- Time-limited access tokens where possible
+- Principle of least privilege for all integrations
+
+### Token Management
+**Refresh Token Handling:**
+- Automatic token refresh before expiration
+- Secure storage of refresh tokens
+- Fallback authentication methods
+- Error handling for token refresh failures
+
+**Scope Management:**
+- Request minimum necessary scopes
+- Regular audit of granted permissions
+- Automatic scope validation
+- User consent tracking and management
+
+### Connection Security
+**Transport Security:**
+- All authentication over HTTPS/TLS 1.3
+- Certificate pinning for critical connections
+- Network-level security controls
+- VPN support for enterprise deployments
+
+**Data Protection:**
+- End-to-end encryption for sensitive data
+- Data minimization principles
+- Automatic data classification
+- Compliance with data protection regulations
+
+## 🔧 Configuration Interface
+
+### Authentication Setup Wizard
+Step-by-step guidance for setting up authentication:
+
+1. **Service Selection**: Choose the service to integrate
+2. **Authentication Method**: Select appropriate auth method
+3. **Credential Configuration**: Enter required credentials
+4. **Permission Setup**: Configure required scopes and permissions
+5. **Connection Testing**: Verify authentication works correctly
+6. **Integration Activation**: Enable the integration for use
+
+### Credential Validation
+**Real-time Testing:**
+- Test authentication during setup
+- Validate permissions and scopes
+- Check service availability
+- Verify API rate limits
+
+**Ongoing Monitoring:**
+- Continuous authentication health checks
+- Automatic error detection and alerting
+- Performance monitoring for auth requests
+- Proactive credential renewal
+
+## 📊 Monitoring and Maintenance
+
+### Authentication Metrics
+Track authentication performance and reliability:
+- **Success Rates**: Authentication success percentages
+- **Response Times**: Time to complete authentication
+- **Error Rates**: Failed authentication attempts
+- **Token Refresh**: Automatic renewal success rates
+
+### Health Monitoring
+- Real-time connection status monitoring
+- Automated health checks for all integrations
+- Alert system for authentication failures
+- Performance degradation detection
+
+### Maintenance Procedures
+**Regular Tasks:**
+- Credential rotation according to security policies
+- Permission audit and cleanup
+- Integration health assessment
+- Security vulnerability scanning
+
+**Troubleshooting:**
+- Detailed error logging and analysis
+- Step-by-step troubleshooting guides
+- Common issue resolution procedures
+- Escalation procedures for complex issues
+
+## 🚨 Troubleshooting
+
+### Common Authentication Issues
+
+**OAuth Failures:**
+- Verify redirect URIs match exactly
+- Check client ID and secret accuracy
+- Ensure proper scope configuration
+- Validate service provider settings
+
+**API Key Issues:**
+- Verify key format and placement
+- Check key permissions and quotas
+- Validate service endpoint URLs
+- Test key functionality independently
+
+**Connection Problems:**
+- Verify network connectivity
+- Check firewall and proxy settings
+- Validate SSL/TLS certificates
+- Test with minimal configuration
+
+### Error Resolution
+**Systematic Approach:**
+1. Check authentication logs for specific errors
+2. Verify service provider status and health
+3. Test authentication outside of AIVAH
+4. Review recent configuration changes
+5. Contact service provider support if needed
+
+### Support Resources
+- **Documentation Library**: Comprehensive setup guides for each service
+- **Video Tutorials**: Step-by-step visual instructions
+- **Community Forums**: User community for tips and troubleshooting
+- **Direct Support**: Technical support for complex authentication issues
+
+## 🔄 Migration and Updates
+
+### Credential Migration
+When moving between environments or updating credentials:
+- Automated migration tools for bulk updates
+- Testing procedures for new credentials
+- Rollback capabilities for failed migrations
+- Zero-downtime credential updates
+
+### Integration Updates
+- Automatic detection of service API changes
+- Guided update process for authentication changes
+- Backward compatibility maintenance
+- Change impact assessment tools
+
+Secure authentication is the foundation of reliable MCP integrations, ensuring your AIVAH agents can safely and effectively connect with all your business applications and services.
