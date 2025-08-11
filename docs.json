@@ -8,81 +8,364 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "groups": [
-      {
-        "group": "Get Started",
-        "icon": "rocket",
-        "pages": [
-          "quickstart",
-          "your-first-agent",
-          "best-practices"
-        ]
-      },
-      {
-        "group": "Using Aivah",
-        "icon": "message-square",
-        "pages": [
-          "interacting",
-          {
-            "group": "Interaction Modes",
-            "icon": "sliders-horizontal",
-            "pages": [
-              "chat-mode",
-              "voice-mode",
-              "scene-switching",
-              "agent-selection"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Team",
-        "icon": "users",
-        "pages": [
-          "manage",
-          "usage",
-          "settings"
-        ]
-      },
-      {
-        "group": "AI Avatar Agent",
-        "icon": "bot",
-        "pages": [
-          "playground",
-          "activity",
-          "analytics",
-          "knowledge-sources"
-        ]
-      },
-      {
-        "group": "Actions & Integrations",
-        "icon": "plug-zap",
-        "pages": [
-          "connect",
-          "custom-commands",
-          "model-comparison"
-        ]
-      },
-      {
-        "group": "API",
-        "icon": "book",
-        "pages": [
-          "api-reference/introduction",
-          {
-            "group": "Endpoints",
-            "icon": "code",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ]
-  },
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "icon": "rocket",
+      "pages": [
+        {
+          "page": "quick-start/introduction",
+          "icon": "play-circle"
+        },
+        {
+          "page": "quick-start/setup-your-first-agent",
+          "icon": "bot"
+        },
+        {
+          "page": "quick-start/best-practice",
+          "icon": "star"
+        }
+      ]
+    },
+    {
+      "group": "Hub",
+      "icon": "home",
+      "pages": [
+        {
+          "page": "interaction-hub/overview",
+          "icon": "layout-grid"
+        },
+        {
+          "group": "Communication",
+          "icon": "message-circle",
+          "pages": [
+            {
+              "page": "interaction-hub/chat",
+              "icon": "message-square"
+            },
+            {
+              "page": "interaction-hub/voice",
+              "icon": "mic"
+            }
+          ]
+        },
+        {
+          "group": "Experience",
+          "icon": "palette",
+          "pages": [
+            {
+              "page": "interaction-hub/scenes",
+              "icon": "image"
+            },
+            {
+              "page": "interaction-hub/options",
+              "icon": "sliders"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Avatar",
+      "icon": "user-round",
+      "pages": [
+        {
+          "page": "avatars/overview",
+          "icon": "users"
+        },
+        {
+          "page": "avatars/create-avatar",
+          "icon": "user-plus"
+        },
+        {
+          "page": "avatars/available-avatars",
+          "icon": "user-check"
+        },
+        {
+          "page": "avatars/shared-avatars",
+          "icon": "user-round-share"
+        }
+      ]
+    },
+    {
+      "group": "Knowledge",
+      "icon": "brain",
+      "pages": [
+        {
+          "group": "Agent Creation",
+          "icon": "bot",
+          "pages": [
+            {
+              "page": "knowledge-agent/overview",
+              "icon": "info"
+            },
+            {
+              "page": "knowledge-agent/create-agent",
+              "icon": "plus-circle"
+            },
+            {
+              "page": "knowledge-agent/add-content",
+              "icon": "file-plus"
+            },
+            {
+              "page": "knowledge-agent/train-agent",
+              "icon": "zap"
+            }
+          ]
+        },
+        {
+          "group": "Agent Types",
+          "icon": "layers",
+          "pages": [
+            {
+              "page": "knowledge-agent/types-of-agents",
+              "icon": "grid-3x3"
+            },
+            {
+              "page": "knowledge-agent/realtime",
+              "icon": "clock"
+            },
+            {
+              "page": "knowledge-agent/presentation-agent",
+              "icon": "presentation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Share",
+      "icon": "share-2",
+      "pages": [
+        {
+          "page": "share/overview",
+          "icon": "eye"
+        },
+        {
+          "group": "Publishing",
+          "icon": "globe",
+          "pages": [
+            {
+              "page": "share/publish",
+              "icon": "upload"
+            },
+            {
+              "page": "share/direct-link",
+              "icon": "link"
+            },
+            {
+              "page": "share/iframe-embed",
+              "icon": "code"
+            },
+            {
+              "page": "share/bubble-script-embed",
+              "icon": "code-2"
+            }
+          ]
+        },
+        {
+          "group": "Configuration",
+          "icon": "settings",
+          "pages": [
+            {
+              "page": "share/share-settings",
+              "icon": "toggle-right"
+            },
+            {
+              "page": "share/behavior",
+              "icon": "activity"
+            },
+            {
+              "page": "share/experience",
+              "icon": "sparkles"
+            },
+            {
+              "page": "share/voice-only-agents",
+              "icon": "volume-2"
+            }
+          ]
+        },
+        {
+          "group": "Advanced",
+          "icon": "wrench",
+          "pages": [
+            {
+              "page": "share/agent-system-prompt",
+              "icon": "terminal"
+            },
+            {
+              "page": "share/prompt-examples",
+              "icon": "lightbulb"
+            },
+            {
+              "page": "share/mcp-tools",
+              "icon": "hammer"
+            },
+            {
+              "page": "share/lead-capture-form",
+              "icon": "clipboard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Insights",
+      "icon": "bar-chart-3",
+      "pages": [
+        {
+          "page": "insights/overview",
+          "icon": "trending-up"
+        },
+        {
+          "group": "Analytics",
+          "icon": "pie-chart",
+          "pages": [
+            {
+              "page": "insights/agent-analytics",
+              "icon": "chart-line"
+            },
+            {
+              "page": "insights/privacy",
+              "icon": "shield"
+            }
+          ]
+        },
+        {
+          "group": "Conversations",
+          "icon": "message-circle-more",
+          "pages": [
+            {
+              "page": "insights/chat-log",
+              "icon": "messages-square"
+            },
+            {
+              "page": "insights/call-logs",
+              "icon": "phone"
+            },
+            {
+              "page": "insights/call-transcriptions",
+              "icon": "file-text"
+            }
+          ]
+        },
+        {
+          "group": "Leads",
+          "icon": "target",
+          "pages": [
+            {
+              "page": "insights/leads",
+              "icon": "user-plus"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Integrations",
+      "icon": "plug",
+      "pages": [
+        {
+          "page": "integration/overview",
+          "icon": "puzzle"
+        },
+        {
+          "group": "Tools",
+          "icon": "wrench",
+          "pages": [
+            {
+              "page": "integration/mcp-tools",
+              "icon": "tool"
+            },
+            {
+              "page": "integration/authenticating-mcp",
+              "icon": "key"
+            },
+            {
+              "page": "integration/workflows",
+              "icon": "workflow"
+            },
+            {
+              "page": "integration/memory",
+              "icon": "database"
+            }
+          ]
+        },
+        {
+          "group": "Phone",
+          "icon": "phone",
+          "pages": [
+            {
+              "page": "integration/twilio-phone-setup",
+              "icon": "phone-call"
+            },
+            {
+              "page": "integration/outbound-calls",
+              "icon": "phone-outgoing"
+            },
+            {
+              "page": "integration/inbound-calls",
+              "icon": "phone-incoming"
+            },
+            {
+              "page": "integration/call-logs",
+              "icon": "list"
+            },
+            {
+              "page": "integration/call-transcriptions",
+              "icon": "scroll-text"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Platform",
+      "icon": "settings",
+      "pages": [
+        {
+          "page": "platform-setup/overview",
+          "icon": "monitor"
+        },
+        {
+          "group": "Account",
+          "icon": "user",
+          "pages": [
+            {
+              "page": "platform-setup/user-settings",
+              "icon": "user-cog"
+            },
+            {
+              "page": "platform-setup/subscriptions",
+              "icon": "credit-card"
+            },
+            {
+              "page": "platform-setup/billing",
+              "icon": "receipt"
+            },
+            {
+              "page": "platform-setup/credits",
+              "icon": "coins"
+            }
+          ]
+        },
+        {
+          "group": "Support",
+          "icon": "help-circle",
+          "pages": [
+            {
+              "page": "platform-setup/documentation",
+              "icon": "book-open"
+            },
+            {
+              "page": "platform-setup/support",
+              "icon": "headphones"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
