@@ -1,0 +1,148 @@
+---
+title: 'Create a Knowledge Agent'
+description: 'Learn how to create and manage a Knowledge Agent in Aivah using the Knowledge workspace'
+---
+
+This guide shows how to create and manage a Knowledge Agent in Aivah using the Knowledge workspace. The steps match the UI shown in the screenshots.
+
+## Open the Knowledge workspace
+
+<Steps>
+  <Step title="Navigate to Knowledge">
+    Sign in and go to the top navigation, then click **Knowledge**.
+  </Step>
+  <Step title="Create New Agent">
+    In the left sidebar, click **Create New Agent**.
+  </Step>
+</Steps>
+
+## Name and configure the agent
+
+<Steps>
+  <Step title="Enter Agent Name">
+    In **Agent Name**, enter a clear name (e.g., "Marketing Agent").
+  </Step>
+  <Step title="Configure Settings">
+    Set the toggles:
+    - **Real-Time API**: turn on for live, conversational use
+    - **Presentation**: leave off for a standard knowledge agent. Turn on only if you're creating a Presentation Agent (see section below)
+    - **Multi Modal**: optional based on your plan/capabilities
+  </Step>
+</Steps>
+
+## Add knowledge (standard agent)
+
+You can add any combination of the three inputs below:
+
+<AccordionGroup>
+  <Accordion title="Paste text">
+    In **Enter Content**, paste any short reference text you want the agent to know.
+  </Accordion>
+  
+  <Accordion title="Add URLs or videos">
+    1. In **Upload URL Or Video**, paste a link (e.g., aivah.ai pages, blog posts, public docs, YouTube/Vimeo)
+    2. Click **+ Add another link** to include more sources
+  </Accordion>
+  
+  <Accordion title="Upload files">
+    1. In **Drag and drop files here for agent knowledge**, drop a file, or click **Upload** to pick one
+    2. After the upload starts, you'll see an upload banner: "Uploading your Agent Knowledge files. Large files and URLs may take several minutes to complete." Wait until it finishes
+  </Accordion>
+</AccordionGroup>
+
+<Tip>Make sure links are publicly accessible. Very large files/URLs may take a few minutes to process.</Tip>
+
+## Create the agent
+
+<Steps>
+  <Step title="Create Agent">
+    Click **+ Create** at the bottom of the page.
+  </Step>
+  <Step title="Access Agent Settings">
+    You'll be taken to **Agent Knowledge Settings** for the new agent.
+  </Step>
+</Steps>
+
+What you'll see there:
+- Each source listed with a character count and upload date
+- **List View** / **Card View** toggle to switch layouts
+- **Export Content List** to download a summary of all sources
+- **Add content** button to add more sources later
+
+## Create a Presentation Agent (optional)
+
+Use this mode if you want the agent to present from a single document (e.g., a deck).
+
+<Steps>
+  <Step title="Start Creation">
+    From **Create New Agent**, enter a name (e.g., "Presentation AgenX").
+  </Step>
+  <Step title="Enable Presentation Mode">
+    Turn **Presentation** on.
+  </Step>
+  <Step title="Upload Document">
+    Upload your PDF in the upload area. You'll see: "Document uploaded successfully. Delete the existing document to upload a new one."
+    
+    <Note>Only one presentation document is active at a time; delete it to replace.</Note>
+  </Step>
+  <Step title="Create Agent">
+    Click **+ Create**. In **Agent Knowledge Settings**, you'll see the uploaded document listed.
+  </Step>
+</Steps>
+
+## Update, add, or remove knowledge
+
+From **Agent Knowledge Settings** (Knowledge tab → select your agent in the left sidebar):
+
+<AccordionGroup>
+  <Accordion title="Add new sources">
+    Click **Add content**, then paste text, add URLs, or upload files. Click **Confirm** to save.
+  </Accordion>
+  
+  <Accordion title="Edit sources">
+    Click a source to open **Update Agent Knowledge**, make changes (add/remove links, paste text, upload files), then **Confirm**.
+  </Accordion>
+  
+  <Accordion title="Delete sources">
+    Use the trash icon next to an item, or **Delete All** (top-right) to clear everything.
+  </Accordion>
+  
+  <Accordion title="Bulk actions">
+    Use the checkboxes and **Select all files** to apply actions to multiple items.
+  </Accordion>
+</AccordionGroup>
+
+## Verify processing
+
+- After adding links or files, wait for processing to complete
+- Refresh or return to **Agent Knowledge Settings** to confirm each item shows a character count (indicates it's been ingested)
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Configure Behavior" icon="gear">
+    Head to **Share** to configure behavior and experience, then generate links or embeds
+  </Card>
+  <Card title="Review Analytics" icon="chart-line">
+    Use **Insights** to review analytics once the agent is live
+  </Card>
+  <Card title="Connect Tools" icon="plug">
+    Connect external tools in **Integrations** when you're ready
+  </Card>
+</CardGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Uploads feel slow">
+    Large files and some websites take time to fetch and parse. Keep the tab open until the upload banner completes.
+  </Accordion>
+  
+  <Accordion title="A link doesn't ingest">
+    Confirm it's publicly accessible and not behind a login or geo-restricted.
+  </Accordion>
+  
+  <Accordion title="Replace presentation deck">
+    Turn **Presentation** on for that agent, delete the existing file in the upload area, and upload the new PDF.
+  </Accordion>
+</AccordionGroup>

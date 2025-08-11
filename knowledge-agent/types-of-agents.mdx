@@ -3,4 +3,399 @@ title: "Types of Agents"
 description: "Types of agents guide"
 ---
 
-Types of agents content.
+## Types of Knowledge Agents
+
+Aivah offers different types of Knowledge Agents, each optimized for specific use cases and interaction patterns. Understanding the differences helps you choose the right configuration for your needs.
+
+## Overview of Agent Types
+
+<CardGroup cols={2}>
+  <Card title="Standard Knowledge Agent" icon="book-open">
+    General-purpose agents for comprehensive knowledge bases with multiple content sources
+  </Card>
+  <Card title="Presentation Agent" icon="presentation">
+    Specialized agents for single-document presentations and slide decks
+  </Card>
+  <Card title="Real-Time Agent" icon="bolt">
+    Live, conversational agents optimized for instant interactions
+  </Card>
+  <Card title="Multi-Modal Agent" icon="image">
+    Advanced agents capable of handling text, images, and multimedia content
+  </Card>
+</CardGroup>
+
+## Standard Knowledge Agent
+
+The most versatile type of Knowledge Agent, designed for comprehensive information delivery across multiple content sources.
+
+### Key Features
+
+- **Multiple content sources** - Combine text, URLs, and file uploads
+- **Comprehensive knowledge base** - Handle diverse information types
+- **Flexible interaction modes** - Support both casual and detailed queries
+- **Scalable content management** - Easy to expand and modify knowledge base
+
+### Best Use Cases
+
+<AccordionGroup>
+  <Accordion title="Customer Support">
+    - FAQ databases
+    - Product documentation
+    - Troubleshooting guides
+    - Policy and procedure information
+  </Accordion>
+  
+  <Accordion title="Internal Knowledge">
+    - Employee handbooks
+    - Company procedures
+    - Training materials
+    - Department-specific information
+  </Accordion>
+  
+  <Accordion title="Educational Content">
+    - Course materials
+    - Research databases
+    - Reference libraries
+    - Academic resources
+  </Accordion>
+</AccordionGroup>
+
+### Configuration Options
+
+<Tabs>
+  <Tab title="Content Sources">
+    **Multiple Input Types**
+    
+    - Direct text entry for specific information
+    - URL integration for web content
+    - File uploads for documents and PDFs
+    - Mix and match sources as needed
+  </Tab>
+  
+  <Tab title="Response Style">
+    **Flexible Interaction**
+    
+    - Detailed explanations for complex topics
+    - Quick answers for simple queries
+    - Context-aware responses
+    - Progressive information disclosure
+  </Tab>
+  
+  <Tab title="Management">
+    **Easy Maintenance**
+    
+    - Add, edit, and remove content sources
+    - Bulk content management operations
+    - Export and backup capabilities
+    - Version control for content updates
+  </Tab>
+</Tabs>
+
+## Presentation Agent
+
+Specialized agents designed for interactive presentation experiences with single-document focus.
+
+### Key Features
+
+- **Single-document optimization** - Focused on one presentation or slide deck
+- **Interactive navigation** - Users can explore content conversationally
+- **Context-aware responses** - Understands slide relationships and flow
+- **Visual content integration** - References charts, graphs, and slide elements
+
+### Best Use Cases
+
+<AccordionGroup>
+  <Accordion title="Sales and Marketing">
+    - Product pitch decks
+    - Marketing presentations
+    - Proposal documents
+    - Campaign materials
+  </Accordion>
+  
+  <Accordion title="Training and Education">
+    - Corporate training decks
+    - Educational presentations
+    - Workshop materials
+    - Onboarding content
+  </Accordion>
+  
+  <Accordion title="Executive Communications">
+    - Strategy presentations
+    - Board meeting materials
+    - Quarterly reviews
+    - Company announcements
+  </Accordion>
+</AccordionGroup>
+
+### Configuration Details
+
+<Steps>
+  <Step title="Document Requirements">
+    - PDF format only
+    - Single document at a time
+    - Selectable text (not image-based)
+    - Clear slide structure and numbering
+  </Step>
+  <Step title="Interaction Features">
+    - Slide-specific questions and answers
+    - Cross-slide information linking
+    - Content summarization capabilities
+    - Navigation by topic or slide number
+  </Step>
+  <Step title="Management Constraints">
+    - Replace entire document to update
+    - No additional content sources
+    - Document-centric content organization
+    - Simplified knowledge management
+  </Step>
+</Steps>
+
+## Real-Time Agent
+
+Optimized for live, instant interactions with minimal response delay.
+
+### Key Features
+
+- **Instant responses** - Sub-second reply times for most queries
+- **Live conversations** - Natural, flowing dialogue experiences
+- **Context retention** - Remembers conversation history within sessions
+- **Voice compatibility** - Works with speech-to-text and text-to-speech
+
+### Best Use Cases
+
+<AccordionGroup>
+  <Accordion title="Customer Service">
+    - Live chat support
+    - Instant FAQ responses
+    - Real-time troubleshooting
+    - Immediate assistance requests
+  </Accordion>
+  
+  <Accordion title="Interactive Applications">
+    - Voice assistants
+    - Chatbot integrations
+    - Real-time Q&A sessions
+    - Live demonstrations
+  </Accordion>
+  
+  <Accordion title="Internal Tools">
+    - Employee self-service
+    - IT help desk automation
+    - Real-time information lookup
+    - Quick decision support
+  </Accordion>
+</AccordionGroup>
+
+### Performance Considerations
+
+<CardGroup cols={2}>
+  <Card title="Response Speed" icon="clock">
+    Optimized for sub-second response times with efficient content retrieval
+  </Card>
+  <Card title="Concurrent Usage" icon="users">
+    Handles multiple simultaneous conversations without performance degradation
+  </Card>
+  <Card title="Context Management" icon="memory">
+    Maintains conversation context while optimizing for speed
+  </Card>
+  <Card title="Integration Ready" icon="plug">
+    API-first design for seamless application integration
+  </Card>
+</CardGroup>
+
+## Multi-Modal Agent
+
+Advanced agents capable of processing and responding to multiple content types including text, images, and multimedia.
+
+### Key Features
+
+- **Image processing** - Analyze and respond to uploaded images
+- **Document understanding** - Process complex documents with visual elements
+- **Mixed media responses** - Provide text, visual, and interactive responses
+- **Advanced content types** - Handle charts, diagrams, screenshots, and more
+
+### Best Use Cases
+
+<AccordionGroup>
+  <Accordion title="Technical Support">
+    - Screenshot troubleshooting
+    - Visual problem diagnosis
+    - Diagram explanations
+    - Step-by-step visual guides
+  </Accordion>
+  
+  <Accordion title="Educational Applications">
+    - Visual learning materials
+    - Image-based questions
+    - Multimedia course content
+    - Interactive learning experiences
+  </Accordion>
+  
+  <Accordion title="Creative and Design">
+    - Design feedback and analysis
+    - Visual content creation
+    - Artistic interpretation
+    - Creative project assistance
+  </Accordion>
+</AccordionGroup>
+
+### Technical Requirements
+
+<Steps>
+  <Step title="Plan Compatibility">
+    Multi-modal features require specific Aivah plan levels. Check your plan for availability.
+  </Step>
+  <Step title="Content Preparation">
+    - High-quality images for best analysis
+    - Clear visual elements and text
+    - Appropriate file formats and sizes
+    - Descriptive alt text when possible
+  </Step>
+  <Step title="Performance Impact">
+    - Slightly longer processing times for complex visuals
+    - Higher resource usage for multimedia content
+    - Bandwidth considerations for image transfer
+    - Storage implications for multimedia knowledge bases
+  </Step>
+</Steps>
+
+## Choosing the Right Agent Type
+
+### Decision Matrix
+
+<Tabs>
+  <Tab title="Content Complexity">
+    **Simple to Complex**
+    
+    - **Single document** → Presentation Agent
+    - **Multiple sources** → Standard Knowledge Agent
+    - **Mixed media** → Multi-Modal Agent
+    - **Any complexity** → Real-Time Agent (with other features)
+  </Tab>
+  
+  <Tab title="Interaction Style">
+    **Response Requirements**
+    
+    - **Instant responses** → Real-Time Agent
+    - **Detailed explanations** → Standard Knowledge Agent
+    - **Visual interactions** → Multi-Modal Agent
+    - **Presentation navigation** → Presentation Agent
+  </Tab>
+  
+  <Tab title="Use Case Priority">
+    **Primary Purpose**
+    
+    - **Customer support** → Real-Time or Standard
+    - **Training delivery** → Presentation Agent
+    - **Knowledge base** → Standard Knowledge Agent
+    - **Technical support** → Multi-Modal Agent
+  </Tab>
+</Tabs>
+
+### Feature Comparison
+
+| Feature | Standard | Presentation | Real-Time | Multi-Modal |
+|---------|----------|--------------|-----------|-------------|
+| Multiple content sources | ✅ | ❌ | ✅ | ✅ |
+| Single document focus | ❌ | ✅ | Optional | Optional |
+| Instant responses | Optional | Optional | ✅ | Optional |
+| Image processing | ❌ | ❌ | Optional | ✅ |
+| Voice compatibility | Optional | Optional | ✅ | ✅ |
+| Context retention | ✅ | ✅ | ✅ | ✅ |
+| API integration | ✅ | ✅ | ✅ | ✅ |
+
+## Combining Agent Types
+
+### Hybrid Configurations
+
+Many agents can combine multiple features:
+
+<AccordionGroup>
+  <Accordion title="Real-Time + Multi-Modal">
+    Live agents with image processing capabilities for technical support and interactive assistance.
+  </Accordion>
+  
+  <Accordion title="Standard + Real-Time">
+    Comprehensive knowledge bases with instant response capabilities for customer service applications.
+  </Accordion>
+  
+  <Accordion title="Presentation + Real-Time">
+    Interactive presentation agents with live Q&A capabilities for training and sales scenarios.
+  </Accordion>
+</AccordionGroup>
+
+### Implementation Strategy
+
+<Steps>
+  <Step title="Start Simple">
+    Begin with a Standard Knowledge Agent to establish your knowledge base and understand usage patterns.
+  </Step>
+  <Step title="Add Features Gradually">
+    Enable Real-Time API, Multi-Modal processing, or Presentation mode based on user needs and feedback.
+  </Step>
+  <Step title="Optimize Performance">
+    Monitor usage patterns and optimize agent configuration for your specific use case requirements.
+  </Step>
+  <Step title="Scale as Needed">
+    Expand capabilities and create specialized agents for different departments or use cases.
+  </Step>
+</Steps>
+
+## Migration Between Agent Types
+
+### Changing Agent Configuration
+
+<Steps>
+  <Step title="Assess Current Setup">
+    Review your existing agent's content, usage patterns, and performance metrics.
+  </Step>
+  <Step title="Plan Migration">
+    Identify which features to add or modify and potential impact on users.
+  </Step>
+  <Step title="Test Changes">
+    Use a duplicate agent to test new configurations before applying to production.
+  </Step>
+  <Step title="Implement Gradually">
+    Roll out changes during low-usage periods and monitor performance closely.
+  </Step>
+</Steps>
+
+### Migration Considerations
+
+<Warning>
+Some agent type changes may require rebuilding your knowledge base or reconfiguring integrations. Plan accordingly and consider creating backup agents during transitions.
+</Warning>
+
+## Best Practices by Agent Type
+
+<AccordionGroup>
+  <Accordion title="Standard Knowledge Agents">
+    - Organize content logically with clear categorization
+    - Regular content audits and updates
+    - Balance comprehensiveness with relevance
+    - Test across different query types and complexity levels
+  </Accordion>
+  
+  <Accordion title="Presentation Agents">
+    - Ensure slide content is text-heavy and well-structured
+    - Use clear, descriptive slide titles and numbering
+    - Test navigation with typical user questions
+    - Optimize presentation for conversational interaction
+  </Accordion>
+  
+  <Accordion title="Real-Time Agents">
+    - Prioritize response speed optimization
+    - Implement proper error handling and fallbacks
+    - Monitor performance under load
+    - Plan for scalability and concurrent users
+  </Accordion>
+  
+  <Accordion title="Multi-Modal Agents">
+    - Use high-quality, clear images and visuals
+    - Provide context for complex visual content
+    - Test with various image types and qualities
+    - Balance visual processing with response speed
+  </Accordion>
+</AccordionGroup>
+
+Ready to create your first agent? Start with our [Agent Creation Guide](/knowledge-agent/create-agent) or learn more about [adding content](/knowledge-agent/add-content) to your knowledge base.

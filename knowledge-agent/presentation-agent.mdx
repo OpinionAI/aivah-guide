@@ -3,4 +3,337 @@ title: "Presentation Agent"
 description: "Presentation agent guide"
 ---
 
-Presentation agent content here.
+## Creating and Using Presentation Agents
+
+Presentation Agents are specialized Knowledge Agents designed to present from a single document, typically a PDF presentation or slide deck. They transform static presentations into interactive, conversational experiences.
+
+## What is a Presentation Agent?
+
+A Presentation Agent allows users to:
+
+- **Navigate presentations conversationally** - Ask questions about specific slides or topics
+- **Get detailed explanations** - Dive deeper into presentation content through Q&A
+- **Access information quickly** - Find specific information without manually browsing slides
+- **Interact naturally** - Use natural language to explore presentation content
+
+<CardGroup cols={2}>
+  <Card title="Single Document Focus" icon="file-pdf">
+    Optimized for one presentation document at a time
+  </Card>
+  <Card title="Interactive Navigation" icon="arrows-rotate">
+    Navigate through content conversationally rather than linearly
+  </Card>
+  <Card title="Context-Aware" icon="brain">
+    Understands slide relationships and presentation flow
+  </Card>
+  <Card title="Visual Integration" icon="image">
+    References visual elements and slide-specific content
+  </Card>
+</CardGroup>
+
+## When to Use Presentation Agents
+
+<AccordionGroup>
+  <Accordion title="Training and Education">
+    - Corporate training materials
+    - Educational lectures and courses
+    - Workshop presentations
+    - Onboarding presentations
+  </Accordion>
+  
+  <Accordion title="Sales and Marketing">
+    - Product pitch decks
+    - Sales presentations
+    - Marketing materials
+    - Proposal presentations
+  </Accordion>
+  
+  <Accordion title="Internal Communications">
+    - Company updates and announcements
+    - Strategy presentations
+    - Meeting materials
+    - Policy presentations
+  </Accordion>
+  
+  <Accordion title="Client Presentations">
+    - Consulting deliverables
+    - Project presentations
+    - Report presentations
+    - Executive briefings
+  </Accordion>
+</AccordionGroup>
+
+## Creating a Presentation Agent
+
+### Step-by-Step Setup
+
+<Steps>
+  <Step title="Access Creation Interface">
+    Navigate to **Knowledge** → **Create New Agent** in your Aivah dashboard.
+  </Step>
+  <Step title="Configure Agent Settings">
+    1. Enter a descriptive agent name (e.g., "Q3 Strategy Presentation", "Product Training Deck")
+    2. **Enable Presentation Mode** - Toggle the **Presentation** switch to ON
+    3. Configure other settings:
+       - **Real-Time API**: Enable for live interactions
+       - **Multi Modal**: Enable if your plan supports it
+  </Step>
+  <Step title="Upload Your Presentation">
+    1. Use the dedicated upload area for presentation documents
+    2. Upload your PDF presentation file
+    3. Wait for processing confirmation: "Document uploaded successfully. Delete the existing document to upload a new one."
+    
+    <img
+      className="block dark:hidden"
+      src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.15.23 PM.png"
+      alt="Presentation Agent Creation with PDF Upload"
+    />
+    <img
+      className="hidden dark:block"
+      src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.15.23 PM.png"
+      alt="Presentation Agent Creation with PDF Upload"
+    />
+  </Step>
+  <Step title="Create and Verify">
+    1. Click **+ Create** to finalize your Presentation Agent
+    2. Verify the document appears in **Agent Knowledge Settings**
+    3. Confirm processing is complete with visible character count
+    
+    <img
+      className="block dark:hidden"
+      src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.16.02 PM.png"
+      alt="Presentation Agent Knowledge Settings"
+    />
+    <img
+      className="hidden dark:block"
+      src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.16.02 PM.png"
+      alt="Presentation Agent Knowledge Settings"
+    />
+  </Step>
+</Steps>
+
+<Warning>
+Presentation Agents support only **ONE active document at a time**. To replace a presentation, delete the existing document before uploading a new one.
+</Warning>
+
+### Supported File Types
+
+<Tabs>
+  <Tab title="PDF Documents">
+    **Primary Format**
+    
+    - Native PDF presentations and slide decks
+    - Exported PowerPoint files (PDF format)
+    - Any PDF document with structured content
+    - Best performance with text-heavy documents
+  </Tab>
+  
+  <Tab title="Preparation Tips">
+    **Optimize Your Files**
+    
+    - Ensure text is selectable (not image-based)
+    - Use clear, readable fonts
+    - Include descriptive slide titles
+    - Add slide numbers for easy reference
+  </Tab>
+</Tabs>
+
+## Managing Presentation Content
+
+### Replacing Presentations
+
+<Steps>
+  <Step title="Access Agent Settings">
+    Select your Presentation Agent from the Knowledge sidebar.
+  </Step>
+  <Step title="Delete Current Document">
+    Use the delete option for the existing presentation in the upload area.
+  </Step>
+  <Step title="Upload New Document">
+    Upload your new presentation file in the same upload area.
+  </Step>
+  <Step title="Verify Processing">
+    Confirm the new document processes successfully with character count visible.
+  </Step>
+</Steps>
+
+### Content Limitations
+
+<Info>
+Unlike standard Knowledge Agents, Presentation Agents are designed for single-document focus:
+
+- **One document limit** - Only one presentation can be active
+- **PDF format required** - Other document types are not supported
+- **No URL or text additions** - Content is limited to the uploaded presentation
+- **Document replacement** - Must delete existing to upload new
+</Info>
+
+## Best Practices for Presentation Agents
+
+### Content Preparation
+
+<AccordionGroup>
+  <Accordion title="Document Structure">
+    - Use clear, descriptive slide titles
+    - Maintain consistent formatting throughout
+    - Include slide numbers for reference
+    - Ensure text is readable and selectable
+  </Accordion>
+  
+  <Accordion title="Content Organization">
+    - Structure information hierarchically
+    - Use bullet points and clear sections
+    - Include key takeaways on each slide
+    - Maintain logical flow between slides
+  </Accordion>
+  
+  <Accordion title="Visual Elements">
+    - Balance text with visuals appropriately
+    - Use high-contrast text for readability
+    - Avoid overly complex graphics
+    - Include alt text or captions where relevant
+  </Accordion>
+</AccordionGroup>
+
+### Interaction Design
+
+<Steps>
+  <Step title="Anticipate User Questions">
+    Consider what questions users might ask about:
+    - Specific slides or sections
+    - Data and statistics presented
+    - Processes or workflows shown
+    - Key concepts and definitions
+  </Step>
+  <Step title="Provide Context">
+    Ensure your presentation includes:
+    - Background information for complex topics
+    - Definitions for technical terms
+    - Examples and case studies
+    - Clear conclusions and next steps
+  </Step>
+  <Step title="Test Interactions">
+    After creating your agent:
+    - Ask questions about different slides
+    - Test navigation between sections
+    - Verify accurate information retrieval
+    - Check response quality and completeness
+  </Step>
+</Steps>
+
+## Common Use Cases and Examples
+
+### Educational Presentations
+
+**Example: Training Module**
+- Upload a company training presentation
+- Users can ask: "What are the safety protocols on slide 15?"
+- Agent provides detailed explanation of safety procedures
+- Follow-up questions about specific protocols are answered contextually
+
+### Sales Presentations
+
+**Example: Product Demo Deck**
+- Upload product presentation PDF
+- Users ask: "Show me the pricing information"
+- Agent navigates to pricing slides and explains options
+- Handles questions about features, benefits, and comparisons
+
+### Strategy Presentations
+
+**Example: Quarterly Business Review**
+- Upload executive presentation
+- Stakeholders ask: "What were our Q2 results?"
+- Agent references specific data slides
+- Provides context and explanations for metrics and trends
+
+## Advanced Features
+
+### Contextual Navigation
+
+Presentation Agents understand:
+
+- **Slide relationships** - How slides connect and relate to each other
+- **Document flow** - The logical progression of the presentation
+- **Visual context** - References to charts, graphs, and images
+- **Sectional organization** - Different parts and themes of the presentation
+
+### Interactive Capabilities
+
+<CardGroup cols={2}>
+  <Card title="Question-Based Navigation" icon="compass">
+    Users can navigate by asking about topics rather than slide numbers
+  </Card>
+  <Card title="Content Summarization" icon="list">
+    Agents can summarize sections or the entire presentation
+  </Card>
+  <Card title="Detail Exploration" icon="magnifying-glass">
+    Deep dive into specific points or data shown in slides
+  </Card>
+  <Card title="Cross-References" icon="link">
+    Connect related information across different slides
+  </Card>
+</CardGroup>
+
+## Troubleshooting Presentation Agents
+
+<AccordionGroup>
+  <Accordion title="Upload Issues">
+    **Common Problems:**
+    - File too large for processing
+    - PDF contains only images (no selectable text)
+    - Corrupted or password-protected files
+    
+    **Solutions:**
+    - Compress large PDFs while maintaining quality
+    - Ensure text is selectable, not just images
+    - Remove password protection before upload
+    - Re-export presentation as clean PDF
+  </Accordion>
+  
+  <Accordion title="Poor Response Quality">
+    **Possible Causes:**
+    - Unclear or poorly structured content
+    - Missing context in slides
+    - Complex visuals without explanatory text
+    
+    **Improvements:**
+    - Add more descriptive text to slides
+    - Include context and background information
+    - Provide clear titles and section headers
+    - Add explanatory notes for complex visuals
+  </Accordion>
+  
+  <Accordion title="Navigation Problems">
+    **Issues:**
+    - Agent cannot find specific slides
+    - Difficulty connecting related information
+    - Poor understanding of presentation flow
+    
+    **Solutions:**
+    - Use consistent slide numbering
+    - Include clear section dividers
+    - Add transition slides between major topics
+    - Ensure logical information flow
+  </Accordion>
+</AccordionGroup>
+
+## Deployment and Sharing
+
+Once your Presentation Agent is ready:
+
+1. **Configure sharing settings** in the Share tab
+2. **Generate public links** for easy access
+3. **Create embeds** for websites or platforms
+4. **Set up access controls** as needed for your audience
+
+## Measuring Success
+
+Track your Presentation Agent's performance:
+
+- **Usage analytics** - How often the agent is accessed
+- **Question patterns** - What users ask about most
+- **Session duration** - How long users engage with content
+- **User satisfaction** - Feedback and ratings from interactions
+
+Ready to explore other agent types? Learn about [Real-time API configuration](/knowledge-agent/realtime) or discover all [Types of Agents](/knowledge-agent/types-of-agents) available in Aivah.

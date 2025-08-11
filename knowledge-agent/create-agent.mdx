@@ -3,4 +3,208 @@ title: "Create Agent"
 description: "Create agent guide"
 ---
 
-Create agent content here.
+## Creating Your First Knowledge Agent
+
+This guide walks you through the complete process of creating a Knowledge Agent in Aivah's Knowledge workspace. Once your agent is created, Aivah automatically trains it on your added content, making it ready for use immediately.
+
+<img
+  className="block dark:hidden"
+  src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.13.17 PM.png"
+  alt="Create New Agent Interface"
+/>
+<img
+  className="hidden dark:block"
+  src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.13.17 PM.png"
+  alt="Create New Agent Interface"
+/>
+
+## Prerequisites
+
+Before creating your agent, ensure you have:
+- An active Aivah account with Knowledge workspace access
+- Your content ready (documents, URLs, or text)
+- A clear understanding of your agent's purpose
+
+## Step-by-Step Creation Process
+
+### 1. Access the Knowledge Workspace
+
+<Steps>
+  <Step title="Navigate to Knowledge">
+    Sign in to your Aivah account and click **Knowledge** in the top navigation bar.
+  </Step>
+  <Step title="Start Agent Creation">
+    In the left sidebar, click **Create New Agent** to begin the setup process.
+  </Step>
+</Steps>
+
+### 2. Configure Basic Settings
+
+<Steps>
+  <Step title="Name Your Agent">
+    Enter a descriptive name in the **Agent Name** field (e.g., "Customer Support Agent", "Product Manual Assistant").
+  </Step>
+  <Step title="Configure Core Features">
+    Set the following toggles based on your needs:
+    
+    - **Real-Time API**: Enable for live, conversational interactions
+    - **Presentation**: Turn on only for single-document presentation agents
+    - **Multi Modal**: Enable if your plan supports multimedia content
+  </Step>
+</Steps>
+
+<Warning>
+Choose your agent name carefully - it will be visible to users and should clearly represent the agent's purpose.
+</Warning>
+
+### 3. Add Initial Knowledge
+
+You have three ways to add knowledge to your agent:
+
+<Tabs>
+  <Tab title="Text Content">
+    **Direct Text Entry**
+    
+    1. In the **Enter Content** section, paste any reference text
+    2. This is ideal for FAQs, policies, or short informational content
+    3. Text is immediately processed and ready to use
+  </Tab>
+  
+  <Tab title="URLs & Videos">
+    **Web Content Integration**
+    
+    1. In **Upload URL Or Video**, paste publicly accessible links
+    2. Supported sources include:
+       - Website pages and blog posts
+       - YouTube and Vimeo videos
+       - Public documentation sites
+    3. Click **+ Add another link** for multiple sources
+  </Tab>
+  
+  <Tab title="File Upload">
+    **Document Upload**
+    
+    1. Use **Drag and drop files here** or click **Upload**
+    2. Supported formats include PDF, DOCX, TXT, and more
+    3. Wait for the upload banner to complete processing
+  </Tab>
+</Tabs>
+
+### 4. Create and Verify
+
+<Steps>
+  <Step title="Wait for Processing">
+    After adding content, you'll see a processing notification. Large files and URLs may take several minutes to complete.
+    
+    <img
+      className="block dark:hidden"
+      src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.13.49 PM.png"
+      alt="Upload Progress Notification"
+    />
+    <img
+      className="hidden dark:block"
+      src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.13.49 PM.png"
+      alt="Upload Progress Notification"
+    />
+  </Step>
+  <Step title="Create the Agent">
+    Click **+ Create** at the bottom of the page to finalize your agent.
+  </Step>
+  <Step title="Access Agent Settings">
+    You'll be redirected to the **Agent Knowledge Settings** page where you can:
+    
+    - View all added sources with character counts
+    - Toggle between List View and Card View
+    - Export your content list
+    - Add more knowledge sources using the **Add content** button
+    
+    <img
+      className="block dark:hidden"
+      src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.14.23 PM.png"
+      alt="Agent Knowledge Settings - List View"
+    />
+    <img
+      className="hidden dark:block"
+      src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.14.23 PM.png"
+      alt="Agent Knowledge Settings - List View"
+    />
+  </Step>
+</Steps>
+
+## Post-Creation Configuration
+
+### Knowledge Management
+
+Once created, you can manage your agent's knowledge:
+
+- **Add Content**: Use the **Add content** button for additional sources
+- **Edit Sources**: Click any source to modify or update it
+- **Remove Content**: Use trash icons or **Delete All** for bulk removal
+- **Monitor Processing**: Ensure all sources show character counts (indicates successful processing)
+
+You can also switch to **Card View** to see a visual representation of your knowledge sources:
+
+<img
+  className="block dark:hidden"
+  src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.14.44 PM.png"
+  alt="Agent Knowledge Settings - Card View"
+/>
+<img
+  className="hidden dark:block"
+  src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.14.44 PM.png"
+  alt="Agent Knowledge Settings - Card View"
+/>
+
+### Next Steps
+
+After creating your agent:
+
+1. **Test Interactions**: Verify the agent responds accurately to test questions
+2. **Configure Behavior**: Set up response style and limitations in Share settings
+3. **Deploy**: Generate sharing links or embeds for your users
+4. **Monitor Performance**: Use Insights to track usage and effectiveness
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Content Quality">
+    - Use clear, well-structured documents
+    - Ensure information is current and accurate
+    - Remove outdated or contradictory content
+  </Accordion>
+  
+  <Accordion title="Knowledge Organization">
+    - Group related content together
+    - Use descriptive titles for uploaded documents
+    - Regularly review and update your knowledge base
+  </Accordion>
+  
+  <Accordion title="Testing">
+    - Test with common user questions
+    - Verify accuracy of responses
+    - Check for knowledge gaps and fill them
+  </Accordion>
+</AccordionGroup>
+
+## Common Issues and Solutions
+
+<AccordionGroup>
+  <Accordion title="Upload Takes Too Long">
+    Large files and some websites require extended processing time. Keep your browser tab open until the upload banner shows completion.
+  </Accordion>
+  
+  <Accordion title="URL Won't Process">
+    Ensure the URL is:
+    - Publicly accessible (not behind login)
+    - Not geo-restricted
+    - Contains readable content (not just images)
+  </Accordion>
+  
+  <Accordion title="Agent Gives Incorrect Answers">
+    - Review your source content for accuracy
+    - Remove conflicting information
+    - Add more specific examples or context
+  </Accordion>
+</AccordionGroup>
+
+Ready to enhance your agent further? Learn about [adding more content](/knowledge-agent/add-content) or explore [agent types](/knowledge-agent/types-of-agents) for advanced configurations.
