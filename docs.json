@@ -8,133 +8,111 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
-  "navigation": [
-    {
-      "group": "Getting Started",
-      "icon": "rocket",
-      "pages": [
-        {
-          "page": "quick-start/introduction",
-          "icon": "play-circle"
-        },
-        {
-          "page": "quick-start/setup-your-first-agent",
-          "icon": "bot"
-        },
-        {
-          "page": "quick-start/best-practice",
-          "icon": "star"
-        }
-      ]
-    },
-    {
-      "group": "Hub",
-      "icon": "home",
-      "pages": [
-        "interaction-hub/overview",
-        "interaction-hub/chat", 
-        "interaction-hub/voice",
-        "interaction-hub/scenes",
-        "interaction-hub/options"
-      ]
-    },
-    {
-      "group": "Avatar",
-      "icon": "user-round",
-      "pages": [
-        {
-          "page": "avatars/overview",
-          "icon": "users"
-        },
-        {
-          "page": "avatars/create-avatar",
-          "icon": "user-plus"
-        },
-        {
-          "page": "avatars/available-avatars",
-          "icon": "user-check"
-        },
-        {
-          "page": "avatars/shared-avatars",
-          "icon": "user-round-share"
-        }
-      ]
-    },
-    {
-      "group": "Knowledge",
-      "icon": "brain", 
-      "pages": [
-        "knowledge-agent/overview",
-        "knowledge-agent/create-agent",
-        "knowledge-agent/add-content", 
-        "knowledge-agent/train-agent",
-        "knowledge-agent/types-of-agents",
-        "knowledge-agent/realtime",
-        "knowledge-agent/presentation-agent"
-      ]
-    },
-    {
-      "group": "Share",
-      "icon": "share-2",
-      "pages": [
-        "share/overview",
-        "share/publish",
-        "share/direct-link",
-        "share/iframe-embed", 
-        "share/bubble-script-embed",
-        "share/share-settings",
-        "share/behavior",
-        "share/experience",
-        "share/voice-only-agents",
-        "share/agent-system-prompt",
-        "share/prompt-examples", 
-        "share/mcp-tools",
-        "share/lead-capture-form"
-      ]
-    },
-    {
-      "group": "Insights", 
-      "icon": "bar-chart-3",
-      "pages": [
-        "insights/overview",
-        "insights/agent-analytics",
-        "insights/privacy",
-        "insights/chat-log",
-        "insights/call-logs", 
-        "insights/call-transcriptions",
-        "insights/leads"
-      ]
-    },
-    {
-      "group": "Integrations",
-      "icon": "plug",
-      "pages": [
-        "integration/overview",
-        "integration/mcp-tools",
-        "integration/authenticating-mcp",
-        "integration/workflows",
-        "integration/memory",
-        "integration/twilio-phone-setup",
-        "integration/outbound-calls",
-        "integration/inbound-calls",
-        "integration/call-logs",
-        "integration/call-transcriptions"
-      ]
-    },
-    {
-      "group": "Platform",
-      "icon": "settings", 
-      "pages": [
-        "platform-setup/overview",
-        "platform-setup/user-settings",
-        "platform-setup/subscriptions",
-        "platform-setup/billing",
-        "platform-setup/credits",
-        "platform-setup/documentation",
-        "platform-setup/support"
-      ]
-    }
-  ],
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Aivah Guide",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "quick-start/introduction",
+              "quick-start/setup-your-first-agent",
+              "quick-start/best-practice"
+            ]
+          },
+          {
+            "group": "Hub",
+            "pages": [
+              "interaction-hub/overview",
+              "interaction-hub/chat",
+              "interaction-hub/voice",
+              "interaction-hub/scenes",
+              "interaction-hub/options"
+            ]
+          },
+          {
+            "group": "Avatar",
+            "pages": [
+              "avatars/overview",
+              "avatars/create-avatar",
+              "avatars/available-avatars",
+              "avatars/shared-avatars"
+            ]
+          },
+          {
+            "group": "Knowledge",
+            "pages": [
+              "knowledge-agent/overview",
+              "knowledge-agent/create-agent",
+              "knowledge-agent/add-content",
+              "knowledge-agent/train-agent",
+              "knowledge-agent/types-of-agents",
+              "knowledge-agent/realtime",
+              "knowledge-agent/presentation-agent"
+            ]
+          },
+          {
+            "group": "Share",
+            "pages": [
+              "share/overview",
+              "share/publish",
+              "share/direct-link",
+              "share/iframe-embed",
+              "share/bubble-script-embed",
+              "share/share-settings",
+              "share/behavior",
+              "share/experience",
+              "share/voice-only-agents",
+              "share/agent-system-prompt",
+              "share/prompt-examples",
+              "share/mcp-tools",
+              "share/lead-capture-form"
+            ]
+          },
+          {
+            "group": "Insights",
+            "pages": [
+              "insights/overview",
+              "insights/agent-analytics",
+              "insights/privacy",
+              "insights/chat-log",
+              "insights/call-logs",
+              "insights/call-transcriptions",
+              "insights/leads"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integration/overview",
+              "integration/mcp-tools",
+              "integration/authenticating-mcp",
+              "integration/workflows",
+              "integration/memory",
+              "integration/twilio-phone-setup",
+              "integration/outbound-calls",
+              "integration/inbound-calls",
+              "integration/call-logs",
+              "integration/call-transcriptions"
+            ]
+          },
+          {
+            "group": "Platform",
+            "pages": [
+              "platform-setup/overview",
+              "platform-setup/user-settings",
+              "platform-setup/subscriptions",
+              "platform-setup/billing",
+              "platform-setup/credits",
+              "platform-setup/documentation",
+              "platform-setup/support"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
