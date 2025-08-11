@@ -1,6 +1,296 @@
 ---
-title: "Agent System Prompt"
-description: "Agent system prompt guide"
+title: "Agent System Prompts"
+description: "Comprehensive guide to creating effective system prompts for your AI agents"
 ---
 
-Agent system prompt content.
+# Agent System Prompts
+
+System prompts are the foundational instructions that define how your AI agent behaves, responds, and interacts with users. They act as the "personality" and "expertise" blueprint for your agent.
+
+## Understanding System Prompts
+
+Based on the agent configuration interface shown in the screenshots, system prompts are configured in the Behavior tab of your agent settings.
+
+![Agent Prompt Configuration](/Users/ahmedz/Documents/GitHub/chatbot/aivah-guide/share/Share%20/Screenshot%202025-08-09%20at%201.20.45%20PM.png)
+
+### What Are System Prompts?
+
+System prompts are instructions that:
+- Define your agent's role and expertise
+- Set behavioral guidelines and conversation style
+- Establish knowledge boundaries and capabilities
+- Configure response format and structure
+- Integrate with knowledge bases and external tools
+
+### Core Components Visible in Interface
+
+The configuration interface shows several key elements:
+
+1. **Agent Prompt (Give Instructions To Agent)**: The main system instruction field
+2. **Prompt Templates**: Pre-built templates for common use cases
+3. **Knowledge Integration**: "Use the following pieces of context to answer the question at the end."
+4. **Initial Messages**: Welcome messages and conversation starters
+5. **Suggested Messages**: Pre-written prompts to help users engage
+
+## Prompt Template System
+
+![Prompt Templates Access](/Users/ahmedz/Documents/GitHub/chatbot/aivah-guide/share/Share%20/Screenshot%202025-08-09%20at%201.20.40%20PM.png)
+
+The interface includes a "Prompt templates" button that provides access to pre-built prompt structures. This helps ensure you start with proven prompt patterns.
+
+### Template Categories
+
+Based on the interface structure, templates likely include:
+
+- **Knowledge Base Agents**: For information retrieval and Q&A
+- **Customer Support**: For handling customer inquiries
+- **Sales Assistants**: For lead qualification and product guidance
+- **Technical Support**: For troubleshooting and technical assistance
+- **General Assistants**: For multi-purpose interactions
+
+## Knowledge Base Integration
+
+![Knowledge Integration](/Users/ahmedz/Documents/GitHub/chatbot/aivah-guide/share/Share%20/Screenshot%202025-08-09%20at%201.22.02%20PM.png)
+
+The system prompt field shows integration with knowledge bases through context instructions:
+
+```
+Use the following pieces of context to answer the question at the end.
+```
+
+This instruction tells the agent how to:
+- Utilize available knowledge sources
+- Reference specific information when responding
+- Maintain accuracy by staying within knowledge boundaries
+- Provide contextual, relevant answers
+
+## System Prompt Best Practices
+
+### 1. Clear Role Definition
+
+Start your prompt by clearly defining the agent's role:
+
+```
+You are a knowledgeable customer support agent for [Company Name]. 
+Your role is to help customers with questions about our products and services.
+```
+
+### 2. Behavioral Guidelines
+
+Set clear expectations for how the agent should behave:
+
+```
+Always be helpful, professional, and friendly. 
+If you don't know something, admit it and offer to find help.
+Keep responses concise but complete.
+```
+
+### 3. Knowledge Integration
+
+Based on the interface screenshot showing knowledge context integration:
+
+```
+Use the following pieces of context to answer the question at the end.
+If the context doesn't contain relevant information, say so clearly.
+Always cite your sources when possible.
+```
+
+### 4. Response Format
+
+Specify how responses should be structured:
+
+```
+Structure your responses with:
+- A brief acknowledgment of the question
+- Clear, actionable information
+- Next steps or follow-up suggestions when appropriate
+```
+
+### 5. Boundaries and Limitations
+
+Set clear boundaries for what the agent can and cannot do:
+
+```
+You can help with:
+- Product information and features
+- Troubleshooting common issues
+- Account management guidance
+
+You cannot:
+- Process payments or financial transactions
+- Access private customer data
+- Make policy exceptions
+```
+
+## Advanced Prompt Engineering
+
+### Contextual Instructions
+
+![Advanced Configuration](/Users/ahmedz/Documents/GitHub/chatbot/aivah-guide/share/Share%20/Screenshot%202025-08-09%20at%201.20.52%20PM.png)
+
+The interface shows advanced configuration options including:
+
+- **MCP Agent Integration**: Model Context Protocol for external tool access
+- **Knowledge Base Selection**: Specific knowledge sources to reference
+- **Voice and Model Settings**: How the agent processes and responds
+
+### Multi-Modal Considerations
+
+For agents with voice capabilities (as shown in the voice selection screenshots):
+
+```
+When responding:
+- Keep verbal responses conversational and natural
+- Use appropriate pauses and emphasis
+- Adapt language complexity to the user's apparent level
+- Be more expressive in tone than in text-only interactions
+```
+
+### Real-Time Interaction Prompts
+
+![Real-Time Model Selection](/Users/ahmedz/Documents/GitHub/chatbot/aivah-guide/share/Share%20/Screenshot%202025-08-09%20at%201.21.14%20PM.png)
+
+For real-time models (GPT-4o Realtime, Gemini 2.0 Flash Live):
+
+```
+In real-time conversations:
+- Respond quickly and naturally
+- Handle interruptions gracefully
+- Use natural speech patterns
+- Acknowledge non-verbal cues when possible
+```
+
+## Industry-Specific Prompt Examples
+
+### Customer Support Agent
+
+```
+You are a customer support specialist for [Company]. Your goal is to resolve 
+customer issues efficiently and professionally.
+
+Use the following knowledge base context to provide accurate information.
+When you don't have specific information, offer to connect the customer 
+with a human specialist.
+
+Always:
+- Listen carefully to the customer's concern
+- Provide step-by-step solutions
+- Follow up to ensure the issue is resolved
+- Maintain a helpful, patient tone
+```
+
+### Sales Assistant
+
+```
+You are a sales consultant helping potential customers understand our products.
+Your role is to qualify leads, answer questions, and guide customers toward 
+the right solutions.
+
+Use product information from the knowledge base to provide accurate details.
+Focus on understanding customer needs before recommending solutions.
+
+Guidelines:
+- Ask qualifying questions to understand requirements
+- Present benefits, not just features
+- Handle objections with empathy and information
+- Guide toward appropriate next steps
+```
+
+### Technical Support Specialist
+
+```
+You are a technical support expert specializing in [Product/Service].
+Your role is to diagnose problems and provide technical solutions.
+
+Reference technical documentation and troubleshooting guides from the 
+knowledge base. For complex issues, gather detailed information before 
+suggesting solutions.
+
+Approach:
+- Ask diagnostic questions to understand the issue
+- Provide step-by-step troubleshooting instructions
+- Explain technical concepts in accessible language
+- Escalate when issues exceed your knowledge scope
+```
+
+## Testing and Optimization
+
+### Prompt Testing Strategy
+
+1. **Role Consistency**: Test if the agent maintains its defined role
+2. **Knowledge Accuracy**: Verify responses align with knowledge base content
+3. **Boundary Respect**: Ensure agent stays within defined limitations
+4. **Tone Consistency**: Check that communication style remains consistent
+5. **Edge Cases**: Test unusual or challenging scenarios
+
+### Iterative Improvement
+
+![Theme Updates](/Users/ahmedz/Documents/GitHub/chatbot/aivah-guide/share/Share%20/Screenshot%202025-08-09%20at%201.23.34%20PM.png)
+
+The interface provides real-time feedback (as shown with "Agent preview theme updated"), allowing for iterative refinement:
+
+1. **Deploy Initial Prompt**: Start with a well-structured prompt
+2. **Monitor Interactions**: Track how users interact with the agent
+3. **Identify Issues**: Look for patterns in misunderstandings or errors
+4. **Refine Instructions**: Update the system prompt based on learnings
+5. **Test Changes**: Verify improvements work as expected
+
+## Integration with Other Features
+
+### Initial Messages Integration
+
+![Initial Messages Setup](/Users/ahmedz/Documents/GitHub/chatbot/aivah-guide/share/Share%20/Screenshot%202025-08-09%20at%201.20.45%20PM.png)
+
+System prompts work with initial agent messages:
+
+- **Welcome Message**: "👋 Hi, how can I help you?"
+- **Suggested Prompts**: Pre-written conversation starters
+- **Context Setting**: Establish the interaction framework immediately
+
+### Voice Integration
+
+![Voice Configuration](/Users/ahmedz/Documents/GitHub/chatbot/aivah-guide/share/Share%20/Screenshot%202025-08-09%20at%201.21.00%20PM.png)
+
+For voice-enabled agents, system prompts should include:
+
+```
+Voice Interaction Guidelines:
+- Speak clearly and at a moderate pace
+- Use natural conversational patterns
+- Pause appropriately for user responses
+- Adapt to the user's communication style
+```
+
+### Data Collection Integration
+
+![Form Integration](/Users/ahmedz/Documents/GitHub/chatbot/aivah-guide/share/Share%20/Screenshot%202025-08-09%20at%201.22.19%20PM.png)
+
+When agents collect user data:
+
+```
+Data Collection Protocol:
+- Explain why information is being collected
+- Request permission before gathering personal data
+- Handle sensitive information appropriately
+- Confirm information accuracy before proceeding
+```
+
+## Common Pitfalls to Avoid
+
+1. **Overly Long Prompts**: Keep instructions focused and actionable
+2. **Vague Instructions**: Be specific about expected behaviors
+3. **Conflicting Guidelines**: Ensure all instructions align consistently
+4. **Ignoring User Context**: Consider how users will actually interact
+5. **Static Thinking**: Plan for prompt evolution and improvement
+
+## Measuring Prompt Effectiveness
+
+Track key metrics to evaluate prompt success:
+
+- **User Satisfaction**: How well does the agent meet user needs?
+- **Task Completion**: Does the agent help users accomplish their goals?
+- **Escalation Rate**: How often do conversations require human intervention?
+- **Conversation Length**: Are interactions appropriately efficient?
+- **Return Usage**: Do users come back to interact with the agent?
+
+System prompts are the foundation of effective AI agents. Well-crafted prompts create agents that are helpful, reliable, and aligned with your business objectives while providing excellent user experiences.
