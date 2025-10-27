@@ -41,7 +41,7 @@
             ]
           },
           {
-            "group": "Knowledge",
+            "group": "Agents",
             "pages": [
               "knowledge-agent/overview",
               "knowledge-agent/create-agent",

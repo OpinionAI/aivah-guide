@@ -3,9 +3,9 @@ title: "Create Agent"
 description: "Create agent guide"
 ---
 
-## Creating Your First Knowledge Agent
+## Creating Your First Agent
 
-This guide walks you through the complete process of creating a Knowledge Agent in Aivah's Knowledge workspace. Once your agent is created, Aivah automatically trains it on your added content, making it ready for use immediately.
+This guide walks you through the complete process of creating an agent in Aivah's Agents workspace. Once your agent is created, Aivah automatically trains it on your added content, making it ready for use immediately.
 
 <img
   className="block dark:hidden"
@@ -21,17 +21,17 @@ This guide walks you through the complete process of creating a Knowledge Agent 
 ## Prerequisites
 
 Before creating your agent, ensure you have:
-- An active Aivah account with Knowledge workspace access
+- An active Aivah account with Agents workspace access
 - Your content ready (documents, URLs, or text)
 - A clear understanding of your agent's purpose
 
 ## Step-by-Step Creation Process
 
-### 1. Access the Knowledge Workspace
+### 1. Access the Agents Workspace
 
 <Steps>
-  <Step title="Navigate to Knowledge">
-    Sign in to your Aivah account and click **Knowledge** in the top navigation bar.
+  <Step title="Navigate to Agents">
+    Sign in to your Aivah account and click **Agents** in the top navigation bar.
   </Step>
   <Step title="Start Agent Creation">
     In the left sidebar, click **Create New Agent** to begin the setup process.
@@ -47,8 +47,8 @@ Before creating your agent, ensure you have:
   <Step title="Configure Core Features">
     Set the following toggles based on your needs:
     
-    - **Real-Time API**: Enable for live, conversational interactions
-    - **Presentation**: Turn on only for single-document presentation agents
+    - **Presentation**: Leave off to create a Worker Agent. Turn on to create a Realtime Interactive Presenter Agent.
+    - **Real-Time API**: Keep enabled for live, conversational interactions across channels.
     - **Multi Modal**: Enable if your plan supports multimedia content
   </Step>
 </Steps>
@@ -111,7 +111,7 @@ You have three ways to add knowledge to your agent:
     Click **+ Create** at the bottom of the page to finalize your agent.
   </Step>
   <Step title="Access Agent Settings">
-    You'll be redirected to the **Agent Knowledge Settings** page where you can:
+    You'll be redirected to the **Agent Settings** page where you can:
     
     - View all added sources with character counts
     - Toggle between List View and Card View
@@ -121,12 +121,12 @@ You have three ways to add knowledge to your agent:
     <img
       className="block dark:hidden"
       src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.14.23 PM.png"
-      alt="Agent Knowledge Settings - List View"
+      alt="Agent Settings - List View"
     />
     <img
       className="hidden dark:block"
       src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.14.23 PM.png"
-      alt="Agent Knowledge Settings - List View"
+      alt="Agent Settings - List View"
     />
   </Step>
 </Steps>
@@ -135,7 +135,7 @@ You have three ways to add knowledge to your agent:
 
 ### Knowledge Management
 
-Once created, you can manage your agent's knowledge:
+For Worker Agents, manage your knowledge sources from the Agents workspace:
 
 - **Add Content**: Use the **Add content** button for additional sources
 - **Edit Sources**: Click any source to modify or update it
@@ -147,13 +147,15 @@ You can also switch to **Card View** to see a visual representation of your know
 <img
   className="block dark:hidden"
   src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.14.44 PM.png"
-  alt="Agent Knowledge Settings - Card View"
+  alt="Agent Settings - Card View"
 />
 <img
   className="hidden dark:block"
   src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.14.44 PM.png"
-  alt="Agent Knowledge Settings - Card View"
+  alt="Agent Settings - Card View"
 />
+
+<Note>Realtime Interactive Presenter Agents manage a single PDF from the same settings screen. Delete the active file to replace it with an updated deck.</Note>
 
 ### Next Steps
 

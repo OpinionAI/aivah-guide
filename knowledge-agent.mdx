@@ -1,15 +1,15 @@
 ---
-title: 'Create a Knowledge Agent'
-description: 'Learn how to create and manage a Knowledge Agent in Aivah using the Knowledge workspace'
+title: 'Create an Agent'
+description: 'Learn how to create and manage Aivah Agents in the Agents workspace'
 ---
 
-This guide shows how to create and manage a Knowledge Agent in Aivah using the Knowledge workspace. The steps match the UI shown in the screenshots.
+This guide shows how to create and manage Agents in Aivah using the Agents workspace. Worker Agents are the default, all-in-one configuration, while Realtime Interactive Presenter Agents deliver guided presentations. The steps below match the current UI.
 
-## Open the Knowledge workspace
+## Open the Agents workspace
 
 <Steps>
-  <Step title="Navigate to Knowledge">
-    Sign in and go to the top navigation, then click **Knowledge**.
+  <Step title="Navigate to Agents">
+    Sign in and go to the top navigation, then click **Agents**.
   </Step>
   <Step title="Create New Agent">
     In the left sidebar, click **Create New Agent**.
@@ -23,16 +23,16 @@ This guide shows how to create and manage a Knowledge Agent in Aivah using the K
     In **Agent Name**, enter a clear name (e.g., "Marketing Agent").
   </Step>
   <Step title="Configure Settings">
-    Set the toggles:
-    - **Real-Time API**: turn on for live, conversational use
-    - **Presentation**: leave off for a standard knowledge agent. Turn on only if you're creating a Presentation Agent (see section below)
-    - **Multi Modal**: optional based on your plan/capabilities
+    Choose your configuration with the available toggles:
+    - **Presentation**: leave this off to create a Worker Agent. Turn it on to create a Realtime Interactive Presenter Agent.
+    - **Real-Time API**: keep enabled for live, conversational use across channels.
+    - **Multi Modal**: turn on if your plan supports image and multimedia understanding.
   </Step>
 </Steps>
 
-## Add knowledge (standard agent)
+## Add knowledge (Worker Agent)
 
-You can add any combination of the three inputs below:
+Worker Agents accept any combination of the inputs below:
 
 <AccordionGroup>
   <Accordion title="Paste text">
@@ -59,7 +59,7 @@ You can add any combination of the three inputs below:
     Click **+ Create** at the bottom of the page.
   </Step>
   <Step title="Access Agent Settings">
-    You'll be taken to **Agent Knowledge Settings** for the new agent.
+    You'll be taken to **Agent Settings** for the new agent.
   </Step>
 </Steps>
 
@@ -69,30 +69,30 @@ What you'll see there:
 - **Export Content List** to download a summary of all sources
 - **Add content** button to add more sources later
 
-## Create a Presentation Agent (optional)
+## Create a Realtime Interactive Presenter Agent
 
-Use this mode if you want the agent to present from a single document (e.g., a deck).
+Use this mode when you want the agent to present from a single deck or playbook with conversational navigation.
 
 <Steps>
   <Step title="Start Creation">
-    From **Create New Agent**, enter a name (e.g., "Presentation AgenX").
+    From **Create New Agent**, enter a name (e.g., "Product Demo Presenter").
   </Step>
-  <Step title="Enable Presentation Mode">
-    Turn **Presentation** on.
+  <Step title="Enable Presenter Mode">
+    Turn the **Presentation** toggle on to switch the agent type.
   </Step>
   <Step title="Upload Document">
-    Upload your PDF in the upload area. You'll see: "Document uploaded successfully. Delete the existing document to upload a new one."
+    Upload your PDF in the presenter upload area. You'll see: "Document uploaded successfully. Delete the existing document to upload a new one."
     
     <Note>Only one presentation document is active at a time; delete it to replace.</Note>
   </Step>
   <Step title="Create Agent">
-    Click **+ Create**. In **Agent Knowledge Settings**, you'll see the uploaded document listed.
+    Click **+ Create**. In your agent settings, the uploaded document appears as the active presentation source.
   </Step>
 </Steps>
 
 ## Update, add, or remove knowledge
 
-From **Agent Knowledge Settings** (Knowledge tab → select your agent in the left sidebar):
+From your agent settings (Agents tab → select your agent in the left sidebar):
 
 <AccordionGroup>
   <Accordion title="Add new sources">
@@ -115,7 +115,7 @@ From **Agent Knowledge Settings** (Knowledge tab → select your agent in the le
 ## Verify processing
 
 - After adding links or files, wait for processing to complete
-- Refresh or return to **Agent Knowledge Settings** to confirm each item shows a character count (indicates it's been ingested)
+- Refresh or return to **Agent Settings** to confirm each item shows a character count (indicates it's been ingested)
 
 ## Next steps
 
@@ -142,7 +142,7 @@ From **Agent Knowledge Settings** (Knowledge tab → select your agent in the le
     Confirm it's publicly accessible and not behind a login or geo-restricted.
   </Accordion>
   
-  <Accordion title="Replace presentation deck">
-    Turn **Presentation** on for that agent, delete the existing file in the upload area, and upload the new PDF.
+  <Accordion title="Replace presenter deck">
+    Open your Realtime Interactive Presenter Agent, delete the existing file in the upload area, then upload the new PDF.
   </Accordion>
 </AccordionGroup>

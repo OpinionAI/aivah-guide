@@ -1,401 +1,151 @@
 ---
 title: "Types of Agents"
-description: "Types of agents guide"
+description: "Understand Worker Agents and Realtime Interactive Presenter Agents"
 ---
 
-## Types of Knowledge Agents
+## Agent Types Overview
 
-Aivah offers different types of Knowledge Agents, each optimized for specific use cases and interaction patterns. Understanding the differences helps you choose the right configuration for your needs.
-
-## Overview of Agent Types
+Aivah now offers two streamlined agent configurations. Each option is optimized for a specific delivery style, so choosing the right type upfront helps you design the best experience.
 
 <CardGroup cols={2}>
-  <Card title="Standard Knowledge Agent" icon="book-open">
-    General-purpose agents for comprehensive knowledge bases with multiple content sources
+  <Card title="Worker Agent" icon="rocket">
+    Full-featured agent that combines knowledge, realtime conversations, multi-modality, and integrations
   </Card>
-  <Card title="Presentation Agent" icon="presentation">
-    Specialized agents for single-document presentations and slide decks
-  </Card>
-  <Card title="Real-Time Agent" icon="bolt">
-    Live, conversational agents optimized for instant interactions
-  </Card>
-  <Card title="Multi-Modal Agent" icon="image">
-    Advanced agents capable of handling text, images, and multimedia content
+  <Card title="Realtime Interactive Presenter Agent" icon="presentation">
+    Dedicated presenter that guides audiences through a single document with conversational controls
   </Card>
 </CardGroup>
 
-## Standard Knowledge Agent
+## Worker Agent
 
-The most versatile type of Knowledge Agent, designed for comprehensive information delivery across multiple content sources.
+Worker Agents are the default choice for most teams. They inherit every capability Aivah offers without extra configuration.
 
-### Key Features
+### Highlights
 
-- **Multiple content sources** - Combine text, URLs, and file uploads
-- **Comprehensive knowledge base** - Handle diverse information types
-- **Flexible interaction modes** - Support both casual and detailed queries
-- **Scalable content management** - Easy to expand and modify knowledge base
+- **Unified capabilities** – Knowledge retrieval, realtime conversations, and integrations are active by default.
+- **Multi-modal ready** – Support images and mixed media when your plan includes it.
+- **Scalable knowledge** – Combine pasted text, URLs, and file uploads in one agent.
+- **Omnichannel deployment** – Reuse the same Worker Agent across chat, voice, and external integrations.
 
-### Best Use Cases
+### Best for
 
 <AccordionGroup>
-  <Accordion title="Customer Support">
-    - FAQ databases
-    - Product documentation
-    - Troubleshooting guides
-    - Policy and procedure information
+  <Accordion title="Customer and Revenue Teams">
+    - Product explainers and pricing support  
+    - Lead qualification and follow-up  
+    - Self-service troubleshooting
   </Accordion>
-  
-  <Accordion title="Internal Knowledge">
-    - Employee handbooks
-    - Company procedures
-    - Training materials
-    - Department-specific information
+  <Accordion title="Internal Enablement">
+    - SOP and policy lookup  
+    - Onboarding assistants  
+    - IT and HR help desks
   </Accordion>
-  
-  <Accordion title="Educational Content">
-    - Course materials
-    - Research databases
-    - Reference libraries
-    - Academic resources
+  <Accordion title="Always-On Experiences">
+    - Website chat and contact capture  
+    - Voice agents for phone lines  
+    - Workflow automations via integrations
   </Accordion>
 </AccordionGroup>
 
-### Configuration Options
+### Configuration Tips
 
-<Tabs>
-  <Tab title="Content Sources">
-    **Multiple Input Types**
-    
-    - Direct text entry for specific information
-    - URL integration for web content
-    - File uploads for documents and PDFs
-    - Mix and match sources as needed
-  </Tab>
-  
-  <Tab title="Response Style">
-    **Flexible Interaction**
-    
-    - Detailed explanations for complex topics
-    - Quick answers for simple queries
-    - Context-aware responses
-    - Progressive information disclosure
-  </Tab>
-  
-  <Tab title="Management">
-    **Easy Maintenance**
-    
-    - Add, edit, and remove content sources
-    - Bulk content management operations
-    - Export and backup capabilities
-    - Version control for content updates
-  </Tab>
-</Tabs>
+<Steps>
+  <Step title="Add Knowledge Sources">
+    Upload files, paste text, or connect URLs. Worker Agents index every source you provide.
+  </Step>
+  <Step title="Tailor Responses">
+    Tune behavior in Share settings to match your brand voice and escalation paths.
+  </Step>
+  <Step title="Connect Integrations">
+    Link CRMs, ticketing tools, and other services so your Worker Agent can take action.
+  </Step>
+  <Step title="Publish Everywhere">
+    Generate links, embeds, or voice deployments from the same configuration.
+  </Step>
+</Steps>
 
-## Presentation Agent
+## Realtime Interactive Presenter Agent
 
-Specialized agents designed for interactive presentation experiences with single-document focus.
+Realtime Interactive Presenter Agents turn a single document into an interactive, conversational walkthrough. They are perfect when you need to guide someone slide-by-slide or page-by-page.
 
-### Key Features
+### Highlights
 
-- **Single-document optimization** - Focused on one presentation or slide deck
-- **Interactive navigation** - Users can explore content conversationally
-- **Context-aware responses** - Understands slide relationships and flow
-- **Visual content integration** - References charts, graphs, and slide elements
+- **Single-document focus** – Upload one PDF presentation or playbook that the agent will reference.
+- **Guided navigation** – Users can ask for slide summaries, jump to sections, or dig into related details.
+- **Polished delivery** – Consistent, on-brand presentations without worrying about a live presenter.
+- **Interactive follow-up** – Answer audience questions and reinforce key points using the same source file.
 
-### Best Use Cases
+### Best for
 
 <AccordionGroup>
-  <Accordion title="Sales and Marketing">
-    - Product pitch decks
-    - Marketing presentations
-    - Proposal documents
-    - Campaign materials
+  <Accordion title="Sales Presentations">
+    - Product demos  
+    - Proposal walkthroughs  
+    - Executive briefings
   </Accordion>
-  
-  <Accordion title="Training and Education">
-    - Corporate training decks
-    - Educational presentations
-    - Workshop materials
-    - Onboarding content
+  <Accordion title="Training and Enablement">
+    - Onboarding decks  
+    - Certification refreshers  
+    - Compliance briefings
   </Accordion>
-  
-  <Accordion title="Executive Communications">
-    - Strategy presentations
-    - Board meeting materials
+  <Accordion title="Investor and Leadership Updates">
+    - Board reports  
+    - Strategy overviews  
     - Quarterly reviews
-    - Company announcements
   </Accordion>
 </AccordionGroup>
 
-### Configuration Details
+### Configuration Tips
 
 <Steps>
-  <Step title="Document Requirements">
-    - PDF format only
-    - Single document at a time
-    - Selectable text (not image-based)
-    - Clear slide structure and numbering
+  <Step title="Prepare the Document">
+    Use a PDF with clear headings and selectable text. One file stays active at a time.
   </Step>
-  <Step title="Interaction Features">
-    - Slide-specific questions and answers
-    - Cross-slide information linking
-    - Content summarization capabilities
-    - Navigation by topic or slide number
+  <Step title="Enable Presenter Mode">
+    Choose the Realtime Interactive Presenter Agent type during creation or toggle Presentation mode on.
   </Step>
-  <Step title="Management Constraints">
-    - Replace entire document to update
-    - No additional content sources
-    - Document-centric content organization
-    - Simplified knowledge management
+  <Step title="Upload the Deck">
+    Add your presentation. Replace it later by deleting the existing file and uploading a new version.
+  </Step>
+  <Step title="Rehearse the Flow">
+    Test navigation prompts and common questions to confirm the conversation stays on-script.
   </Step>
 </Steps>
 
-## Real-Time Agent
-
-Optimized for live, instant interactions with minimal response delay.
-
-### Key Features
-
-- **Instant responses** - Sub-second reply times for most queries
-- **Live conversations** - Natural, flowing dialogue experiences
-- **Context retention** - Remembers conversation history within sessions
-- **Voice compatibility** - Works with speech-to-text and text-to-speech
-
-### Best Use Cases
-
-<AccordionGroup>
-  <Accordion title="Customer Service">
-    - Live chat support
-    - Instant FAQ responses
-    - Real-time troubleshooting
-    - Immediate assistance requests
-  </Accordion>
-  
-  <Accordion title="Interactive Applications">
-    - Voice assistants
-    - Chatbot integrations
-    - Real-time Q&A sessions
-    - Live demonstrations
-  </Accordion>
-  
-  <Accordion title="Internal Tools">
-    - Employee self-service
-    - IT help desk automation
-    - Real-time information lookup
-    - Quick decision support
-  </Accordion>
-</AccordionGroup>
-
-### Performance Considerations
-
-<CardGroup cols={2}>
-  <Card title="Response Speed" icon="clock">
-    Optimized for sub-second response times with efficient content retrieval
-  </Card>
-  <Card title="Concurrent Usage" icon="users">
-    Handles multiple simultaneous conversations without performance degradation
-  </Card>
-  <Card title="Context Management" icon="memory">
-    Maintains conversation context while optimizing for speed
-  </Card>
-  <Card title="Integration Ready" icon="plug">
-    API-first design for seamless application integration
-  </Card>
-</CardGroup>
-
-## Multi-Modal Agent
-
-Advanced agents capable of processing and responding to multiple content types including text, images, and multimedia.
-
-### Key Features
-
-- **Image processing** - Analyze and respond to uploaded images
-- **Document understanding** - Process complex documents with visual elements
-- **Mixed media responses** - Provide text, visual, and interactive responses
-- **Advanced content types** - Handle charts, diagrams, screenshots, and more
-
-### Best Use Cases
-
-<AccordionGroup>
-  <Accordion title="Technical Support">
-    - Screenshot troubleshooting
-    - Visual problem diagnosis
-    - Diagram explanations
-    - Step-by-step visual guides
-  </Accordion>
-  
-  <Accordion title="Educational Applications">
-    - Visual learning materials
-    - Image-based questions
-    - Multimedia course content
-    - Interactive learning experiences
-  </Accordion>
-  
-  <Accordion title="Creative and Design">
-    - Design feedback and analysis
-    - Visual content creation
-    - Artistic interpretation
-    - Creative project assistance
-  </Accordion>
-</AccordionGroup>
-
-### Technical Requirements
-
-<Steps>
-  <Step title="Plan Compatibility">
-    Multi-modal features require specific Aivah plan levels. Check your plan for availability.
-  </Step>
-  <Step title="Content Preparation">
-    - High-quality images for best analysis
-    - Clear visual elements and text
-    - Appropriate file formats and sizes
-    - Descriptive alt text when possible
-  </Step>
-  <Step title="Performance Impact">
-    - Slightly longer processing times for complex visuals
-    - Higher resource usage for multimedia content
-    - Bandwidth considerations for image transfer
-    - Storage implications for multimedia knowledge bases
-  </Step>
-</Steps>
-
-## Choosing the Right Agent Type
-
-### Decision Matrix
+## Choosing the Right Agent
 
 <Tabs>
-  <Tab title="Content Complexity">
-    **Simple to Complex**
+  <Tab title="Decision Guide">
+    **Start with the outcome you want:**
     
-    - **Single document** → Presentation Agent
-    - **Multiple sources** → Standard Knowledge Agent
-    - **Mixed media** → Multi-Modal Agent
-    - **Any complexity** → Real-Time Agent (with other features)
+    - Need a single assistant for every channel? → **Worker Agent**
+    - Present a narrated deck or playbook? → **Realtime Interactive Presenter Agent**
   </Tab>
-  
-  <Tab title="Interaction Style">
-    **Response Requirements**
-    
-    - **Instant responses** → Real-Time Agent
-    - **Detailed explanations** → Standard Knowledge Agent
-    - **Visual interactions** → Multi-Modal Agent
-    - **Presentation navigation** → Presentation Agent
+  <Tab title="Content Strategy">
+    - Multiple sources, knowledge base style → **Worker Agent**  
+    - One hero document that anchors the entire conversation → **Realtime Interactive Presenter Agent**
   </Tab>
-  
-  <Tab title="Use Case Priority">
-    **Primary Purpose**
-    
-    - **Customer support** → Real-Time or Standard
-    - **Training delivery** → Presentation Agent
-    - **Knowledge base** → Standard Knowledge Agent
-    - **Technical support** → Multi-Modal Agent
+  <Tab title="Interaction Pattern">
+    - Open-ended Q&A, support, automation → **Worker Agent**  
+    - Structured walkthrough with chapter-style control → **Realtime Interactive Presenter Agent**
   </Tab>
 </Tabs>
 
-### Feature Comparison
+## Switching Agent Types
 
-| Feature | Standard | Presentation | Real-Time | Multi-Modal |
-|---------|----------|--------------|-----------|-------------|
-| Multiple content sources | ✅ | ❌ | ✅ | ✅ |
-| Single document focus | ❌ | ✅ | Optional | Optional |
-| Instant responses | Optional | Optional | ✅ | Optional |
-| Image processing | ❌ | ❌ | Optional | ✅ |
-| Voice compatibility | Optional | Optional | ✅ | ✅ |
-| Context retention | ✅ | ✅ | ✅ | ✅ |
-| API integration | ✅ | ✅ | ✅ | ✅ |
-
-## Combining Agent Types
-
-### Hybrid Configurations
-
-Many agents can combine multiple features:
+Need to pivot? Create a new agent of the required type, then reuse your content:
 
 <AccordionGroup>
-  <Accordion title="Real-Time + Multi-Modal">
-    Live agents with image processing capabilities for technical support and interactive assistance.
+  <Accordion title="Worker to Presenter">
+    - Export the key sections from your Worker Agent  
+    - Consolidate into a single PDF  
+    - Create a Realtime Interactive Presenter Agent and upload the document
   </Accordion>
-  
-  <Accordion title="Standard + Real-Time">
-    Comprehensive knowledge bases with instant response capabilities for customer service applications.
-  </Accordion>
-  
-  <Accordion title="Presentation + Real-Time">
-    Interactive presentation agents with live Q&A capabilities for training and sales scenarios.
+  <Accordion title="Presenter to Worker">
+    - Break the presentation into individual knowledge sources  
+    - Create a Worker Agent and add each section as a separate file or text block  
+    - Expand with additional URLs or media as needed
   </Accordion>
 </AccordionGroup>
 
-### Implementation Strategy
-
-<Steps>
-  <Step title="Start Simple">
-    Begin with a Standard Knowledge Agent to establish your knowledge base and understand usage patterns.
-  </Step>
-  <Step title="Add Features Gradually">
-    Enable Real-Time API, Multi-Modal processing, or Presentation mode based on user needs and feedback.
-  </Step>
-  <Step title="Optimize Performance">
-    Monitor usage patterns and optimize agent configuration for your specific use case requirements.
-  </Step>
-  <Step title="Scale as Needed">
-    Expand capabilities and create specialized agents for different departments or use cases.
-  </Step>
-</Steps>
-
-## Migration Between Agent Types
-
-### Changing Agent Configuration
-
-<Steps>
-  <Step title="Assess Current Setup">
-    Review your existing agent's content, usage patterns, and performance metrics.
-  </Step>
-  <Step title="Plan Migration">
-    Identify which features to add or modify and potential impact on users.
-  </Step>
-  <Step title="Test Changes">
-    Use a duplicate agent to test new configurations before applying to production.
-  </Step>
-  <Step title="Implement Gradually">
-    Roll out changes during low-usage periods and monitor performance closely.
-  </Step>
-</Steps>
-
-### Migration Considerations
-
-<Warning>
-Some agent type changes may require rebuilding your knowledge base or reconfiguring integrations. Plan accordingly and consider creating backup agents during transitions.
-</Warning>
-
-## Best Practices by Agent Type
-
-<AccordionGroup>
-  <Accordion title="Standard Knowledge Agents">
-    - Organize content logically with clear categorization
-    - Regular content audits and updates
-    - Balance comprehensiveness with relevance
-    - Test across different query types and complexity levels
-  </Accordion>
-  
-  <Accordion title="Presentation Agents">
-    - Ensure slide content is text-heavy and well-structured
-    - Use clear, descriptive slide titles and numbering
-    - Test navigation with typical user questions
-    - Optimize presentation for conversational interaction
-  </Accordion>
-  
-  <Accordion title="Real-Time Agents">
-    - Prioritize response speed optimization
-    - Implement proper error handling and fallbacks
-    - Monitor performance under load
-    - Plan for scalability and concurrent users
-  </Accordion>
-  
-  <Accordion title="Multi-Modal Agents">
-    - Use high-quality, clear images and visuals
-    - Provide context for complex visual content
-    - Test with various image types and qualities
-    - Balance visual processing with response speed
-  </Accordion>
-</AccordionGroup>
-
-Ready to create your first agent? Start with our [Agent Creation Guide](/knowledge-agent/create-agent) or learn more about [adding content](/knowledge-agent/add-content) to your knowledge base.
+Ready to move forward? Jump to the [Agent creation guide](/knowledge-agent/create-agent) or explore how to [add content sources](/knowledge-agent/add-content).
