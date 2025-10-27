@@ -25,15 +25,10 @@ Configure your agent's voice from our selection of high-quality options:
 
 ![Select Agent Voice](/integration/Integerations%20/Integeration%20with%20%20Twillio%20%20Select%20Agent%20Voice.png)
 
-Available voice options include:
-- **Alloy**: Professional and clear
-- **Echo**: Warm and conversational  
-- **Shimmer**: Energetic and engaging
-- **Ash**: Calm and reassuring
-- **Ballad**: Expressive and dynamic
-- **Coral**: Friendly and approachable
-- **Sage**: Wise and thoughtful
-- **Verse**: Articulate and refined
+Available voice options depend on the active model family:
+- **Gemini voices**: Sportsman, Customer support, Sarah, Brooke, Katie, Zemo, ajith, duaila, azj, ajz, sjl, brit, Swissen
+- **OpenAI Realtime voices**: Alloy, Echo, Shimmer, Ash, Ballad, Coral, Sage, Verse, Cedar, Marin
+- Voices refresh automatically when you switch providers in the LLM picker
 
 ### Step 2: Agent Selection
 
@@ -52,9 +47,11 @@ Select your preferred Large Language Model:
 
 ![Select LLM Model](/integration/Integerations%20/Integeration%20with%20%20Twillio%20%20Select%20Your%20LLM%20.png)
 
-Available models:
-- **GPT-4o Mini Realtime**: Fast responses with good quality
-- **GPT-4o Realtime**: High-quality responses with advanced reasoning
+Available models span four provider families:
+- **OpenAI**: GPT 4.1 mini, GPT 4.1, GPT 5, GPT 5 nano, GPT 5 mini
+- **Gemini**: Gemini 2.5 Flash Lite, Gemini 2.5 Flash, Gemini 2.5 Pro
+- **OpenAI Realtime**: GPT Realtime, GPT‑4o Realtime, GPT Realtime Mini for ultra-low latency voice calls
+- **Groq hosted**: GPT OSS 20B, GPT OSS 120B, Qwen3‑32B, Moonshotai Kimi K2 when you need alternative model behavior
 
 ## 🔧 Authentication Setup
 
@@ -100,7 +97,7 @@ Monitor and manage your active phone numbers:
 **Common Issues:**
 - **Authentication Errors**: Verify your Twilio credentials
 - **Call Quality**: Check your internet connection and Twilio account status  
-- **Response Delays**: Consider upgrading to GPT-4o Realtime for faster responses
+- **Response Delays**: Consider switching to GPT Realtime Mini or Gemini 2.5 Flash Lite for faster responses
 - **Voice Issues**: Test different voice options to find the best fit
 
 Need help? Contact our support team for assistance with your Twilio integration.

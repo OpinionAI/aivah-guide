@@ -82,26 +82,13 @@ When using the Video Wall scene, access video upload functionality through the o
 
 ## Voice Selection
 
-### Available Voices
-**Voice Options:**
-- **Ryan**: Professional male voice, clear and authoritative
-- **Sarah**: Professional female voice, warm and engaging
-- **Additional Voices**: More options based on subscription tier
-- **Quality Settings**: All voices optimized for business communication
+### Voice Families by LLM
+Voice availability adapts to the model family you select:
 
-![Voice Selection Options](/images/hub-options-voice-selection.png)
-*Voice selection dropdown showing available voice options including Ryan, Sarah, Emily, Summer, Coral, and Sage for diverse voice preferences*
+- **Gemini Voices** *(when a Gemini model is active)*: Sportsman, Customer support, Sarah, Brooke, Katie, Zemo, ajith, duaila, azj, ajz, sjl, brit, Swissen  
+- **OpenAI Realtime Voices** *(when an OpenAI Realtime model is active)*: Alloy, Echo, Shimmer, Ash, Ballad, Coral, Sage, Verse, Cedar, Marin
 
-### Voice Characteristics
-**Ryan Voice:**
-- **Tone**: Professional, confident, business-appropriate
-- **Best Use**: Sales presentations, technical explanations, formal communications
-- **Accent**: Clear, neutral accent for universal understanding
-
-**Sarah Voice:**
-- **Tone**: Warm, approachable, friendly yet professional
-- **Best Use**: Customer support, training, conversational interactions
-- **Accent**: Clear, welcoming tone for customer-facing applications
+<Info>Switching to a different provider in the LLM picker immediately refreshes the voice dropdown with the compatible set.</Info>
 
 ### Voice Switching
 **Real-Time Changes:**
@@ -113,33 +100,21 @@ When using the Video Wall scene, access video upload functionality through the o
 ## LLM Model Selection
 
 ### Available Models
-**AI Model Options:**
-- **GPT-4o Mini Realtime**: Fast, efficient responses optimized for real-time interaction
-- **GPT-4**: Advanced reasoning and complex task handling
-- **Model Variants**: Additional models based on availability and subscription
+**Provider Families in the Picker:**
+- **OpenAI**: GPT 4.1 mini, GPT 4.1, GPT 5, GPT 5 nano, GPT 5 mini  
+- **Gemini**: Gemini 2.5 Flash Lite, Gemini 2.5 Pro, Gemini 2.5 Flash  
+- **OpenAI Realtime**: GPT Realtime, GPT‑4o Realtime, GPT Realtime Mini *(formerly “GPT‑4o Mini Realtime”)*  
+- **Groq**: GPT OSS 20B, GPT OSS 120B, Qwen3‑32B, Moonshotai Kimi K2
 
 ![LLM Model Selection](/images/hub-options-llm-models.png)
-*LLM model selection showing GPT-4o Mini Realtime, GPT-4o Realtime, and Gemini 2.0 Flash Live Realtime options with performance indicators*
-
-### Model Characteristics
-**GPT-4o Mini Realtime:**
-- **Speed**: Fastest response times for real-time conversations
-- **Efficiency**: Optimized for voice and chat interactions
-- **Best Use**: General conversations, quick Q&A, standard business interactions
-- **Performance**: Ideal for responsive, fluid conversations
-
-**GPT-4:**
-- **Advanced Reasoning**: Complex problem-solving and analysis
-- **Detailed Responses**: Comprehensive answers and explanations
-- **Best Use**: Complex tasks, detailed analysis, technical discussions
-- **Capability**: Superior reasoning for sophisticated interactions
+*LLM picker groups models by provider so you can match speed, quality, and capability needs*
 
 ### Model Selection Strategy
-**Choose Based on Needs:**
-- **Speed Priority**: GPT-4o Mini Realtime for fast, responsive interactions
-- **Complexity Priority**: GPT-4 for detailed analysis and complex reasoning
-- **Real-Time Voice**: Mini Realtime optimized for voice conversations
-- **Advanced Tasks**: GPT-4 for sophisticated problem-solving
+**Pick the right model based on your priority:**
+- **Realtime conversations** → OpenAI Realtime family for lowest latency, with GPT Realtime Mini as the fastest option
+- **Balanced quality + speed** → OpenAI GPT 4.1 mini or Gemini 2.5 Flash Lite
+- **Premium reasoning** → GPT 5, GPT 5 mini, Gemini 2.5 Pro, or Groq’s GPT OSS 120B
+- **Specialized workloads** → Qwen3‑32B or Moonshotai Kimi K2 when you need alternative model behavior
 
 ## Conversation History
 
@@ -247,7 +222,7 @@ When using the Video Wall scene, access video upload functionality through the o
 
 ### Performance Issues
 **System Optimization:**
-- **Slow Response**: Try switching to faster model (GPT-4o Mini Realtime)
+- **Slow Response**: Try switching to GPT Realtime Mini or Gemini 2.5 Flash Lite
 - **Connection Problems**: Monitor status indicators and connection quality
 - **Audio Issues**: Check voice selection and browser audio permissions
 - **Memory Problems**: Clear browser cache if options become sluggish
