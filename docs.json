@@ -78,9 +78,9 @@
               "insights/agent-analytics",
               "insights/privacy",
               "insights/chat-log",
+              "insights/leads",
               "insights/call-logs",
-              "insights/call-transcriptions",
-              "insights/leads"
+              "insights/call-transcriptions"
             ]
           },
           {
