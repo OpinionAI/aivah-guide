@@ -1,6 +1,52 @@
 ---
 title: "Leads"
-description: "Leads management guide"
+description: "Capture, review, and export contacts gathered by your agents"
 ---
 
-Leads management content here.
+# Leads
+
+The **Leads** tab aggregates contact information collected during conversations—perfect for handing qualified prospects to sales or following up on support inquiries.
+
+## Accessing Lead Data
+
+1. Open **Insights** and pick an agent from the left rail.
+2. Click the **Leads** tab across the top.
+3. Choose a date range; Today is selected by default.
+
+Entries appear in a table format. If no leads were collected during the period, you’ll see **“No data”**.
+
+## What You’ll See
+
+- **Captured On**: Timestamp of the conversation that generated the lead.
+- **Name / Email / Phone**: Fields vary based on the capture form or conversation flow you configured.
+- **Source**: Indicates whether the lead came from chat, voice, or a specific share surface.
+- **Notes**: Additional context (e.g., product interest, campaign attribution).
+
+## Exporting Leads
+
+- Click **Download all** to export every lead in the current filter window.
+- Data typically downloads as CSV, ready for import into your CRM or marketing tools.
+- Rename exports with the date range (e.g., `leads_2025-02-06.csv`) for easier tracking.
+
+## How Leads Are Captured
+
+- **Built-in Forms**: If you’ve enabled lead capture during share configuration, the form fields map directly into this tab.
+- **Conversation Prompts**: Agents asking for email addresses or phone numbers can automatically store the responses.
+- **Custom Integrations**: MCP workflows can push structured data back into the leads table.
+
+Ensure your agent prompt or share settings make it clear to users why their details are requested.
+
+## Best Practices
+
+- **Regular Sync**: Export leads weekly (or daily for high-volume agents) and load them into your CRM.
+- **Segment by Agent**: Route different agents to different pipelines—for example, product demo agents to sales, support agents to customer success.
+- **Validate Data**: Spot-check newly captured leads for formatting issues or missing fields.
+- **Respect Privacy**: Make sure your privacy policy covers any personal data collection, especially for public agents.
+
+## Troubleshooting
+
+- **Missing Leads**: Expand the date range or confirm the agent’s form is still active in the Share settings.
+- **Duplicate Entries**: De-duplicate in your CRM after import; consider adding validation rules to the capture form.
+- **Export Fails**: Refresh the page, reduce the date window, or try again with a stable network connection.
+
+Use the Leads tab as your single source of truth for contact capture—then automate follow-up to maximize the value of every interaction.

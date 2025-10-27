@@ -1,6 +1,47 @@
 ---
 title: "Privacy"
-description: "Privacy settings guide"
+description: "Manage public or private access for each agent"
 ---
 
-Privacy settings content here.
+# Privacy Settings
+
+The **Privacy** tab controls whether an agent is visible to users outside your organization. Use it to toggle between internal-only pilots and publicly shared experiences.
+
+## Accessing the Privacy Tab
+
+1. Navigate to **Insights** in the main nav.
+2. Choose the agent you want to manage from the left rail.
+3. Click the **Privacy** tab along the top bar.
+
+## Visibility Modes
+
+<CardGroup cols={2}>
+  <Card title="Private" icon="lock">
+    Only teammates inside your workspace can access or test the agent. External share links are disabled.
+  </Card>
+  <Card title="Public" icon="share">
+    Allows anyone with the link or embed to interact with the agent. Ideal for production deployments or external demos.
+  </Card>
+</CardGroup>
+
+Switching modes is instant—choose the desired radio button and the setting will persist automatically.
+
+## Common Use Cases
+
+- **Staging vs Production**: Keep draft agents Private until content and behavior have been approved.
+- **Beta Programs**: Temporarily flip to Public for select customers, then revert to Private once the test period ends.
+- **Compliance Requirements**: Ensure regulated content stays Private while FAQs or marketing agents remain Public.
+
+## Best Practices
+
+- **Audit Regularly**: Create a recurring reminder to review which agents are publicly accessible.
+- **Document Changes**: Note visibility toggles in your release notes so stakeholders know when an agent goes live.
+- **Pair with Share Settings**: Public agents often need updated scripts, prompts, or guardrails—coordinate with the [Share section](/share/overview) before switching on.
+
+## Troubleshooting
+
+- **Users Still Can’t Access a Public Agent**: Confirm they are using the latest share link or embed; cache or old URLs may still point to the private version.
+- **Reached via Search Engines**: Remember that public agents can appear outside your direct channels. If that’s not desired, revert to Private or use controlled distribution methods.
+- **Need Granular Access**: For invite-only experiences, keep the agent Private and share recordings or curated interactions instead.
+
+Privacy settings give you quick control over who can reach each agent—review them whenever you launch new flows or wrap a campaign.

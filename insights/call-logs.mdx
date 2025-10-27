@@ -1,6 +1,51 @@
 ---
 title: "Call Logs"
-description: "Call logs guide"
+description: "Audit telephony sessions handled by your agents"
 ---
 
-Call logs content here.
+# Call Logs
+
+The **Call Logs** tab documents every voice or video session routed through an agent, making it easy to review duration, participants, and outcomes.
+
+## Navigating the Call Logs Tab
+
+1. Open **Insights** and pick an agent from the sidebar.
+2. Click the **Call Logs** tab along the top.
+3. Adjust the date range to the window you want to analyze.
+
+If no calls occurred during the selected period, the table displays **“No data”**.
+
+## Column Breakdown
+
+- **Call Start**: Timestamp when the session began.
+- **Duration**: Length of the call (HH:MM:SS).
+- **Channel / Entry Point**: Indicates whether the call came from web voice, Twilio phone, etc.
+- **Participants**: Caller ID or contact information when available.
+- **Outcome / Status**: Completed, missed, escalated, or other custom statuses.
+
+## Exporting Call History
+
+- Use **Export Call Logs** to download the filtered dataset as CSV.
+- Ideal for record keeping, QA audits, or syncing with telephony analytics tools.
+- Add the date range to the filename for clarity (e.g., `call-logs_jan2025.csv`).
+
+## Investigating Calls
+
+- **Hover for Details**: Some columns provide tooltips with extra metadata (e.g., automation path taken).
+- **Cross-reference**: Match call timestamps with [Chat Log](/insights/chat-log) entries if the session switched channels.
+- **Escalation Review**: Identify calls that required human takeover to improve workflows or knowledge sources.
+
+## Best Practices
+
+- **Monitor SLAs**: Compare call durations and response times against your support targets.
+- **Flag Anomalies**: Sudden spikes in missed or short calls may indicate routing issues.
+- **Integrate with CRM**: Attach exported logs to customer records for a complete interaction history.
+- **Secure Storage**: If call logs contain sensitive data, follow your organization’s retention and encryption policies.
+
+## Troubleshooting
+
+- **Missing Calls**: Confirm the agent was active (via the Setting tab) and that telephony integrations were connected.
+- **Incorrect Durations**: Verify that the user’s session ended cleanly; lingering connections can inflate totals.
+- **Export Errors**: Retry with a shorter date range or check your network connection.
+
+For transcript-level analysis, open the [Call Transcriptions](/insights/call-transcriptions) tab, where you can read or download the conversation content tied to each log.

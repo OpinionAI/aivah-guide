@@ -1,6 +1,65 @@
 ---
 title: "Agent Analytics"
-description: "Agent analytics guide"
+description: "Understand usage metrics, trends, and engagement for each agent"
 ---
 
-Agent analytics content here.
+# Agent Analytics
+
+The **Agent Analytics** tab (labelled *Insights* in the interface) is the default view when you open the Insights workspace. It surfaces high-level metrics that help you evaluate how often an agent is used, who is interacting with it, and how many credits those interactions consume.
+
+## Layout Overview
+
+<CardGroup cols={2}>
+  <Card title="Agent Picker" icon="list">
+    Agents are listed in the left sidebar. Selecting one refreshes the analytics panel instantly.
+  </Card>
+  <Card title="Date Filter" icon="calendar">
+    Choose predefined ranges such as Today, Yesterday, Last 7 Days, or set a custom window.
+  </Card>
+  <Card title="Credits Graph" icon="activity">
+    A line chart tracks credits consumed across the chosen timeline. Hover to reveal exact values.
+  </Card>
+  <Card title="Unique Users" icon="users">
+    A counter beneath the graph shows how many distinct users interacted with the agent during the selected period.
+  </Card>
+</CardGroup>
+
+## Working with the Credits Graph
+
+<Steps>
+  <Step title="Select a Time Range">
+    Use the date picker to focus on the window you care about (e.g., Today for freshness, Last 30 Days for broader trends).
+  </Step>
+  <Step title="Hover for Detail">
+    Move your cursor across the line graph to see precise credit expenditure at any point in time.
+  </Step>
+  <Step title="Compare Agents">
+    Click another agent in the left rail to instantly load their credit usage, making it easy to contrast performance.
+  </Step>
+</Steps>
+
+<Tip>If you are preparing reports, jot down peak usage times from the graph—these often correspond with marketing campaigns or product launches.</Tip>
+
+## Monitoring Unique Users
+
+- Located directly beneath the chart.
+- Displays **“No data”** when the agent has not received interactions during the chosen window.
+- Combine this metric with credits used to gauge efficiency (e.g., high credits with low unique users may indicate long or complex sessions per user).
+
+## When to Use This Tab
+
+- **Capacity Planning**: Identify growth in agent engagement before extending infrastructure or credit allocations.
+- **Campaign Tracking**: Verify that new releases, webinars, or support initiatives drive the expected traffic.
+- **Usage Audits**: Confirm that agents set to “public” are actually being used, or see if dormant agents can be retired.
+
+## Best Practices
+
+- **Set Review Cadence**: Schedule a weekly or monthly review of the credits graph to flag anomalies early.
+- **Log Context**: Document spikes within your internal notes or analytics platform so future viewers know what caused the change.
+- **Pair with Settings**: If usage is outpacing your budget, adjust credit ceilings in the **Setting** tab immediately.
+- **Share Snapshots**: Capture screenshots of the graph to include in stakeholder updates or sprint reviews.
+
+Ready to dig deeper? Explore adjacent tabs for governance and raw data:
+- [Privacy](/insights/privacy) to control who can access the agent.
+- [Chat Log](/insights/chat-log) for conversation-level insight.
+- [Leads](/insights/leads) to follow up with captured contacts.
