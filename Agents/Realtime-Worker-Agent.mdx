@@ -1,15 +1,15 @@
 ---
-title: "Realtime"
-description: "Realtime agent guide"
+title: "Worker Agent Realtime "
+description: "Realtime worker agent guide"
 ---
 
 ## Real-Time API Configuration
 
-Real-Time API enables live, conversational interactions with your Aivah Agent, providing instant responses and seamless user experiences. This guide covers configuring and optimizing real-time features for Worker Agents and presenter experiences.
+Real-Time Worker Agent enables live, conversational interactions with your Worker Agent, providing instant responses and seamless user experiences. This guide covers configuring and optimizing real-time features for your agents.
 
 ## Understanding Real-Time API
 
-Real-Time API transforms your agent into a dynamic, conversational interface that:
+Real-Time API transforms your Knowledge Agent into a dynamic, conversational interface that:
 
 - **Provides instant responses** - No waiting for batch processing or delayed replies
 - **Enables live conversations** - Natural back-and-forth interactions
@@ -42,21 +42,18 @@ Real-Time API transforms your agent into a dynamic, conversational interface tha
     - Real-time troubleshooting assistance
     - Immediate customer service interactions
   </Accordion>
-  
   <Accordion title="Interactive Learning">
     - Educational Q&A sessions
     - Training modules with instant feedback
     - Interactive presentations
     - Real-time tutoring assistance
   </Accordion>
-  
   <Accordion title="Sales and Marketing">
     - Live product demonstrations
     - Instant pricing and feature queries
     - Real-time lead qualification
     - Interactive sales presentations
   </Accordion>
-  
   <Accordion title="Internal Tools">
     - Employee self-service portals
     - IT help desk automation
@@ -78,7 +75,7 @@ Real-Time API transforms your agent into a dynamic, conversational interface tha
 
 <Steps>
   <Step title="Access Agent Creation">
-    Navigate to **Agents** → **Create New Agent** in your Aivah dashboard.
+    Navigate to **Knowledge** → **Create New Agent** in your Aivah dashboard.
   </Step>
   <Step title="Configure Basic Settings">
     Enter your agent name and configure the presentation mode as needed.
@@ -87,7 +84,7 @@ Real-Time API transforms your agent into a dynamic, conversational interface tha
     Toggle the **Real-Time API** switch to **ON** during the creation process.
   </Step>
   <Step title="Complete Agent Setup">
-    Add your knowledge content and click **+ Create** to finalize the agent.
+    Add your knowledge content and click **\+ Create** to finalize the agent.
   </Step>
 </Steps>
 
@@ -95,7 +92,7 @@ Real-Time API transforms your agent into a dynamic, conversational interface tha
 
 <Steps>
   <Step title="Access Agent Settings">
-    Select your existing agent from the Agents workspace sidebar.
+    Select your existing agent from the Knowledge workspace sidebar.
   </Step>
   <Step title="Edit Configuration">
     Look for the Real-Time API toggle in your agent settings.
@@ -109,7 +106,7 @@ Real-Time API transforms your agent into a dynamic, conversational interface tha
 </Steps>
 
 <Info>
-Enabling Real-Time API may affect your usage costs based on your Aivah plan. Check your plan details for real-time interaction pricing.
+  Enabling Real-Time API may affect your usage costs based on your Aivah plan. Check your plan details for real-time interaction pricing.
 </Info>
 
 ## Real-Time Configuration Options
@@ -119,25 +116,23 @@ Enabling Real-Time API may affect your usage costs based on your Aivah plan. Che
 <Tabs>
   <Tab title="Speed Settings">
     **Optimize for Response Time**
-    
+
     - Prioritize quick responses over comprehensive answers
     - Ideal for simple Q&A and quick information retrieval
     - Best for high-volume, brief interactions
     - Reduces processing time for faster user experience
   </Tab>
-  
   <Tab title="Quality Settings">
     **Optimize for Response Quality**
-    
+
     - Prioritize comprehensive, detailed responses
     - Better for complex questions requiring thorough explanations
     - Ideal for educational or consultative interactions
     - May have slightly longer response times
   </Tab>
-  
   <Tab title="Balanced Settings">
     **Optimize for Both**
-    
+
     - Balance speed and quality based on query complexity
     - Adapts response style to question type
     - Good default setting for most use cases
@@ -150,18 +145,21 @@ Enabling Real-Time API may affect your usage costs based on your Aivah plan. Che
 <Steps>
   <Step title="Session Duration">
     Configure how long conversation context is maintained:
+
     - **Short sessions** (5-10 minutes): Quick interactions
     - **Medium sessions** (30-60 minutes): Extended conversations
     - **Long sessions** (2+ hours): Deep consultative interactions
   </Step>
   <Step title="Context Depth">
     Set how many previous interactions to remember:
+
     - **Shallow context** (2-3 exchanges): Simple Q&A
     - **Medium context** (5-10 exchanges): Standard conversations
     - **Deep context** (10+ exchanges): Complex, multi-topic discussions
   </Step>
   <Step title="Context Reset">
     Define when context should reset:
+
     - **Auto-reset** after periods of inactivity
     - **Manual reset** when users start new topics
     - **Never reset** for continuous long-form interactions
@@ -178,7 +176,7 @@ Enabling Real-Time API may affect your usage costs based on your Aivah plan. Che
   </Step>
   <Step title="Implement Chat Interface">
     Use Aivah's JavaScript SDK or REST API to integrate real-time chat:
-    
+
     ```javascript
     // Example integration code
     const aivahChat = new AivahRealTimeAPI({
@@ -194,6 +192,7 @@ Enabling Real-Time API may affect your usage costs based on your Aivah plan. Che
   </Step>
   <Step title="Handle Real-Time Events">
     Set up event listeners for:
+
     - Message sending and receiving
     - Typing indicators
     - Connection status
@@ -206,22 +205,23 @@ Enabling Real-Time API may affect your usage costs based on your Aivah plan. Che
 <AccordionGroup>
   <Accordion title="Voice Input Setup">
     Configure your agent to accept voice input:
+
     - Enable microphone access in your application
     - Use speech-to-text conversion
     - Pass converted text to Real-Time API
     - Handle audio input processing
   </Accordion>
-  
   <Accordion title="Voice Output Configuration">
     Set up text-to-speech for responses:
+
     - Choose appropriate voice models
     - Configure speech rate and tone
     - Handle audio output to users
     - Manage voice playback controls
   </Accordion>
-  
   <Accordion title="Voice Experience Optimization">
     Optimize for voice interactions:
+
     - Adjust response length for audio
     - Use conversational language patterns
     - Include audio-friendly formatting
@@ -236,6 +236,7 @@ Enabling Real-Time API may affect your usage costs based on your Aivah plan. Che
 <Steps>
   <Step title="Knowledge Base Optimization">
     Optimize your content for faster retrieval:
+
     - Remove redundant or outdated information
     - Structure content with clear headings
     - Use concise, well-organized documents
@@ -243,6 +244,7 @@ Enabling Real-Time API may affect your usage costs based on your Aivah plan. Che
   </Step>
   <Step title="Query Optimization">
     Help users ask better questions:
+
     - Provide suggested questions or prompts
     - Guide users toward specific information
     - Use autocomplete or query suggestions
@@ -250,6 +252,7 @@ Enabling Real-Time API may affect your usage costs based on your Aivah plan. Che
   </Step>
   <Step title="Caching Strategy">
     Implement intelligent caching:
+
     - Cache frequently asked questions
     - Pre-load common response patterns
     - Use session-based caching for repeated queries
@@ -291,22 +294,23 @@ Track key performance indicators:
 <AccordionGroup>
   <Accordion title="Peak Usage Patterns">
     Identify when your agent is most active:
+
     - Daily usage peaks and valleys
     - Weekly patterns and trends
     - Seasonal usage variations
     - Geographic usage distribution
   </Accordion>
-  
   <Accordion title="Common Interaction Patterns">
     Understand how users interact:
+
     - Most frequent question types
     - Common conversation flows
     - Average session duration
     - Popular knowledge areas
   </Accordion>
-  
   <Accordion title="Performance Trends">
     Track improvement over time:
+
     - Response quality improvements
     - Speed optimization results
     - User satisfaction trends
@@ -319,39 +323,43 @@ Track key performance indicators:
 <AccordionGroup>
   <Accordion title="Slow Response Times">
     **Common Causes:**
+
     - Overloaded knowledge base
     - Complex queries requiring extensive processing
     - Network connectivity issues
     - High concurrent user load
-    
+
     **Solutions:**
+
     - Optimize and streamline knowledge content
     - Implement query complexity handling
     - Check network infrastructure
     - Scale resources during peak times
   </Accordion>
-  
   <Accordion title="Connection Issues">
     **Possible Problems:**
+
     - API endpoint connectivity
     - Authentication failures
     - Network timeouts
     - Service interruptions
-    
+
     **Troubleshooting Steps:**
+
     - Verify API credentials and endpoints
     - Check network connectivity
     - Implement retry logic with backoff
     - Monitor service status
   </Accordion>
-  
   <Accordion title="Context Loss">
     **Symptoms:**
+
     - Agent forgets previous conversation
     - Inconsistent responses
     - Loss of session continuity
-    
+
     **Fixes:**
+
     - Check session timeout settings
     - Verify context retention configuration
     - Implement proper session management
@@ -368,14 +376,12 @@ Track key performance indicators:
     - Handle errors gracefully with helpful messages
     - Offer alternative suggestions when agent can't help
   </Accordion>
-  
   <Accordion title="Performance">
     - Regular performance monitoring and optimization
     - Implement proper error handling and recovery
     - Use efficient data structures and algorithms
     - Plan for scalability from the beginning
   </Accordion>
-  
   <Accordion title="Content Strategy">
     - Keep knowledge base focused and current
     - Regular content audits and updates
@@ -409,4 +415,4 @@ Combine real-time text with other media:
   </Step>
 </Steps>
 
-Ready to explore different agent configurations? Learn about the various [Types of Agents](/knowledge-agent/types-of-agents) or return to the main [Agent Overview](/knowledge-agent/overview).
+Ready to explore different agent configurations? Learn about the various [Types of Agents](/knowledge-agent/types-of-agents) or return to the main [Knowledge Agent Overview](/knowledge-agent/overview).
