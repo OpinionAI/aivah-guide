@@ -28,7 +28,8 @@
               "interaction-hub/chat",
               "interaction-hub/voice",
               "interaction-hub/scenes",
-              "interaction-hub/options"
+              "interaction-hub/options",
+              "interaction-hub/media-generation"
             ]
           },
           {
