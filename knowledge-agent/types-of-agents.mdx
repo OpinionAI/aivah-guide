@@ -1,6 +1,6 @@
 ---
 title: "Types of Agents"
-description: "Understand Worker Agents and Realtime Interactive Presenter Agents"
+description: "Understand Worker Agents and Presenter Agents"
 ---
 
 ## Agent Types Overview
@@ -9,22 +9,22 @@ Aivah now offers two streamlined agent configurations. Each option is optimized 
 
 <CardGroup cols={2}>
   <Card title="Worker Agent" icon="rocket">
-    Full-featured agent that combines knowledge, realtime conversations, multi-modality, and integrations
+    Multi-source assistant that blends your documents, links, and text into one realtime, multimodal experience
   </Card>
-  <Card title="Realtime Interactive Presenter Agent" icon="presentation">
-    Dedicated presenter that guides audiences through a single document with conversational controls
+  <Card title="Presenter Agent" icon="presentation">
+    Autonomous keynote presenter that delivers a single PDF while retaining the same realtime tools and multimodal intelligence
   </Card>
 </CardGroup>
 
 ## Worker Agent
 
-Worker Agents are the default choice for most teams. They inherit every capability Aivah offers without extra configuration.
+Worker Agents are the default choice when you need to blend multiple sources together. They share all realtime, multimodal, and integration capabilities with Presenter Agents, but they can ingest many knowledge inputs at once.
 
 ### Highlights
 
-- **Unified capabilities** – Knowledge retrieval, realtime conversations, and integrations are active by default.
-- **Multi-modal ready** – Support images and mixed media when your plan includes it.
-- **Scalable knowledge** – Combine pasted text, URLs, and file uploads in one agent.
+- **Multi-source knowledge** – Combine pasted text, URLs, and file uploads in one agent.
+- **Same realtime power** – Enjoy identical realtime, multimodal, and integration features as Presenter Agents.
+- **Flexible context** – Mix evergreen documentation with live data tools.
 - **Omnichannel deployment** – Reuse the same Worker Agent across chat, voice, and external integrations.
 
 ### Best for
@@ -64,16 +64,16 @@ Worker Agents are the default choice for most teams. They inherit every capabili
   </Step>
 </Steps>
 
-## Realtime Interactive Presenter Agent
+## Presenter Agent
 
-Realtime Interactive Presenter Agents turn a single document into an interactive, conversational walkthrough. They are perfect when you need to guide someone slide-by-slide or page-by-page.
+Presenter Agents turn a single document into an interactive, conversational walkthrough while retaining the same realtime, multimodal, and integration features as Worker Agents. The only difference is their single-source focus for keynote-style delivery.
 
 ### Highlights
 
-- **Single-document focus** – Upload one PDF presentation or playbook that the agent will reference.
+- **Single-document focus** – Upload one PDF presentation or playbook that the agent will present live.
 - **Guided navigation** – Users can ask for slide summaries, jump to sections, or dig into related details.
 - **Polished delivery** – Consistent, on-brand presentations without worrying about a live presenter.
-- **Interactive follow-up** – Answer audience questions and reinforce key points using the same source file.
+- **Interactive follow-up** – Answer audience questions, call tools, search the web, or trigger integrations during the session.
 
 ### Best for
 
@@ -102,13 +102,16 @@ Realtime Interactive Presenter Agents turn a single document into an interactive
     Use a PDF with clear headings and selectable text. One file stays active at a time.
   </Step>
   <Step title="Enable Presenter Mode">
-    Choose the Realtime Interactive Presenter Agent type during creation or toggle Presentation mode on.
+    Choose the Presenter Agent type during creation or toggle Presentation mode on.
   </Step>
   <Step title="Upload the Deck">
     Add your presentation. Replace it later by deleting the existing file and uploading a new version.
   </Step>
   <Step title="Rehearse the Flow">
     Test navigation prompts and common questions to confirm the conversation stays on-script.
+  </Step>
+  <Step title="Use Full Capabilities">
+    Presenter Agents can use the same integrations, web search, and multimodal tools as Workers—plan how the deck should reference those actions.
   </Step>
 </Steps>
 
@@ -119,15 +122,15 @@ Realtime Interactive Presenter Agents turn a single document into an interactive
     **Start with the outcome you want:**
     
     - Need a single assistant for every channel? → **Worker Agent**
-    - Present a narrated deck or playbook? → **Realtime Interactive Presenter Agent**
+    - Present a narrated deck or playbook? → **Presenter Agent**
   </Tab>
   <Tab title="Content Strategy">
     - Multiple sources, knowledge base style → **Worker Agent**  
-    - One hero document that anchors the entire conversation → **Realtime Interactive Presenter Agent**
+    - One hero document that anchors the entire conversation → **Presenter Agent**
   </Tab>
   <Tab title="Interaction Pattern">
     - Open-ended Q&A, support, automation → **Worker Agent**  
-    - Structured walkthrough with chapter-style control → **Realtime Interactive Presenter Agent**
+    - Structured walkthrough with chapter-style control → **Presenter Agent**
   </Tab>
 </Tabs>
 
@@ -139,7 +142,7 @@ Need to pivot? Create a new agent of the required type, then reuse your content:
   <Accordion title="Worker to Presenter">
     - Export the key sections from your Worker Agent  
     - Consolidate into a single PDF  
-    - Create a Realtime Interactive Presenter Agent and upload the document
+    - Create a Presenter Agent and upload the document
   </Accordion>
   <Accordion title="Presenter to Worker">
     - Break the presentation into individual knowledge sources  

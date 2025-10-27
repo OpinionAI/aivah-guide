@@ -47,11 +47,13 @@ Before creating your agent, ensure you have:
   <Step title="Configure Core Features">
     Set the following toggles based on your needs:
     
-    - **Presentation**: Leave off to create a Worker Agent. Turn on to create a Realtime Interactive Presenter Agent.
-    - **Real-Time API**: Keep enabled for live, conversational interactions across channels.
-    - **Multi Modal**: Enable if your plan supports multimedia content
+    - **Presentation**: Leave off to create a Worker Agent. Turn on to create a Presenter Agent.
+    - **Real-Time API**: Enabled by default for both agent types—leave it on for realtime conversations.
+    - **Multi Modal**: Enabled when your plan includes it so either agent can work with images and other media.
   </Step>
 </Steps>
+
+<Note>Both agent types are realtime and multimodal. Presentation mode simply tells Aivah to focus the agent on a single PDF for live delivery.</Note>
 
 <Warning>
 Choose your agent name carefully - it will be visible to users and should clearly represent the agent's purpose.
@@ -59,7 +61,7 @@ Choose your agent name carefully - it will be visible to users and should clearl
 
 ### 3. Add Initial Knowledge
 
-You have three ways to add knowledge to your agent:
+Worker Agents can ingest multiple knowledge sources. Add knowledge in three ways:
 
 <Tabs>
   <Tab title="Text Content">
@@ -155,7 +157,7 @@ You can also switch to **Card View** to see a visual representation of your know
   alt="Agent Settings - Card View"
 />
 
-<Note>Realtime Interactive Presenter Agents manage a single PDF from the same settings screen. Delete the active file to replace it with an updated deck.</Note>
+<Note>Presenter Agents manage a single PDF from the same settings screen. Delete the active file to replace it with an updated deck—everything else (realtime responses, integrations, multimodal tools) works the same as a Worker.</Note>
 
 ### Next Steps
 

@@ -3,7 +3,7 @@ title: 'Create an Agent'
 description: 'Learn how to create and manage Aivah Agents in the Agents workspace'
 ---
 
-This guide shows how to create and manage Agents in Aivah using the Agents workspace. Worker Agents are the default, all-in-one configuration, while Realtime Interactive Presenter Agents deliver guided presentations. The steps below match the current UI.
+This guide shows how to create and manage Agents in Aivah using the Agents workspace. Worker Agents are the default, multi-source configuration, while Presenter Agents deliver guided presentations from a single PDF. Both types are realtime, multimodal, and fully integrated—the presentation toggle only changes how the knowledge source is organized. The steps below match the current UI.
 
 ## Open the Agents workspace
 
@@ -24,9 +24,9 @@ This guide shows how to create and manage Agents in Aivah using the Agents works
   </Step>
   <Step title="Configure Settings">
     Choose your configuration with the available toggles:
-    - **Presentation**: leave this off to create a Worker Agent. Turn it on to create a Realtime Interactive Presenter Agent.
-    - **Real-Time API**: keep enabled for live, conversational use across channels.
-    - **Multi Modal**: turn on if your plan supports image and multimedia understanding.
+    - **Presentation**: leave this off to create a Worker Agent. Turn it on to create a Presenter Agent that delivers a single PDF.
+    - **Real-Time API**: enabled by default for both agent types—leave it on for instant responses.
+    - **Multi Modal**: enabled by default when included in your plan so either agent can understand images and mixed media.
   </Step>
 </Steps>
 
@@ -69,7 +69,7 @@ What you'll see there:
 - **Export Content List** to download a summary of all sources
 - **Add content** button to add more sources later
 
-## Create a Realtime Interactive Presenter Agent
+## Create a Presenter Agent
 
 Use this mode when you want the agent to present from a single deck or playbook with conversational navigation.
 
@@ -78,7 +78,7 @@ Use this mode when you want the agent to present from a single deck or playbook 
     From **Create New Agent**, enter a name (e.g., "Product Demo Presenter").
   </Step>
   <Step title="Enable Presenter Mode">
-    Turn the **Presentation** toggle on to switch the agent type.
+    Turn the **Presentation** toggle on to switch the agent type. The agent keeps the same realtime, multimodal, and integration capabilities as a Worker.
   </Step>
   <Step title="Upload Document">
     Upload your PDF in the presenter upload area. You'll see: "Document uploaded successfully. Delete the existing document to upload a new one."
@@ -87,6 +87,8 @@ Use this mode when you want the agent to present from a single deck or playbook 
   </Step>
   <Step title="Create Agent">
     Click **+ Create**. In your agent settings, the uploaded document appears as the active presentation source.
+
+    <Note>Presenter Agents still have access to web search, integrations, and media generation—your deck simply becomes their primary knowledge source.</Note>
   </Step>
 </Steps>
 
@@ -143,6 +145,6 @@ From your agent settings (Agents tab → select your agent in the left sidebar):
   </Accordion>
   
   <Accordion title="Replace presenter deck">
-    Open your Realtime Interactive Presenter Agent, delete the existing file in the upload area, then upload the new PDF.
+    Open your Presenter Agent, delete the existing file in the upload area, then upload the new PDF.
   </Accordion>
 </AccordionGroup>
