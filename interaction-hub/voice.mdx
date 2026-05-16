@@ -1,16 +1,26 @@
 ---
 title: "Hub Talk Mode"
-description: "Advanced multilingual voice conversation with AI agents"
+description: "Advanced multilingual voice conversation with AI agents and avatars"
 ---
 
 # Hub Talk Mode
 
-Experience natural voice conversations with your AI agents using Aivah's advanced multilingual voice system. Talk mode provides immersive, real-time voice interaction with speech recognition and intelligent voice responses.
+Experience natural voice conversations with your AI agents using Aivah's advanced multilingual voice system. Talk mode includes a fully animated **Avatar chat** experience – a real-time 3D avatar that lip-syncs, reacts, and speaks every reply.
+
+The avatar-chat page lives at `/{conversationId}/avatar-chat`. It splits into two panes:
+
+- **Avatar / scene canvas** – the 3D rendering of the avatar in the active scene
+- **Side panel** – conversation transcript, chat composer, and inline voice controls
+
+On smaller screens the layout switches to a vertical resizable split.
 
 ## Starting a Voice Session
 
 ### Activation
 Click the **Talk** button in the top-left corner of any Hub scene to enter voice mode. The system will establish a WebRTC connection and display a green dot when ready for voice interaction.
+
+### Voice orb (voice-only mode)
+The **voice orb** appears full-screen when you start a voice-only session. Click anywhere outside or press the close icon to return to the regular chat layout.
 
 ### Connection Status Indicators
 - **Green Dot**: Agent connected and ready for voice conversation

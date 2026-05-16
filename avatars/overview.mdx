@@ -1,71 +1,93 @@
 ---
-title: "Avatars Overview"
-description: "Create, manage, and deploy 3D avatars for your AI agents"
+title: "Customization Overview"
+description: "Create, manage, and deploy 3D avatars, image-based characters, and voices for your AI agents"
 ---
 
-# Avatars Overview
+# Customization Overview
 
-Give your AI agents visual personalities with Aivah's 3D avatar system. Create custom characters using Ready Player Me, manage your avatar library, and deploy them across multiple platforms.
+Aivah's **Customization** workspace is where you craft the persona that wraps your agent. It is split into three sections in the side navigation:
 
-## Avatar Management Sections
+| Side nav | Path | What it is |
+|---|---|---|
+| **Avatars** | `/avatars` | 3D avatar companions (.glb models) for the Avatar chat |
+| **Characters** | `/avatars/characters` | Lightweight, image-based personas (a single picture used as a 2D avatar in chat) |
+| **Voices** | `/avatars/voices` | Aivah's built-in voice library plus your private voice clones |
 
-### Create New Avatar
-Design and create custom 3D avatars for your AI agents:
-- **Custom Design**: Use Ready Player Me to create unique avatars from scratch
-- **Existing Avatar Import**: Paste Ready Player Me URLs if you already have an avatar
-- **Voice & Naming**: Assign names and select voice options
-- **Instant Creation**: Click create to add to your library and test in Hub
+## Avatars (3D)
 
-### Available Avatars  
-Manage your complete avatar collection:
-- **Custom Avatars**: Your user-generated 3D characters
-- **System Avatars**: Default avatars like Orbe (sphere avatar)
-- **Avatar Actions**: Preview, share, or delete avatars from each card
-- **Orbe Sharing**: System avatar Orbe can be shared, others are view-only
+`Side nav → Customization → Avatars`.
 
-### Shared Avatar Agents
+- Paginated grid of every 3D avatar your account has access to.
+- Use the **search** field to filter by name.
+- Click a card to preview, set it as the default for the Playground, or use it inside **New chat**.
+- Pagination controls live at the bottom; pick a page size or jump to any page. A scroll indicator appears when more cards are below the fold.
+
+### Avatar Types
+
+#### Custom Avatars (Ready Player Me)
+- Designed using **Ready Player Me**'s advanced 3D builder.
+- Full customization of appearance, clothing, and style.
+- Can be previewed, shared, and deleted by the creator.
+- Ideal for branded, role-specific representations.
+
+#### System Avatars
+- **Orbe** – a professional sphere avatar for universal use.
+- Ready to use without any customization.
+- Orbe can be shared; other system avatars are reference-only.
+- Optimized for performance across every deployment type.
+
+## Characters (image-based)
+
+`Side nav → Customization → Characters`.
+
+Characters are 2D personas: a single picture cropped to the face and shoulders. Use them when you want a lightweight, instantly recognizable avatar without the cost of a full 3D rig.
+
+See the [Characters](/avatars/characters) guide for the full upload, crop, and management flow.
+
+## Voices
+
+`Side nav → Customization → Voices`.
+
+A single library that lists both Aivah's built-in voices and any voice clones you upload. Each voice card supports playback and can be selected as the default speech voice in the chat composer, telephony configuration, or channels.
+
+See the [Voices](/avatars/voices) guide to learn how to clone your own voice from a short reference recording.
+
+## Shared Avatar Agents
 Track and manage deployed avatar agents:
 - **Deployment Links**: Direct links, iframe embeds, and chat bubble scripts
 - **Model Information**: View associated agents and LLM models  
 - **Copy & Share**: Easily copy deployment links from avatar cards
 - **Usage Tracking**: Monitor which avatars are actively shared
 
-## Avatar Types
-
-### Custom Avatars
-**User-Created Characters:**
-- Design using Ready Player Me's advanced 3D builder
-- Full customization of appearance, clothing, and style
-- Can be previewed, shared, and deleted by creator
-- Ideal for branded, role-specific representations
-
-### System Avatars
-**Platform-Provided Options:**
-- **Orbe**: Professional sphere avatar for universal use
-- Ready-to-use without customization needed
-- Orbe can be shared, other system avatars are reference-only
-- Optimized for performance across all deployment types
-
 ## Getting Started Workflow
 
 1. **Create Your First Avatar**
-   - Navigate to Create New Avatar
+   - Navigate to **Create New Avatar**
    - Choose between Ready Player Me design or URL import
    - Set name, voice, and create your avatar
 
-2. **Test Your Avatar**
-   - Go to Hub after creation to interact with your new avatar
-   - Verify appearance and voice settings work correctly
+2. **Add a Character (optional)**
+   - Open **Characters → Upload Image**
+   - Crop to the face, give it a name
+   - The character becomes selectable in the chat composer
 
-3. **Manage Your Collection**
-   - View all avatars in Available Avatars section
-   - Use preview, share, or delete options as needed
+3. **Pick or Clone a Voice**
+   - Open **Voices** and pick a built-in voice, or
+   - Use **Clone voice** to mint a personal voice from a short clean recording
 
-4. **Deploy & Share**
+4. **Test Your Persona**
+   - Go to the Playground after creation to interact with your new persona
+   - Verify appearance, voice, and personality work correctly
+
+5. **Manage Your Collection**
+   - Use the per-card edit / delete actions to keep things tidy
+   - Shared characters cannot be deleted while the share is live – unpublish first
+
+6. **Deploy & Share**
    - Generate shareable links, embeds, or chat bubbles
-   - Track deployments in Shared Avatar Agents section
+   - Track deployments in **Shared Avatar Agents**
 
 ![Available Avatars](/images/available-avatars.png)
 *Avatar library showing custom user avatars (Sales1, Marketing, Support1) and system avatar (Orbe)*
 
-Ready to create your first avatar? Start with our [Create Avatar](/avatars/create-avatar) guide.
+Ready to create your first avatar? Start with the [Create Avatar](/avatars/create-avatar) guide, or jump straight to [Characters](/avatars/characters) and [Voices](/avatars/voices).

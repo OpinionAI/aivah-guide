@@ -5,32 +5,60 @@ description: "Monitor remaining balance and purchase additional usage credits"
 
 # Credits
 
-Every realtime conversation, media generation request, or call consumes credits. The **Credits** page gives you a snapshot of what’s left and lets you top up when needed.
+Every realtime conversation, media generation request, or call consumes credits. Credits are also surfaced live in the top-right of **Avatar chat** as a small pill (for example `2,341 Credits`) so you always know what's left.
+
+You can top up at any time from the **user menu** in the bottom of the side navigation – choose **Add credit** to open the **Buy Credits** dialog.
 
 ## Current Balance
 
-- The banner at the top displays **Available Credits**—your spendable balance.
-- Check this value weekly to avoid unexpected depletion during high-traffic periods.
+- The user menu and the Avatar chat pill both display your **Available Credits**.
+- The Buy Credits dialog also shows your current balance and the projected balance after a purchase, so you can verify the maths before confirming.
+- Check the balance weekly to avoid unexpected depletion during high-traffic periods.
 
-## Purchasing Credits
+## One-off Credit Packages
+
+The **Buy Credits** dialog (user menu → **Add credit**) lets you pick from these one-off packages:
+
+| Credits | Price |
+|---|---|
+| 2,000 | $10 |
+| 5,000 | $20 |
+| 10,000 | $30 |
+| 20,000 | $40 |
+| 30,000 | $50 |
+| 40,000 | $60 |
+
+Confirm to start a Stripe checkout. The packages stack on top of any plan-included credits.
+
+## Buying Credits
 
 <Steps>
-  <Step title="Enter Desired Amount">
-    Use the number field to specify how many credits you want to buy. The interface instantly calculates the cost and projected new balance.
+  <Step title="Open the user menu">
+    Click your avatar / name at the bottom of the side navigation and choose **Add credit**.
   </Step>
-  <Step title="Review Pricing">
-    Confirm the projected total credits and payable amount before proceeding. If you have finance approvals, capture a screenshot for documentation.
+  <Step title="Pick a package">
+    Select one of the one-off packages above. The dialog shows your current balance and the projected new balance.
+  </Step>
+  <Step title="Review pricing">
+    Confirm the projected total credits and payable amount before proceeding. Capture a screenshot if you need an audit trail.
   </Step>
   <Step title="Click Buy Credits">
-    Press **Buy credits** to start checkout. You’ll be prompted for payment details if none are stored.
+    Press **Buy credits** to start Stripe checkout. You'll be prompted for payment details if none are stored.
+  </Step>
+  <Step title="Return to Aivah">
+    After Stripe completes you're redirected to `/payment` with a success or cancel state. From there you can jump back to **Home** or **View plans**.
   </Step>
 </Steps>
 
 <Warning>Always double-check with the requestor or finance team before finalizing a purchase—credit buys are typically non-refundable.</Warning>
 
+## What if credits run out mid-conversation?
+
+You'll see a clear toast. Open the user menu → **Add credit** and buy a package. Your balance is applied immediately and the agent resumes when you send the next message.
+
 ## Best Practices
 
-- **Set Threshold Alerts**: Establish an internal process to refill credits when the balance drops below a certain level (e.g., 25% of monthly usage).
+- **Set Threshold Alerts**: Establish an internal process to refill credits when the balance drops below a certain level (for example 25% of monthly usage).
 - **Tie to Campaigns**: Before launching marketing pushes, forecast expected traffic and pre-purchase credits accordingly.
 - **Monitor Impact**: After large purchases, review the [Insights → Agent Analytics](/insights/agent-analytics) tab to confirm credits are being used as planned.
 

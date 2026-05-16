@@ -9,96 +9,109 @@ AIVAH is the complete AI platform for creating, customizing, and deploying intel
 
 ![AIVAH Hub Start](/AivahHubStart.png)
 
-## 🎯 What You'll Build
+## What You'll Build
 
 With AIVAH, you can create AI agents that:
 
-- **Engage Visually**: 3D avatar agents in immersive environments
-- **Communicate Naturally**: Advanced voice and text conversation capabilities
-- **Remember Context**: Persistent memory across all interactions and platforms
-- **Integrate Everywhere**: Connect with popular apps and services via MCP
-- **Handle Calls**: Professional telephony integration with Twilio
-- **Share Easily**: Deploy via direct links, embeds, or chat bubbles
+- **Engage Visually**: 3D avatar agents and 2D image-based Characters in immersive scenes
+- **Communicate Naturally**: Text chat, real-time voice, and a fully animated avatar chat
+- **Remember Context**: Persistent long-term memory across every conversation and channel
+- **Integrate Everywhere**: Connect to popular tools via MCP, Slack, WhatsApp, and telephony
+- **Generate Productivity Assets**: Turn knowledge into slide decks, podcasts, and mind maps
+- **Handle Calls**: Bring your own Twilio number for inbound and outbound voice
+- **Share Easily**: Publish a public link with a built-in lead capture form
 
-## 🚀 Platform Capabilities
+## Platform Capabilities
 
-### 🎭 Avatar Creation
-Create stunning 3D avatars with Ready Player Me integration:
-- Professional avatar designer with extensive customization
-- Voice assignment and personality configuration
-- Background story and character development
-- Cross-platform avatar sharing
+### Avatar, Characters, and Voices
+Give your agent a face and a voice:
+- **3D Avatars**: Realistic, animated companions powered by Ready Player Me models
+- **Characters**: Lightweight image-based personas (upload a photo, crop, and chat)
+- **Voices**: Aivah's built-in voice library plus your own **voice clones** from a short reference recording
 
-### 🧠 Agents
+### Agents
 Build intelligent agents tailored to your use case:
-- Worker Agents combine knowledge, realtime responses, multi-modality, and integrations
-- Presenter Agents guide audiences through a single PDF deck while matching Worker capabilities
-- Upload documents, URLs, and multimedia content for Worker Agents
-- Real-time API integration keeps every conversation responsive
+- **Knowledge-base Agents** combine documents, URLs, text, audio, video, and images
+- **Presenter Agents** turn a single PDF or video into a guided, slide-aligned experience with built-in **Quiz** support
+- Per-source ingestion status with retry on a single failing item
+- Live training status that polls automatically while content is being indexed
 
-### 🎥 Realtime Media Studio
-Generate rich media in seconds directly from Hub chat:
+### Playground (Hub)
+The chat workspace ships in three related modes:
+- **New chat** — pick agent, model, voice, and avatar, then send your first message
+- **Text chat** — classic message thread with file attach and image generation
+- **Avatar chat** — live 3D avatar that lip-syncs, reacts, and speaks in real time
+
+A floating productivity toolbar surfaces the **Quiz**, **Mind map**, and **Podcast player** for the active conversation.
+
+### Productivity – Slides, Podcasts, Mind maps
+Turn an agent's knowledge into ready-to-use assets:
+- **Slide decks** with configurable style (Academic, Business, Casual) and length
+- **Podcasts** with selectable host and expert voices, and short / default / long pacing
+- **Mind maps** that open as an interactive overlay during avatar chat
+
+### Realtime Media Studio
+Generate rich media in seconds directly from the chat composer:
 - Create images and transform them into videos with a single prompt
 - Backed by Google Nano Banana, Veo 3.1, and Sora 2 for high-fidelity visuals
-- Every asset auto-saves to AI Drive for download, sharing, or reuse
+- Every asset auto-saves to **AI Drive** for download, sharing, or reuse
 
-### 🌟 Interaction Hub
-Immersive 3D environments for agent interactions:
-- Multiple scene types: Standard, Zen, Video Wall, Web Search, Presentation
-- Seamless avatar switching and scene transitions
-- Voice and text communication modes
-- Interactive widgets and smart features
-
-### 📡 Share & Deploy
+### Share & Deploy
 Multiple deployment options for your agents:
 - **Direct Links**: Instant access URLs
 - **iFrame Embeds**: Website integration
 - **Chat Bubbles**: Non-intrusive website assistance
-- **Lead Capture**: Data collection and analytics
+- **Lead Capture Form**: Built-in form with reorderable, required/optional fields
 - **Voice-Only Mode**: Audio-first experiences
 
-### 🔗 Integrations
+### Integrations
 Connect with your existing workflow:
-- **MCP Tools**: 15+ app integrations (Gmail, Slack, GitHub, Notion, etc.)
-- **Telephony**: Professional phone system with Twilio
-- **Memory System**: Cross-platform information retention
-- **Workflows**: Advanced automation and business process integration
+- **MCP Tools** (Composio): One-click OAuth connectors for Gmail, Calendar, Notion, Linear, Slack, GitHub and many more
+- **Telephony**: Bring your own Twilio number (with optional SIP trunk) for inbound and outbound calls
+- **Channels**: Native **Slack** (App Manifest + bot token + signing secret) and **WhatsApp** (QR pairing) connectors
+- **Manage Memory**: View, edit, and export everything your agent has learned
+- **Tasks**: Cron jobs and heartbeat monitors created by you or your agent
+- **AI Drive**: Central gallery for all generated images, videos, slides, documents, and web results
 
-### 📊 Analytics & Insights
+### Analytics & Insights
 Comprehensive performance tracking:
-- Agent interaction analytics
-- Call logs and transcriptions
-- Lead generation metrics
-- Privacy-compliant data management
+- Unique users, credits used, and time-series charts
+- Full **Chat Log** search with timestamps
+- **Leads** captured from your shared agents
+- **Call Logs** with duration, status, and recordings (when available)
+- Date-range and per-agent filters across every tab
 
-## 🎬 Your 5-Minute Journey
+## Your 5-Minute Journey
 
 Here's what you'll accomplish in the next few minutes:
 
-1. **Create Your First Agent** → Build a Worker Agent or presenter experience
-2. **Design Your Avatar** → Customize your agent's visual appearance
-3. **Generate Media** → Produce realtime images and videos from Hub chat
-4. **Test in the Hub** → Experience your agent in action
-5. **Share with Others** → Deploy your agent for public use
-6. **Add Integrations** → Connect to your favorite apps and services
+1. **Create Your First Agent** → Build a knowledge-base agent or a presenter
+2. **Pick a Persona** → Choose a 3D avatar, an image-based character, and a voice
+3. **Generate Media** → Produce realtime images and videos straight from the chat composer
+4. **Test in the Playground** → Talk to your agent in text or avatar chat
+5. **Publish a Shared Link** → Add a lead form and share with the world
+6. **Connect Channels** → Plug your agent into Slack, WhatsApp, a phone number, or MCP tools
 
-## 🏗️ Platform Architecture
+## Platform Architecture
 
 AIVAH's modular platform consists of:
 
 ### Core Workspaces
-- **Agents**: Agent creation and training
-- **Avatar**: Visual character design and management
-- **Hub**: Interactive testing and communication
-- **Share**: Publishing and deployment
-- **Integrations**: External service connections
-- **Insights**: Analytics and performance monitoring
+- **Customization**: Avatars, Characters, and Voices (including voice cloning)
+- **Agents**: Knowledge-base and Presenter agent creation, training, and content management
+- **Playground / Hub**: New chat, text chat, and avatar chat experiences
+- **Productivity**: Slide decks, podcasts, and mind maps generated from agent knowledge
+- **Shared**: Public links with lead capture
+- **Integrations**: AI Drive, MCP, Telephony, Channels (Slack/WhatsApp), Manage Memory, Tasks
+- **Insights**: Analytics, chat logs, leads, and call logs
+- **Subscription**: Plans, credits, and billing
 
 ### Advanced Features
-- **Memory Management**: Persistent cross-platform memory
-- **Voice Integration**: High-quality text-to-speech and speech-to-text
-- **Scene Environments**: Multiple 3D environments for different use cases
-- **API Access**: Programmatic control and integration
+- **Long-term Memory**: Persistent key/value memories per customer, fully editable and exportable to CSV
+- **Voice Cloning**: Upload a short, clean reference recording to mint a personal voice
+- **Scene Environments**: Standard, Zen, Web Results, Video, and Presentation backdrops
+- **Quiz Overlay**: Multiple-choice questions baked into presenter agents
+- **Document Creating Banner**: In-chat status while long assets (decks, podcasts, mind maps) generate
 - **Enterprise Security**: Role-based access and compliance features
 
 ## 🎯 Use Cases
@@ -135,11 +148,11 @@ Built on modern, scalable architecture:
 - **Real-Time**: Low-latency voice and text processing
 - **Multi-Modal**: Support for text, voice, and visual interactions
 
-## 📚 What's Next?
+## What's Next?
 
 Ready to build your first AI agent? Let's start with the fundamentals:
 
 1. **[Setup Your First Agent](./setup-your-first-agent)** - Create and configure your first agent
 2. **[Best Practices](./best-practice)** - Learn optimization techniques and proven strategies
 
-Your journey to creating powerful AI agents starts now. Let's build something amazing together! 🚀
+Your journey to creating powerful AI agents starts now. Let's build something amazing together.

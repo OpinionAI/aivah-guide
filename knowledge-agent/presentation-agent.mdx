@@ -5,13 +5,14 @@ description: "Create conversational presentations with a single uploaded documen
 
 ## Creating and Using Realtime Interactive Presenter Agents
 
-Realtime Interactive Presenter Agents transform a single PDF deck or playbook into an interactive experience. Instead of clicking through slides, audiences can ask questions, jump to chapters, and get tailored explanations in real time.
+Realtime Interactive Presenter Agents transform a single PDF deck (or a single video) into an interactive experience. Instead of clicking through slides, audiences can ask questions, jump to chapters, take a built-in **Quiz**, and get tailored explanations in real time.
 
 ## What Makes a Presenter Agent Different?
 
-- **Single document focus** – One uploaded PDF anchors the entire conversation.
+- **Single document focus** – One uploaded PDF or video anchors the entire conversation.
 - **Guided navigation** – Users can request summaries, ask for the next slide, or revisit earlier sections.
 - **Context awareness** – The agent understands slide order and their relationships, keeping answers on-track.
+- **Built-in Quiz** – Multiple-choice questions defined for the presenter agent are exposed as a floating Quiz overlay in [Avatar chat](/interaction-hub/voice).
 - **Always on-brand** – Deliver consistent demos and trainings without relying on a live presenter.
 
 <CardGroup cols={2}>
@@ -54,17 +55,17 @@ Realtime Interactive Presenter Agents transform a single PDF deck or playbook in
 
 <Steps>
   <Step title="Open the Agents Workspace">
-    Navigate to **Agents** → **Create New Agent** from your Aivah dashboard.
+    Navigate to **Agents** in the side navigation (`/agents`) and click the **Plus (+)** icon to open `/agents/create`.
   </Step>
   <Step title="Name and Configure">
-    1. Enter a descriptive name (e.g., "Product Demo Presenter", "Compliance Training Deck").  
-    2. Turn the **Presentation** toggle on to switch from a Worker Agent to a presenter configuration.  
-    3. Leave **Real-Time API** enabled for live interactions and toggle **Multi Modal** if your plan supports it.
+    1. Enter a descriptive name (e.g., "Product Demo Presenter", "Compliance Training Deck"). The name becomes the slug (`@product-demo-presenter`).
+    2. Turn the **Presenter** toggle on to switch from a knowledge-base agent to a presenter configuration.
+    3. Write an **Agent prompt** and a **Persona** to set tone and behaviour.
   </Step>
   <Step title="Upload the Deck">
-    1. Use the presenter upload area to add your PDF.  
-    2. Wait for the confirmation message: "Document uploaded successfully. Delete the existing document to upload a new one."  
-    3. Click **+ Create** to publish the agent.
+    1. Open the **Add document** dropdown and choose **Add Files**.
+    2. Add your PDF (or a single video). Wait for the confirmation message: "Document uploaded successfully. Delete the existing document to upload a new one."
+    3. Click **Create agent** to publish.
     
     <img
       className="block dark:hidden"
@@ -96,7 +97,7 @@ Realtime Interactive Presenter Agents transform a single PDF deck or playbook in
 </Steps>
 
 <Warning>
-Presenter Agents support only **one active document**. Delete the existing file before uploading an updated version.
+Presenter Agents support only **one active document** – a single PDF or a single video. Delete the existing file before uploading an updated version.
 </Warning>
 
 ## Optimize Your Presentation File
@@ -130,13 +131,23 @@ Presenter Agents support only **one active document**. Delete the existing file 
   </Step>
 </Steps>
 
-<Note>Presenter Agents do not accept additional knowledge sources. For multi-document experiences, create a Worker Agent instead.</Note>
+<Note>Presenter Agents do not accept additional knowledge sources. For multi-document experiences, create a knowledge-base agent instead (toggle **Presenter** off when creating the agent).</Note>
+
+## Using the Quiz Overlay
+
+When you talk to a Presenter Agent in [Avatar chat](/interaction-hub/voice), a **Quiz** icon appears in the floating toolbar next to the chat composer. Click it to:
+
+- Step through multiple-choice questions defined on the agent's content
+- Check answers without leaving the conversation
+- Re-open the overlay any time during the session
+
+The Quiz icon also appears next to qualifying agents in the **Agents** list (`/agents`) so you can preview the quiz outside of a live chat.
 
 ## Delivering a Great Experience
 
 - **Rehearse navigation prompts** so you know how the agent references each slide.  
 - **Prepare likely questions** and validate the responses stay aligned with your narrative.  
-- **Pair with Worker Agents** when you need deeper knowledge or integrations beyond the deck.  
+- **Pair with knowledge-base agents** when you need deeper knowledge or integrations beyond the deck.
 - **Monitor Insights** to see which slides and questions resonate most with audiences.
 
 ## Troubleshooting
@@ -149,9 +160,9 @@ Presenter Agents support only **one active document**. Delete the existing file 
     Add supporting context or summary bullets to the relevant slides before re-uploading. The agent relies on the information in the document.
   </Accordion>
   <Accordion title="Need multiple documents">
-    Create a Worker Agent instead, or link multiple presenter agents together using share links.
+    Create a knowledge-base agent instead (toggle **Presenter** off when creating), or link multiple presenter agents together using share links.
   </Accordion>
 </AccordionGroup>
 
-Ready to go beyond a single deck? Explore [Worker Agents](/knowledge-agent/types-of-agents) to see how presenter experiences pair with full-featured assistants.
+Ready to go beyond a single deck? Explore [knowledge-base agents](/knowledge-agent/types-of-agents) to see how presenter experiences pair with full-featured assistants.
 

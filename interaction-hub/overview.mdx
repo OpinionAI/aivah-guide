@@ -1,44 +1,74 @@
 ---
 title: "Hub Overview"
-description: "Main interaction space for engaging with your AI avatar agents"
+description: "Main interaction space (Playground) for engaging with your AI agents"
 ---
 
 # Hub Overview
 
-The Hub is your primary interaction space where you engage with AI avatar agents in immersive 3D environments. Switch between avatars, explore different scenes, and communicate through chat or voice with your intelligent agents.
+The Hub – also known as the **Playground** – is your primary interaction space where you talk to your AI agents. It ships in three related modes, all built on the same chat composer:
+
+| Route | Mode | Use it for |
+|---|---|---|
+| `/new-playground/new-chat` | **New chat** | A fresh conversation – pick agent, model, voice, and avatar before sending your first message. |
+| `/{conversationId}/chat` | **Text chat** | Continue an existing text conversation with file attach and image generation. |
+| `/{conversationId}/avatar-chat` | **Avatar chat** | A live 3D avatar that listens, speaks, and reacts in real time. |
+
+The home route (`/`) automatically loads your most recent conversation. If you don't have one yet, it redirects to **New chat**.
 
 ![Hub Main Interface](/images/hub-main-interface.png)
 *Main Hub interface showing avatar selection, scene options, and interaction controls*
 
 ## Hub Components
 
-### Avatar Selection
-**Right Side Avatar Carousel:**
-- **Visual Avatar Cards**: All available avatars displayed in scrollable carousel
-- **Up/Down Navigation**: Arrow controls to browse through avatar collection
-- **Instant Switching**: Click any avatar card to change the main stage character
-- **Avatar Types**: Custom user avatars (Sales1, Marketing, Support1) and system avatars (Orbe)
+### New chat composer
+When you open **New chat** you see a welcome line and a single chat composer with configuration pills:
+
+- **Knowledge base / Agent** – which agent answers you
+- **LLM model** – which large language model to use
+- **Voice** – which voice the avatar will speak with
+- **Avatar / Character** – the 3D companion or 2D character that appears
+
+Type your first message and press **Enter**. Aivah creates a new conversation, redirects to its chat URL, and delivers the message. If any default cannot be loaded automatically you'll see a toast – set defaults from **Preferences** (palette icon).
+
+### Avatar / scene canvas (Avatar chat)
+On `/{conversationId}/avatar-chat` the page splits in two:
+
+- **Avatar / scene canvas** – a real-time 3D rendering with lip-sync that reacts to audio
+- **Side panel** – chat transcript, composer, and inline voice controls
+
+On smaller screens the layout switches to a vertical resizable split.
 
 ### Scene Selection
-**Bottom Left Paint Icon:**
-- **Scene Menu**: Click paint brush icon to open scene selection
-- **Multiple Environments**: Choose from Standard, Zen, Video Wall, Web Search, and Presentation scenes
-- **Interactive Elements**: Some scenes include widgets for enhanced functionality
-- **Context-Aware**: Certain scenes optimized for specific agent types and activities
+The **palette icon** next to the composer opens **Preferences**, where you choose your default avatar and scene. The first time you visit Avatar chat without an avatar selected, Preferences opens automatically.
 
-### Interaction Modes
-**Top Left Controls:**
-- **Chat Mode**: Text-based conversation with transcript display
-- **Talk Mode**: Voice conversation with advanced multilingual support
-- **Options Gear**: Access settings for agents, voices, and LLM models
+Available scenes:
+
+| Scene | Purpose |
+|---|---|
+| Standard | Empty studio. |
+| Zen | Calm zen background. |
+| Web Results | Embedded web pages while you talk. |
+| Video | Video wall. |
+| Present 1 / Present 2 | Slide presentation backdrops. |
+
+### Floating productivity toolbar
+When the active agent supports them, additional icons surface next to the chat composer:
+
+- **Quiz overlay** – multiple-choice questions for presentation agents
+- **Mind map** – an interactive mind map for the current content
+- **Podcast player** – plays the latest generated podcast for this agent
+- **Chat toggle (speech bubble)** – hide or show the transcript so the avatar has more room
+
+### Credits badge
+A small pill in the top-right of Avatar chat shows your live credit balance and updates whenever the agent consumes credits (chat tokens, voice generation, image generation, etc.).
 
 ## Core Functionality
 
-### Avatar Management
+### Avatar & Character Management
+- **3D Avatars and 2D Characters**: Switch between fully animated companions and image-based personas
 - **Seamless Switching**: Change avatars without losing conversation context
 - **Real-Time Loading**: Avatars load instantly with visual feedback
-- **Voice Consistency**: Each avatar maintains assigned voice settings
-- **Character Persistence**: Avatar personalities remain consistent across sessions
+- **Voice Consistency**: Each avatar can be paired with a built-in or cloned voice
 
 ### Scene Environments
 Multiple immersive environments enhance different interaction types:
@@ -50,10 +80,23 @@ Multiple immersive environments enhance different interaction types:
 **Presentation Scenes**: Interactive presentation delivery with slide control
 
 ### Communication Options
-**Dual Interaction Modes:**
-- **Chat**: Type questions and receive text + voice responses
-- **Talk**: Full voice conversation with real-time speech recognition
-- **Hybrid Support**: Switch between modes seamlessly during conversations
+**Three Interaction Modes:**
+- **New chat**: Pick agent, model, voice, and avatar before sending your first message
+- **Text chat**: Classic message thread with file attach and image generation
+- **Avatar chat**: Real-time 3D avatar with voice and lip-sync
+- **Hybrid Support**: Switch between text and voice within the same conversation
+
+### Chat composer features
+The composer is shared by every mode:
+
+- **Text input** – multi-line, supports keyboard send
+- **File attach** – paper-clip icon attaches images, PDFs, Word docs, Excel sheets, PowerPoint
+- **Image generation** – pick an image model from the trailing dropdown to ask the agent to create a picture
+- **Voice** – tap the mic icon to dictate or switch to voice-first mode
+- **Agent badge** – shows which agent is currently active
+- **Inline selectors** – agent / model / voice pickers (visible on New chat)
+
+While the agent is producing a long asset (slide deck, podcast, mind map) the **Document Creating Banner** appears so you know what's happening.
 
 ### Realtime Media Creation
 - **Prompt-Based Images**: Generate high-quality visuals without leaving the Hub
@@ -91,8 +134,10 @@ Multiple immersive environments enhance different interaction types:
 ### Agentic Capabilities
 - **RAG Integration**: Intelligent retrieval from your knowledge sources
 - **Web Search**: Live web search with immersive result display
-- **Tool Integration**: Access to 200+ connected apps through MCP workflows
-- **Phone Capabilities**: Make calls and send messages through Twilio integration
+- **Tool Integration**: Composio MCP connectors for Gmail, Calendar, Notion, Linear, Slack, GitHub and more
+- **Channel Integration**: Native Slack and WhatsApp bots that respond using the same agent
+- **Phone Capabilities**: Bring-your-own Twilio number for inbound and outbound calls
+- **Tasks**: Cron jobs and heartbeat monitors created on demand from chat
 
 ### Interactive Status Display
 Real-time status indicators show agent activities:
@@ -149,11 +194,15 @@ Watch agents perform real-world tasks like sending emails through connected appl
 
 ### Avatar Library Connection
 - Directly connected to your [Available Avatars](/avatars/available-avatars) collection
-- Changes to avatars reflect immediately in Hub
+- Changes to avatars and [Characters](/avatars/characters) reflect immediately in Hub
 - System avatars like Orbe available alongside custom avatars
 
+### Voices
+- Choose from Aivah's built-in voice library or your own [voice clones](/avatars/voices)
+- Switching the LLM provider may filter the available voice list
+
 ### Agent Integration  
-- Access all created agents through the options menu
+- Access all created agents through the composer pills or the side navigation
 - Switch between different AI models and voice settings
 - Conversation history maintained across agent switches
 

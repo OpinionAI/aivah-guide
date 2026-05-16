@@ -1,11 +1,31 @@
 ---
 title: "Overview"
-description: "Knowledge Agent overview"
+description: "Knowledge-base and Presenter agents overview"
 ---
 
-## What is a Knowledge Agent?
+## What is an Agent?
 
-A Knowledge Agent is a specialized AI assistant powered by your custom knowledge base. It combines Aivah's conversational capabilities with your specific content, documents, and information to provide accurate, contextual responses. When you add content to your agent, Aivah automatically trains it, making your information immediately available for user interactions.
+An **agent** is a chatbot bound to a knowledge base. Think of it as the *brain* – the avatar, character, voice, and integrations are how it speaks to the world.
+
+Open **Agents** from the side navigation (`/agents`) to:
+
+- See every agent your account owns, with live training status badges.
+- Search by name and refresh the list while training is in progress.
+- Create a new agent with the **Plus** button.
+- Open any row to view documents, retry failed sources, edit content, or quiz an agent that has Q&A baked into it.
+
+### Agent capabilities
+
+When you create an agent you pick between two capability profiles:
+
+| Profile | Content accepted | Notable features |
+|---|---|---|
+| **Knowledge base** *(default)* | URLs, documents, text, audio, video, images | RAG-grounded answers, MCP tools, real-time voice, multi-modal |
+| **Presenter** | A single PDF **or** a single video | Slide-aligned answers, in-chat **Quiz** overlay, presentation scenes |
+
+The legacy term *Knowledge Agent* maps to a knowledge-base agent; *Presentation Agent* maps to a presenter. The two are the same product surface with a single **Presenter** toggle that flips behavior.
+
+When you add or change content, Aivah automatically trains the agent, making the information immediately available for user interactions.
 
 <CardGroup cols={2}>
   <Card title="Custom Knowledge" icon="book">
@@ -50,13 +70,24 @@ A Knowledge Agent is a specialized AI assistant powered by your custom knowledge
 - **Sales Support**: Provide product details and answer prospect questions
 - **Content Presentation**: Transform documents into interactive experiences
 
+## Agent status colours
+
+The agents list shows a status badge on every row that reflects the training pipeline:
+
+| Status | Meaning |
+|---|---|
+| `pending` / `processing` | The agent is being trained. The list polls every 10 seconds and a **Refresh** icon appears automatically. |
+| `completed` | Ready to chat. |
+| `failed` | Training failed – click **Retry** to restart, or open the agent to retry an individual source. |
+
 ## Getting Started
 
-Ready to create your first Knowledge Agent? Follow these steps:
+Ready to create your first agent? Follow these steps:
 
-1. [Understand Agent Types](/knowledge-agent/types-of-agents) - Choose the right type for your needs
+1. [Understand Agent Types](/knowledge-agent/types-of-agents) - Choose between a knowledge-base agent and a presenter
 2. [Create Your Agent](/knowledge-agent/create-agent) - Set up and configure your agent  
 3. [Add Knowledge](/knowledge-agent/add-content) - Upload your content (automatically trained by Aivah)
 4. [Configure Settings](/knowledge-agent/realtime) - Set up real-time features and behavior
+5. [Build a Presenter](/knowledge-agent/presentation-agent) - Turn a single PDF or video into a guided slide-aligned experience
 
-Once you create your agent and add content, you can always expand its knowledge using the **Add content** button in your agent settings - Aivah will automatically retrain it with any new information you provide.
+Once you create your agent and add content, you can always expand its knowledge using the **Add document** button in your agent settings – Aivah automatically retrains it with any new information you provide.

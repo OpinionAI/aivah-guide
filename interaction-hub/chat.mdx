@@ -1,16 +1,22 @@
 ---
 title: "Hub Chat Mode"
-description: "Text-based conversation with AI agents including transcript and options"
+description: "Text-based conversation with AI agents – attachments, image generation, transcript, and options"
 ---
 
 # Hub Chat Mode
 
-Engage in text-based conversations with your AI agents while receiving both written responses and voice narration. Chat mode provides a comprehensive transcript, real-time status updates, and full access to agent options and settings.
+Engage in text-based conversations with your AI agents while receiving both written responses and voice narration. Text chat provides a comprehensive transcript, file attachments, image generation, real-time status updates, and full access to agent options.
+
+The text-chat page lives at `/{conversationId}/chat`. Aivah opens it automatically when you continue an existing conversation, and you can also reach it from the **New chat** flow once you've sent your first message.
 
 ## Starting a Chat Session
 
 ### Activation
 Click the **Chat** button in the top-left corner of any Hub scene to enter chat mode. The system will establish a WebRTC connection and display a green dot when ready for interaction.
+
+### New chat vs continuing a chat
+- **New chat** (`/new-playground/new-chat`) – starts a fresh thread; pick agent, model, voice, and avatar with the composer pills before sending.
+- **Existing chat** (`/{conversationId}/chat`) – picks up where you left off; the agent badge in the composer shows which agent is active.
 
 ### Connection Status Indicators
 - **Green Dot**: Agent connected and ready for chat
@@ -27,9 +33,13 @@ Click the **Chat** button in the top-left corner of any Hub scene to enter chat 
 
 ### Chat Input Area
 **Bottom Center:**
-- **Message Input Bar**: Type your questions and messages
+- **Message Input Bar**: Multi-line text input, supports keyboard send
 - **Send Button**: Submit messages to your agent
-- **Transcript Toggle**: Show/hide conversation transcript on right side
+- **Attach (paper-clip)**: Upload images, PDFs, Word documents, Excel sheets, and PowerPoint files
+- **Image model dropdown (trailing)**: Switch to an image generation model so the agent renders a picture
+- **Mic icon**: Dictate using your browser microphone or switch into a voice-first mode
+- **Agent badge**: Shows which agent currently answers
+- **Transcript Toggle**: Show/hide the conversation transcript on the right side
 
 ### Conversation Transcript
 **Right Side Panel:**
@@ -161,11 +171,17 @@ When agents perform web searches:
 
 ### Tool Integration and Actions
 **Connected Application Access:**
-- **MCP Tools**: Integration with 200+ applications
+- **MCP Tools (Composio)**: Gmail, Calendar, Notion, Linear, Slack, GitHub, and many more
 - **Email Management**: Send emails through connected Gmail
 - **Calendar Operations**: Schedule meetings and manage appointments
 - **CRM Updates**: Update customer records and contact information
-- **Phone Integration**: Make calls via Twilio integration
+- **Phone Integration**: Make calls via your Twilio number
+
+### File attachments
+Click the paper-clip icon to upload supporting material into the chat. Supported types include images, PDFs, Word documents, Excel sheets, and PowerPoint presentations (subject to the per-file size limits shown on the dialog).
+
+### Document Creating Banner
+When the agent is producing a long asset (slide deck, podcast, mind map) the **Document Creating Banner** appears at the top of the conversation. It tells you what is being generated and disappears automatically once the asset is ready – you can keep chatting in the meantime.
 
 ### Multi-Modal Content
 **Rich Interaction Support:**

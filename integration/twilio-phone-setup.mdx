@@ -53,6 +53,21 @@ Available models span four provider families:
 - **OpenAI Realtime**: GPT Realtime, GPT‑4o Realtime, GPT Realtime Mini for ultra-low latency voice calls
 - **Groq hosted**: GPT OSS 20B, GPT OSS 120B, Qwen3‑32B, Moonshotai Kimi K2 when you need alternative model behavior
 
+## Telephony Form Fields
+
+The Telephony page (`/integrations/telephony`) exposes a single form that ties everything together:
+
+| Field | Notes |
+|---|---|
+| **LLM Model** | The model used during the call. Voices are filtered automatically by provider, so the voice list refreshes when you change the model. |
+| **Voice** | The voice the AI uses on the call. Includes Aivah's built-in voices and any [voice clones](/avatars/voices) you've added. |
+| **Phone number** | The Twilio E.164 number (for example `+14155551234`). |
+| **Twilio Termination SIP URI** | *Optional.* Used when you bring your own SIP trunk. |
+| **Twilio Username / Password** | Credentials for the SIP trunk (required only when using a custom termination URI). |
+| **Custom prompt** | Override the agent prompt during phone calls without changing the agent itself. |
+
+Click **Save Configuration** to persist. The page also lets you **delete** any saved Twilio configuration. After saving, calls placed to the number are routed through Aivah's media servers and answered by your agent.
+
 ## 🔧 Authentication Setup
 
 ### Twilio Credentials Configuration
@@ -64,6 +79,24 @@ Available models span four provider families:
 
 1. **Enter Phone Number**: Input the Twilio phone number you want to use
 2. **Verify Configuration**: Ensure the number is active in your Twilio account
+
+### Bring Your Own SIP Trunk *(optional)*
+
+If you operate your own SIP infrastructure you can route inbound calls through a Twilio Elastic SIP Trunk:
+
+1. **Twilio Termination SIP URI** – paste the termination URI from your Twilio SIP trunk configuration.
+2. **Twilio Username / Password** – paste the SIP credentials Twilio shows when you create the trunk.
+3. Aivah will use those credentials to authenticate against your trunk for every call.
+
+Leave these fields blank if you want Aivah to route directly through the Twilio number.
+
+### Custom Prompt for Phone Calls
+
+The **Custom prompt** field lets you override the agent prompt specifically for telephony. Use it to:
+
+- Add a phone-specific greeting ("You're an AI agent answering customer calls for…")
+- Shorten responses for voice channels
+- Constrain the agent to a narrower set of topics during calls
 
 ## ⚙️ Workflow Management
 
@@ -81,9 +114,9 @@ Monitor and manage your active phone numbers:
 
 ## 🚀 Testing Your Setup
 
-1. **Update Knowledge Base**: Click "Update Knowledge Base" to sync your configuration
-2. **Test Call**: Make a test call to verify voice quality and response accuracy
-3. **Monitor Performance**: Use the dashboard to track call metrics and performance
+1. **Save Configuration**: Click **Save Configuration** to persist your changes
+2. **Test Call**: Place a test call to verify voice quality and response accuracy
+3. **Monitor Performance**: Use [Insights → Call Logs](/insights/call-logs) to track call metrics and performance
 
 ## 📊 Best Practices
 

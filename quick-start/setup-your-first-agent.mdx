@@ -13,46 +13,42 @@ Start by building the intelligence behind your AI agent.
 
 ### Navigate to Agents Workspace
 
-1. **Sign in to AIVAH** and click **Agents** in the top navigation
-2. In the left sidebar, click **Create New Agent**
+1. **Sign in to AIVAH** and open **Agents** in the side navigation (`/agents`).
+2. Click the **Plus (+)** icon in the agents list header to open `/agents/create`.
 
 ### Configure Your Agent
 
 ![Agent Creation](/images/hub-options-knowledge-agents.png)
 
 **Agent Configuration:**
-- **Agent Name**: Enter a descriptive name (e.g., "Marketing Assistant", "Product Expert")
-- **Presentation Mode**: Leave off to create a Worker Agent, or turn on for a Presenter Agent
-- **Real-Time API**: Enabled by default for both agent types—leave it on for live conversational interactions across channels
-- **Multi Modal**: Enabled when your plan supports image/video processing so both agent types can use it
+- **Name**: Enter a descriptive name – this becomes the slug shown next to the heading (`@my-agent`).
+- **Presenter toggle**: Leave **off** for a knowledge-base agent (accepts URLs, documents, text, audio, video, images). Turn **on** for a presenter (accepts a single PDF or a single video and produces slide-aligned answers with a **Quiz** overlay).
+- **Agent prompt**: Free-form instructions that shape the agent's behaviour.
+- **Persona**: A short label of your agent's tone (for example *witty and casual*).
 
 ### Add Knowledge Content
 
-Worker Agents need information to be helpful. Add knowledge in three ways:
+Open the **Add document** dropdown to attach knowledge sources.
 
-#### Option 1: Paste Text Content
-In **Enter Content**, add any reference text, policies, or information your agent should know.
+#### Option 1: Add URL
+Paste any publicly accessible link – website pages, blog posts, YouTube/Vimeo videos, or documentation. Aivah fetches and indexes the page automatically.
 
-#### Option 2: Upload URLs and Videos
-1. In **Upload URL or Video**, paste links to:
-   - Company websites and documentation
-   - Blog posts and knowledge bases
-   - YouTube/Vimeo training videos
-   - Public documentation
-2. Click **+ Add another link** for multiple sources
+#### Option 2: Add Files
+Drag-and-drop or pick files. Supported types include:
 
-#### Option 3: Upload Files
-1. **Drag and drop files** or click **Upload** to select:
-   - PDFs, Word docs, presentations
-   - Text files and spreadsheets
-   - Image files (if multi-modal enabled)
-2. Wait for the upload banner to complete: "Uploading your Agent Knowledge files..."
+- `.pdf`, `.docx`, `.txt`, `.csv`, `.xlsx`, `.html`, `.md`, `.epub`, `.json`, `.xml`
+- `.mp4`, `.mp3`, `.jpg`, `.png` and more
 
-<Note>Presenter Agents rely on a single PDF upload. Delete the existing file to replace their presentation deck.</Note>
+Each file can be up to **21 MB**.
+
+#### Option 3: Create Text
+Paste raw text content – ideal for FAQs, policies, or short snippets.
+
+<Note>Presenter agents accept only a single PDF or a single video at a time. Delete the existing file to replace the deck.</Note>
 
 ### Finalize Agent Creation
-1. Click **Create Agent** to build your agent
-2. Wait for processing to complete (large files may take several minutes)
+1. Click **Create agent**. The upload starts, the agent enters `processing`, and you're redirected back to the agents list.
+2. The list polls every 10 seconds while agents are training; the status flips to `completed` once ready. If a single source fails, open the agent detail view and hit the inline refresh on just that item.
 
 ---
 
@@ -252,24 +248,38 @@ Enhance your agent with powerful integrations and advanced features.
 
 ### Explore Integration Options
 
-Navigate to **Integrations** to connect external services:
+Navigate to **Integrations** in the side navigation to connect external services:
 
-#### MCP Tools
-Connect popular applications:
+#### MCP Tools (Composio)
+Connect popular applications with one-click OAuth:
 - **Gmail**: Email management and sending
+- **Google Calendar**: Scheduling and appointment management
 - **Slack**: Team communication and notifications
 - **GitHub**: Repository management and code assistance
 - **Notion**: Knowledge base and document management
-- **Google Calendar**: Scheduling and appointment management
+- **Linear**: Issue tracking and product management
+
+Each card has a toggle switch. The first time you enable a tool you're redirected to its OAuth screen; after success Aivah verifies the connection automatically and toasts *"Account verified and connected!"*. The active counter (`X/3 Active` by default) shows how many tools you've enabled vs. your plan limit.
 
 ![MCP Integrations](/integration/Integerations%20/Integerations%20with%20Apps%20using%20MCP%20.png)
+
+#### Channels: Slack & WhatsApp
+Let your agent respond inside your team's chat tools:
+- **Slack** uses the included **App Manifest** plus a *Bot Token*, *Signing Secret*, and your *Member ID*. Use `/aivah` after inviting the bot.
+- **WhatsApp** uses **QR pairing** – click Connect, scan the QR with WhatsApp → Linked Devices, and you're live.
+
+See the [Channels guide](/integration/channels) for the full flow.
 
 #### Telephony Integration
 Set up professional phone capabilities:
 - **Twilio Integration**: Handle inbound and outbound calls
+- **Bring Your Own SIP Trunk**: Optional termination SIP URI
 - **Voice Configuration**: Professional call handling
-- **Call Logging**: Complete call records and transcriptions
-- **Workflow Automation**: Advanced call routing and processing
+- **Custom Prompt**: Override the agent prompt for calls
+- **Call Logging**: Complete call records and transcriptions in [Insights → Call Logs](/insights/call-logs)
+
+#### Tasks (Cron & Heartbeat)
+Schedule recurring jobs or wire up heartbeat monitors. Anything created by you – or by the agent in response to a request – shows up under [Integrations → Tasks](/integration/tasks).
 
 ### Memory Management
 

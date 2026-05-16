@@ -5,17 +5,17 @@ description: "Collect user information and generate leads through data collectio
 
 # Data Collection Forms
 
-Lead capture forms allow you to collect valuable user information before or during agent interactions. This feature helps you generate leads, understand your audience, and provide personalized experiences.
+Lead capture forms collect valuable user information before or during agent interactions. The form is built into the **Shared** create flow (`/shared/create`) so every published agent can optionally gate its conversation behind a lightweight form.
+
+Submitted leads stream into [Insights → Leads](/insights/leads) where you can review and export them.
 
 ## Form Configuration
 
 ### Basic Setup
-Access the data collection form through the "Add data form" button in your agent configuration.
-
-![Data Collection Form Interface](/Users/ahmedz/Documents/GitHub/chatbot/aivah-guide/share/Share%20/Screenshot%202025-08-09%20at%201.22.19%20PM.png)
+Open the **Shared** workspace, click **+** to start the create flow, and configure the lead form as part of the publish steps.
 
 ### Form Structure
-- **Title**: Set a descriptive title for your form (e.g., "Contact details")
+- **Title**: Set a descriptive title for your form (e.g., *"Contact details"*)
 - **User Consent Text**: Add privacy-compliant consent language
 - **Field Configuration**: Define what information to collect
 
@@ -24,22 +24,22 @@ Access the data collection form through the "Add data form" button in your agent
 ### Standard Fields
 - **Name Field**: Collect user names with customizable placeholder text
 - **Email Field**: Capture email addresses for follow-up communications
+- **Phone Field**: Capture a phone number with simple validation
 - **Custom Fields**: Add any additional fields your use case requires
 
 ### Field Configuration
 Each field can be configured with:
-- **Data Type**: Name, Email, Text, Number, etc.
+- **Data Type**: Name, Email, Phone, Text, Number, etc.
 - **Label**: Display name for the field
 - **Placeholder Text**: Helpful text shown before user input
-- **Mandatory Status**: Make fields required or optional
-- **Edit Options**: Allow users to modify entries
+- **Mandatory Status**: Mark required or optional
+- **Re-order**: Drag-and-drop fields to change their order
+- **Remove**: Delete fields that don't apply
 
 ### Advanced Field Settings
 - **Validation Rules**: Ensure data quality and format compliance
 - **Conditional Logic**: Show/hide fields based on previous responses
 - **Multi-step Forms**: Break complex forms into manageable sections
-
-![Advanced Form Configuration](/Users/ahmedz/Documents/GitHub/chatbot/aivah-guide/share/Share%20/Screenshot%202025-08-09%20at%201.22.27%20PM.png)
 
 ## User Experience Design
 

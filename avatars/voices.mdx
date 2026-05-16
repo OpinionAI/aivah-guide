@@ -1,0 +1,76 @@
+---
+title: "Voices"
+description: "Browse the Aivah voice library and clone your own voice"
+---
+
+# Voices
+
+The **Voices** page (`Side nav → Customization → Voices`, or `/avatars/voices`) lists every voice your account can use – both Aivah's built-in library and the private voice clones you upload.
+
+Voices are the speech engine for:
+
+- The chat composer (Playground)
+- The avatar in [Avatar chat](/interaction-hub/voice)
+- Telephony calls (see [Twilio Phone Setup](/integration/twilio-phone-setup))
+- Channel responses where audio is supported
+
+## What you see
+
+- A grid of voice cards. Each card includes:
+  - Voice name
+  - Provider / model family (so you know which LLMs it pairs with)
+  - Playback controls to preview the voice
+  - A *Set as default* action
+- A **Clone voice** button in the header for creating a new voice clone.
+- Search and pagination across the full library.
+
+<Tip>
+Switching the LLM provider in the chat composer may filter the available voice list. For example, Gemini voices appear when a Gemini model is active, and OpenAI Realtime voices appear when an OpenAI Realtime model is active.
+</Tip>
+
+## Clone a voice
+
+<Steps>
+  <Step title="Click Clone voice">
+    Press **Clone voice** in the header. The clone dialog opens.
+  </Step>
+  <Step title="Upload a clean reference recording">
+    Upload a short, mono audio file with a single speaker. For best results:
+
+    - Keep the recording free of background noise, music, or other voices
+    - Aim for natural pacing – read a short paragraph rather than a single sentence
+    - Use a quality microphone and the highest-fidelity export available
+  </Step>
+  <Step title="Name the voice">
+    Give the voice a short, descriptive name (for example *Sarah – Casual*). This is what appears in pickers throughout Aivah.
+  </Step>
+  <Step title="Submit and wait for processing">
+    Click submit. The new voice enters processing. Once processed, it shows up in the list and can be selected wherever a voice can be picked.
+  </Step>
+</Steps>
+
+## Use a voice
+
+Voices can be selected in three places:
+
+1. **Chat composer pills** – the voice pill in **New chat** or in the configuration pop-over for an existing conversation.
+2. **Preferences modal** (palette icon in Avatar chat) – set the voice your avatar speaks with.
+3. **Integration configuration** – Telephony and Channels both expose a voice picker so calls or channel messages use the right voice.
+
+## Default voice
+
+Mark a voice as your default to pre-fill the picker every time you start a new conversation. You can change the default at any time from the Voices page.
+
+## Best practices
+
+- **Cleanly trim recordings** – background noise during the training clip is reproduced in the clone.
+- **Match accent and language** – clone voices reproduce the linguistic patterns of the source.
+- **Test before publishing** – preview the clone in the Playground before assigning it to a shared agent or a phone number.
+- **Pair voice and LLM** – some voice families are only available with specific LLM providers; if a voice disappears, switch the LLM back to the matching family.
+
+## Related guides
+
+- [Customization overview](/avatars/overview)
+- [Hub Talk Mode and Avatar chat](/interaction-hub/voice)
+- [Twilio Phone Setup](/integration/twilio-phone-setup)
+- [Voice-Only Agents](/share/voice-only-agents)

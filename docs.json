@@ -33,11 +33,13 @@
             ]
           },
           {
-            "group": "Avatar",
+            "group": "Customization",
             "pages": [
               "avatars/overview",
               "avatars/create-avatar",
               "avatars/available-avatars",
+              "avatars/characters",
+              "avatars/voices",
               "avatars/shared-avatars"
             ]
           },
@@ -51,6 +53,15 @@
               "knowledge-agent/types-of-agents",
               "knowledge-agent/realtime",
               "knowledge-agent/presentation-agent"
+            ]
+          },
+          {
+            "group": "Productivity",
+            "pages": [
+              "productivity/overview",
+              "productivity/slides",
+              "productivity/podcasts",
+              "productivity/mind-maps"
             ]
           },
           {
@@ -96,7 +107,9 @@
               "integration/outbound-calls",
               "integration/inbound-calls",
               "integration/call-logs",
-              "integration/call-transcriptions"
+              "integration/call-transcriptions",
+              "integration/channels",
+              "integration/tasks"
             ]
           },
           {

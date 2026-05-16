@@ -31,18 +31,25 @@ When users interact with your agent, they can see the memory system working in r
 
 The agent automatically stores "James" as the user's name and will remember this in future conversations.
 
-## 🎛️ Memory Management Interface
+## 🎛️ Manage Memory Page
 
-Access comprehensive memory management through the dedicated interface:
+`Side nav → Integrations → Manage Memory` (or `/integrations/manage-memory`) lists every long-term memory the agent has stored for each customer.
 
 ![Memory Management Interface](/integration/Integerations%20/Integerations%20-%20Memory.png)
 
-### Key Features:
+The table has four columns:
 
-1. **Memory Overview**: View all stored memories organized by category
-2. **Edit or Remove**: Full control over stored information
-3. **Search Function**: Quickly find specific memories
-4. **Category Organization**: Memories are automatically categorized for easy access
+| Column | Description |
+|---|---|
+| `info_key` | What was remembered (for example `favorite_colour`). |
+| `info_value` | The remembered value. |
+| `created_datetime` | First time the value was learned. |
+| `updated_datetime` | Last time the value changed. |
+| Actions | Inline edit and delete on each row. |
+
+### Export to CSV
+
+Click **Download CSV** to export the entire table. The file is named `customer-information-YYYY-MM-DD.csv`, making it easy to drop into CRMs, spreadsheets, or audit pipelines.
 
 ## 📊 Managing Your Memories
 
@@ -52,17 +59,19 @@ The memory management system provides:
 
 ### Memory Categories
 - **userName**: Personal identifiers and names
-- **Additional Categories**: Preferences, history, context, and more
+- **Additional Categories**: Preferences, history, context, and more (each row is keyed by `info_key`)
 
 ### Memory Actions
-- **Edit Memory**: Modify stored information with the edit icon (✏️)
-- **Delete Memory**: Remove memories with the delete button (🗑️)
-- **Add New**: Manually add important information to memory
+- **Edit Memory**: Modify the `info_value` inline with the edit icon
+- **Delete Memory**: Remove a row with the trash icon
+- **Add New**: Use the manual entry option to capture important information that the agent did not learn on its own
+- **Export**: Hit **Download CSV** for a full backup
 
 ### Memory Details
 Each memory entry includes:
-- **Category**: Type of information stored
-- **Content**: The actual information remembered
+- **Key (`info_key`)**: Type of information stored
+- **Value (`info_value`)**: The actual information remembered
+- **Timestamps**: When the memory was first stored and last updated
 - **Actions**: Edit and delete options
 
 ## ⚙️ Memory Configuration
