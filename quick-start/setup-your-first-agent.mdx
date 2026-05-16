@@ -5,327 +5,388 @@ description: 'Setup your first agent guide'
 
 # Setup Your First Agent
 
-Create your first AIVAH agent in 5 simple steps. This comprehensive guide walks you through building a Worker Agent or presenter experience, designing its avatar, testing interactions, and sharing with the world.
+Build your first AIVAH agent in five short steps. This walkthrough mirrors the live product flow: create an agent, give it a face and a voice, test it in the Playground, share it publicly, and wire it up to your tools.
 
 ## Step 1: Create Your Agent
 
-Start by building the intelligence behind your AI agent.
+Open **Agents** in the side navigation (`/agents`) and click the **+** button to start a fresh agent at `/agents/create`.
 
-### Navigate to Agents Workspace
+<Frame caption="Create agent form – Name, Agent Capabilities, Agent Prompt, Persona, and Documents">
+  ![Create agent form](/images/agent-create-form.png)
+</Frame>
 
-1. **Sign in to AIVAH** and open **Agents** in the side navigation (`/agents`).
-2. Click the **Plus (+)** icon in the agents list header to open `/agents/create`.
+### Configure the basics
 
-### Configure Your Agent
+- **Name** – becomes the slug shown next to the heading (`@my-agent`).
+- **Agent Capabilities → Presenter** – leave **off** for a knowledge-base agent that accepts URLs, files, and text. Turn **on** for a presenter that takes a single PDF or video and produces slide-aligned answers with a built-in **Quiz** overlay.
+- **Agent Prompt** – freeform instructions that shape behaviour.
+- **Persona** – a short label of your agent's tone (for example *witty and casual*).
 
-![Agent Creation](/images/hub-options-knowledge-agents.png)
+<Frame caption="Presenter toggle on – this constrains the agent to a single PDF or video and unlocks the Quiz overlay">
+  ![Presenter toggle](/images/agent-presenter-toggle.png)
+</Frame>
 
-**Agent Configuration:**
-- **Name**: Enter a descriptive name – this becomes the slug shown next to the heading (`@my-agent`).
-- **Presenter toggle**: Leave **off** for a knowledge-base agent (accepts URLs, documents, text, audio, video, images). Turn **on** for a presenter (accepts a single PDF or a single video and produces slide-aligned answers with a **Quiz** overlay).
-- **Agent prompt**: Free-form instructions that shape the agent's behaviour.
-- **Persona**: A short label of your agent's tone (for example *witty and casual*).
+### Add knowledge content
 
-### Add Knowledge Content
+Click **Add document** to attach knowledge sources. Knowledge-base agents accept any mix of URL / Files / Text; presenter agents accept a single PDF or video.
 
-Open the **Add document** dropdown to attach knowledge sources.
+<Frame caption="Add document dropdown – Add URL, Add Files, or Create Text">
+  ![Add document dropdown](/images/agent-add-document-dropdown.png)
+</Frame>
 
-#### Option 1: Add URL
-Paste any publicly accessible link – website pages, blog posts, YouTube/Vimeo videos, or documentation. Aivah fetches and indexes the page automatically.
+<Tabs>
+  <Tab title="Add URL">
+    Paste any publicly accessible link – website pages, blog posts, YouTube/Vimeo videos, or documentation. Aivah fetches and indexes the page automatically.
 
-#### Option 2: Add Files
-Drag-and-drop or pick files. Supported types include:
+    <Frame caption="Add URL modal">
+      ![Add URL modal](/images/agent-add-url-modal.png)
+    </Frame>
+  </Tab>
+  <Tab title="Add Files">
+    Drag-and-drop or pick files (up to 21 MB each). Supported types include `.pdf`, `.docx`, `.txt`, `.csv`, `.xlsx`, `.html`, `.md`, `.epub`, `.json`, `.xml`, `.mp4`, `.mp3`, `.jpg`, `.png`.
 
-- `.pdf`, `.docx`, `.txt`, `.csv`, `.xlsx`, `.html`, `.md`, `.epub`, `.json`, `.xml`
-- `.mp4`, `.mp3`, `.jpg`, `.png` and more
+    <Frame caption="Add Files modal with the full list of supported file types">
+      ![Add Files modal](/images/agent-add-files-modal.png)
+    </Frame>
+  </Tab>
+  <Tab title="Create Text">
+    Paste raw text content – ideal for FAQs, policies, or short snippets.
 
-Each file can be up to **21 MB**.
-
-#### Option 3: Create Text
-Paste raw text content – ideal for FAQs, policies, or short snippets.
+    <Frame caption="Create Text modal">
+      ![Create Text modal](/images/agent-create-text-modal.png)
+    </Frame>
+  </Tab>
+</Tabs>
 
 <Note>Presenter agents accept only a single PDF or a single video at a time. Delete the existing file to replace the deck.</Note>
 
-### Finalize Agent Creation
-1. Click **Create agent**. The upload starts, the agent enters `processing`, and you're redirected back to the agents list.
-2. The list polls every 10 seconds while agents are training; the status flips to `completed` once ready. If a single source fails, open the agent detail view and hit the inline refresh on just that item.
+### Finalise
+
+Click **Create Agent**. The agent enters `processing`, you're redirected to the agents list, and Aivah polls every few seconds until the status flips to `completed`. If a single source fails, open the agent detail view and hit the inline refresh on just that item.
+
+<Frame caption="Agents workspace – every agent with its type, capability badges, and live training status">
+  ![Agents list](/images/agents-list.png)
+</Frame>
 
 ---
 
-## Step 2: Design Your Avatar
+## Step 2: Pick a Persona – Avatar, Character, and Voice
 
-Give your agent a visual identity with a custom 3D avatar.
+Aivah keeps everything visual in one workspace: `Side nav → Customization`.
 
-### Access Avatar Creator
+### Avatars (3D)
 
-1. Navigate to **Avatar** in the top navigation
-2. Click **Create New Avatar** in the left sidebar
+Browse the full Ready Player Me-based avatar library and set defaults from `Customization → Avatars`.
 
-![Create New Avatar](/avatars/Avatar/Create%20New%20Avatar.png)
+<Frame caption="Avatars grid – every 3D companion in your account">
+  ![Avatars grid](/images/avatars-grid.png)
+</Frame>
 
-### Design Your Avatar
+For step-by-step avatar creation, see [Create Avatar](/avatars/create-avatar).
 
-**Basic Setup:**
-- **Avatar Name**: Choose a name that matches your agent's personality
-- **Voice Setup**: Choose Gemini voices (Sportsman, Customer support, Sarah, Brooke, Katie, Zemo, ajith, duaila, azj, ajz, sjl, brit, Swissen) or OpenAI Realtime voices (Alloy, Echo, Shimmer, Ash, Ballad, Coral, Sage, Verse, Cedar, Marin) based on the model you select
+### Characters (2D)
 
-**Avatar Design Options:**
+Characters are lightweight image-based personas – upload a photo, crop it, name it, and it's instantly selectable everywhere a character can be picked.
 
-#### Option 1: Ready Player Me Designer
-1. Click **Design New Avatar** 🎨 (green button)
-2. This opens the Ready Player Me avatar builder
-3. Customize:
-   - Facial features and expressions
-   - Hair styles and colors
-   - Clothing and accessories
-   - Body proportions
-4. Export your avatar when complete
+<Frame caption="Characters page – upload an image and it becomes a selectable 2D persona">
+  ![Characters page](/images/characters-page.png)
+</Frame>
 
-![Ready Player Me Designer](/avatars/Avatar/Ready%20Player%20Me%20Avatar%20Builder.png)
+<Steps>
+  <Step title="Click Upload Image">
+    Open `Customization → Characters` and pick a photo. JPG, PNG, and WEBP are supported.
+  </Step>
+  <Step title="Crop the face">
+    The **Crop Character Image** modal opens. Pick an aspect ratio (1:1, 3:4, 4:5, or Custom), name the character, then save.
 
-#### Option 2: Upload Custom Avatar
-1. If you have an existing .glb avatar file, add the URL in **Avatar URL**
-2. Follow the help link for guidance on obtaining .glb files
+    <Frame caption="Crop Character Image modal">
+      ![Character crop modal](/images/character-crop-modal.png)
+    </Frame>
+  </Step>
+  <Step title="Edit or delete anytime">
+    The pencil icon reopens an Edit modal where you can change the name, **Agent Prompt**, and **Agent Idle Prompt** that describe how the character behaves when speaking or idle.
 
-**Character Development:**
-- **Background Story**: Write a compelling background that defines your avatar's personality and expertise
-- This story influences how your avatar interacts and responds to users
+    <Frame caption="Edit Character modal">
+      ![Edit character modal](/images/character-edit-modal.png)
+    </Frame>
+  </Step>
+</Steps>
 
-### Complete Avatar Creation
-Click **Create** to finalize your avatar. Your new avatar will appear in the Available Avatars list.
+### Voices
+
+`Customization → Voices` lists every built-in voice plus any clones you've made. Click **+ Create** to add your own.
+
+<Frame caption="Voices page – built-in voices plus your private clones">
+  ![Voices list](/images/voices-list.png)
+</Frame>
+
+<Steps>
+  <Step title="Open the Add voice modal">
+    Click **+ Create** to launch the dialog.
+
+    <Frame caption="Add voice modal – Name, Language, Voice Sample, and Description">
+      ![Add voice modal](/images/voice-clone-modal.png)
+    </Frame>
+  </Step>
+  <Step title="Pick the language">
+    Choose from English, French, German, Spanish, Portuguese, and more.
+  </Step>
+  <Step title="Upload or record a sample">
+    Use **Upload File** for a clean mono recording (up to 10 MB) or **Record Audio** in the browser (up to 1 minute).
+
+    <Frame caption="Record Audio mode – capture up to 1 minute right in the browser">
+      ![Voice clone record audio](/images/voice-clone-record-audio.png)
+    </Frame>
+  </Step>
+  <Step title="Save">
+    Click **Add to my voice**. Once processed, the voice appears wherever voices can be picked.
+  </Step>
+</Steps>
 
 ---
 
-## Step 3: Test in the Hub
+## Step 3: Test in the Playground
 
-Experience your agent in action within AIVAH's immersive Hub environment.
+Open the **Chat** workspace from the side navigation. New chats start at `/new-playground/new-chat`; existing conversations live at `/{conversationId}/chat` and `/{conversationId}/avatar-chat`.
 
-### Access the Hub
+<Frame caption="New chat composer – pick agent, character, model, and voice from the pills">
+  ![New chat composer](/images/new-chat-composer.png)
+</Frame>
 
-1. Navigate to **Hub** in the top navigation
-2. Your main avatar appears in the center stage
-3. See your created avatars in the carousel on the right side
+### Configure the conversation from the composer pills
 
-![Hub Interface](/images/hub-main-interface.png)
+Every important option is one click away from the composer:
 
-### Explore Avatar Selection
+<Tabs>
+  <Tab title="Agent">
+    <Frame caption="Switch the active agent without leaving the composer">
+      ![Composer agent picker](/images/composer-agent-picker.png)
+    </Frame>
+  </Tab>
+  <Tab title="LLM">
+    <Frame caption="Pick between OpenAI, Gemini, Grok, and OpenAI Realtime model families">
+      ![Composer LLM picker](/images/composer-llm-picker.png)
+    </Frame>
+  </Tab>
+  <Tab title="Voice">
+    <Frame caption="Voices are filtered to those supported by the selected model">
+      ![Composer voice picker](/images/composer-voice-picker.png)
+    </Frame>
+  </Tab>
+  <Tab title="Character">
+    <Frame caption="The Character picker covers 2D personas, including the ones you've uploaded">
+      ![Character picker modal](/images/character-picker-modal.png)
+    </Frame>
+  </Tab>
+</Tabs>
 
-**Avatar Carousel (Right Side):**
-- Scroll through available avatars using up/down arrows
-- Click any avatar card to switch to that character
-- Notice how each avatar maintains its assigned voice and personality
+### Try the three modes
 
-### Try Different Scenes
+<Tabs>
+  <Tab title="Text chat">
+    Type your message, attach files with the paper-clip, ask for an image or video, or trigger a web search inline.
 
-Click the **paint brush icon** (bottom left) to explore scene options:
+    <Frame caption="Text chat conversation with credits badge in the top-right">
+      ![Text chat conversation](/images/chat-text-conversation.png)
+    </Frame>
 
-#### Standard Scene
-Clean professional environment for general interactions
-![Standard Scene](/images/hub-standard-scene.png)
+    <Frame caption="Add photos and files directly from the composer">
+      ![Add photos and files](/images/composer-file-attach.png)
+    </Frame>
+  </Tab>
+  <Tab title="Avatar chat">
+    The 3D avatar fills the canvas and the side panel keeps the transcript + composer in view.
 
-#### Zen Scenes
-Interactive environments with smart widgets
-![Zen Scene](/images/hub-zen-scene-1.png)
+    <Frame caption="Avatar chat in a Zen scene with the productivity toolbar on the left rail">
+      ![Avatar chat zen scene](/images/avatar-chat-zen-scene.png)
+    </Frame>
 
-#### Video Scene
-Customizable video backgrounds
-![Video Scene](/images/hub-video-scene.png)
+    <Frame caption="Tap a Character to chat with a 2D persona in full-screen mode">
+      ![Avatar chat character fullscreen](/images/avatar-chat-character-fullscreen.png)
+    </Frame>
+  </Tab>
+  <Tab title="Voice-only">
+    Click the mic to start a voice-first session. The voice orb expands while the avatar listens and responds.
 
-#### Web Search Scene
-Immersive search with interactive results
-![WebSearch Scene](/images/hub-websearch-scene.png)
+    <Frame caption="Voice orb during a voice-only session">
+      ![Voice orb](/images/voice-orb.png)
+    </Frame>
+  </Tab>
+</Tabs>
 
-#### Presentation Scenes
-Perfect for demos and presentations
-![Presentation Scene](/images/hub-presentation-scene-1.png)
+### Generate media right from the composer
 
-### Test Interaction Modes
+Ask the agent to draw, animate, or research – the chat composer routes the request to the right model automatically.
 
-**Chat Mode:**
-1. Click the **chat icon** (top left)
-2. Type questions to test your agent's knowledge
-3. Review responses and conversation flow
+<Frame caption="Image generation runs inline, then the result auto-saves to AI Drive">
+  ![Image generation result](/images/image-generation-result.png)
+</Frame>
 
-![Chat Interface](/images/hub-chat-interface.png)
+<Frame caption="Animate any generated image into a short video with a follow-up prompt">
+  ![Video from image](/images/video-from-image.png)
+</Frame>
 
-**Voice Mode:**
-1. Click the **microphone icon** (top left)
-2. Enable microphone permissions when prompted
-3. Speak naturally with your avatar
-4. Experience real-time voice responses
+### Tune the avatar and scene from Preferences
 
-![Voice Interface](/images/hub-voice-conversation.png)
+The palette icon next to the composer opens **Preferences**. Use it to set the default avatar and the 3D scene the avatar chat opens in.
 
-### Customize Settings
+<Frame caption="Preferences modal – Avatar tab">
+  ![Preferences avatar tab](/images/preferences-avatar-tab.png)
+</Frame>
 
-Click the **options gear** (top left) to access:
-
-**Agents:** Switch between different Worker and presenter agents
-![Agent Options](/images/hub-options-knowledge-agents.png)
-
-**Voice Selection:** Change avatar voice settings
-![Voice Options](/images/hub-options-voice-selection.png)
-
-**LLM Models:** Select different language models for responses
-![LLM Model Options](/images/hub-options-llm-models.png)
+<Frame caption="Preferences modal – Scene tab (Standard, Zen, Web Results, Video, Presenter)">
+  ![Preferences scene tab](/images/preferences-scene-tab.png)
+</Frame>
 
 ---
 
 ## Step 4: Share Your Agent
 
-Deploy your agent for public access through multiple distribution channels.
+Open **Shared** in the side navigation to publish a public link, bubble, or iframe.
 
-### Navigate to Share
+<Frame caption="Shared workspace – every published agent with its link type badge">
+  ![Shared agents grid](/images/shared-agents-grid.png)
+</Frame>
 
-1. Click **Share** in the top navigation
-2. Configure your sharing experience
+### Create a shared agent
 
-![Share Configuration](/share/Share%20/Screenshot%202025-08-09%20at%201.20.40%20PM.png)
+Click the **+** button to open the two-step create flow.
 
-### Configure Agent Behavior
+<Steps>
+  <Step title="Persona step – pick the agent, model, voice, tools, and instructions">
+    <Frame caption="Persona step – Link Type, Model, Voice, Knowledge Base, MCP Tools, Instructions, Lead capture">
+      ![Shared agent create form](/images/shared-agent-create-form.png)
+    </Frame>
 
-**Customization Settings:**
-- **Avatar Selection**: Choose Face Focus, Body Focus, or Orbe
-- **Companion Name**: Set the public name for your agent
-- **Agent Name**: Select which agent to use (Worker or presenter)
-- **Voice**: Configure voice settings for shared experience
-- **LLM Model**: Choose response quality vs. speed
+    Choose the **Link Type** that fits your distribution plan:
 
-**Agent Instructions:**
-- **Agent Prompt**: Provide specific instructions for public interactions
-- **Initial Messages**: Set the opening greeting (e.g., "👋 Hi, how can I help you?")
-- **Suggested Messages**: Add helpful conversation starters
-- **Input Placeholder**: Customize the message input prompt
+    - **Direct Link** – a clean URL you can post anywhere.
+    - **Iframe** – an embeddable widget for your website.
+    - **Chat Bubble** – a floating bubble script for any site.
+  </Step>
+  <Step title="Optional – add a lead capture form">
+    Click **Add lead capture form** inside the Persona step. Configure title, consent text, and one or more fields (name, email, phone, custom). Mark each as required or optional.
 
-### Customize Experience
+    <Frame caption="Data Collection Form modal – fields, consent, and a Mandatory toggle">
+      ![Lead capture form modal](/images/lead-capture-form.png)
+    </Frame>
+  </Step>
+  <Step title="Experience step – pick the avatar / character, scene, and branding">
+    Switch tabs between **Companion Avatars** (3D) and **Characters** (2D), pick a scene, and decide what logo appears in the embed.
 
-**Visual Customization:**
-- **Font Family & Size**: Choose typography that matches your brand
-- **Background Color**: Set the interface background
-- **User Font Color**: Customize user message colors
-- **Aivah Font Color**: Set agent response colors
-- **Input Background**: Style the message input area
+    <Frame caption="Experience step – Companion Avatars tab with scene picker">
+      ![Experience companion avatars](/images/shared-experience-avatars.png)
+    </Frame>
 
-**Advanced Options:**
-- **Show initial messages as tooltip**: ✅ Recommended for user guidance
-- **Remove 'Powered by Aivah'**: Available on higher plans
-- **Hide microphone**: For text-only experiences
+    <Frame caption="Experience step – Characters tab">
+      ![Experience characters](/images/shared-experience-characters.png)
+    </Frame>
+  </Step>
+  <Step title="Publish">
+    Click **Publish**. The agent appears in the Shared list with a copy button for its public URL.
+  </Step>
+</Steps>
 
-### Choose Sharing Method
+### Pick the right distribution
 
-**Direct Link:**
-- Generate an instant URL for immediate sharing
-- Perfect for social media, email, or direct distribution
+After publishing, the **Share Options** dialog gives you every distribution snippet for that agent:
 
-**iFrame Embed:**
-- Get HTML embed code for websites
-- Customize dimensions and styling
-- Integrate seamlessly into existing sites
+<Tabs>
+  <Tab title="Direct Link">
+    A simple URL plus a Direct Link With Voice variant.
 
-**Chat Bubble:**
-- Add a floating chat widget to any website
-- Non-intrusive way to offer AI assistance
-- Customizable appearance and behavior
+    <Frame caption="Share Options – Direct Link tab">
+      ![Share direct link](/images/share-direct-link.png)
+    </Frame>
+  </Tab>
+  <Tab title="Iframe">
+    Two iframe variants – companion (avatar only) and companion-scene (full scene).
 
-### Add Lead Capture (Optional)
+    <Frame caption="Share Options – Iframe tab">
+      ![Share iframe embed](/images/share-iframe-embed.png)
+    </Frame>
+  </Tab>
+  <Tab title="Chat Bubble">
+    A drop-in `<script>` that floats a chat bubble in the corner of any page.
 
-Click **Add data form** to collect user information:
-- Name, email, phone, company fields
-- Custom questions and requirements
-- Lead qualification and routing
-- Compliance and privacy settings
-
-### Publish Your Agent
-1. Click **Publish** to make your agent live
-2. Copy the generated links or embed codes
-3. Share your agent with the world!
-
----
-
-## Step 5: Add Integrations (Optional)
-
-Enhance your agent with powerful integrations and advanced features.
-
-### Explore Integration Options
-
-Navigate to **Integrations** in the side navigation to connect external services:
-
-#### MCP Tools (Composio)
-Connect popular applications with one-click OAuth:
-- **Gmail**: Email management and sending
-- **Google Calendar**: Scheduling and appointment management
-- **Slack**: Team communication and notifications
-- **GitHub**: Repository management and code assistance
-- **Notion**: Knowledge base and document management
-- **Linear**: Issue tracking and product management
-
-Each card has a toggle switch. The first time you enable a tool you're redirected to its OAuth screen; after success Aivah verifies the connection automatically and toasts *"Account verified and connected!"*. The active counter (`X/3 Active` by default) shows how many tools you've enabled vs. your plan limit.
-
-![MCP Integrations](/integration/Integerations%20/Integerations%20with%20Apps%20using%20MCP%20.png)
-
-#### Channels: Slack & WhatsApp
-Let your agent respond inside your team's chat tools:
-- **Slack** uses the included **App Manifest** plus a *Bot Token*, *Signing Secret*, and your *Member ID*. Use `/aivah` after inviting the bot.
-- **WhatsApp** uses **QR pairing** – click Connect, scan the QR with WhatsApp → Linked Devices, and you're live.
-
-See the [Channels guide](/integration/channels) for the full flow.
-
-#### Telephony Integration
-Set up professional phone capabilities:
-- **Twilio Integration**: Handle inbound and outbound calls
-- **Bring Your Own SIP Trunk**: Optional termination SIP URI
-- **Voice Configuration**: Professional call handling
-- **Custom Prompt**: Override the agent prompt for calls
-- **Call Logging**: Complete call records and transcriptions in [Insights → Call Logs](/insights/call-logs)
-
-#### Tasks (Cron & Heartbeat)
-Schedule recurring jobs or wire up heartbeat monitors. Anything created by you – or by the agent in response to a request – shows up under [Integrations → Tasks](/integration/tasks).
-
-### Memory Management
-
-Enable persistent memory for your agents:
-- **Cross-Platform Memory**: Remember users across all interactions
-- **Context Retention**: Maintain conversation context over time
-- **User Preferences**: Store individual user preferences and history
-
-![Memory Management](/integration/Integerations%20/Memory%20-%20Manage%20your%20memories%20here%20that%20Agent%20Stored%20.png)
-
-### Advanced Workflows
-
-Create sophisticated automation:
-- **Multi-Step Processes**: Chain multiple actions together
-- **Conditional Logic**: Route actions based on user input
-- **External API Calls**: Connect to custom systems and databases
-- **Event-Driven Actions**: Respond to external triggers automatically
+    <Frame caption="Share Options – Chat bubble tab">
+      ![Share chat bubble script](/images/share-bubble-script.png)
+    </Frame>
+  </Tab>
+</Tabs>
 
 ---
 
-## 🎉 Congratulations!
+## Step 5: Connect Channels and Tools
 
-You've successfully created, customized, and deployed your first AIVAH agent! Your AI companion is now ready to engage with users through:
+Open **Integrations** in the side navigation to plug your agent into the rest of your stack.
 
-✅ **Intelligent Conversations** powered by your knowledge base
-✅ **Visual Avatar Interactions** in immersive 3D environments  
-✅ **Multi-Channel Deployment** via links, embeds, or chat bubbles
-✅ **Professional Voice Capabilities** for natural communication
-✅ **Integration Potential** with your favorite apps and services
+### MCP Tools
 
-## 🚀 Next Steps
+One-click OAuth connectors for Gmail, Slack, Notion, Linear, GitHub, Calendar, Drive, Sheets, Outlook, Composio and many more. Toggle on a connector, run the OAuth flow, and Aivah verifies the connection automatically.
 
-Now that you have a working agent, consider these enhancements:
+<Frame caption="MCP page – every connector with a live X/N Active counter">
+  ![MCP tools grid](/images/mcp-tools-grid.png)
+</Frame>
 
-1. **[Best Practices](./best-practice)** - Optimize performance and user experience
-2. **[Advanced Integrations](../integration/overview)** - Connect more apps and services
-3. **[Analytics & Insights](../insights/overview)** - Track performance and gather insights
-4. **[Voice & Telephony](../integration/twilio-phone-setup)** - Add professional calling capabilities
-5. **[Memory Management](../integration/memory)** - Enable persistent user memory
+### Channels – Slack & WhatsApp
 
-## 💡 Pro Tips
+Let the same agent respond inside your team's chat tools.
 
-- **Test Thoroughly**: Always test your agent in different scenarios before sharing
-- **Iterate on Knowledge**: Regularly update your agent's knowledge base with new information
-- **Monitor Performance**: Use analytics to understand how users interact with your agent  
-- **Gather Feedback**: Ask users for feedback to continuously improve the experience
-- **Start Simple**: Begin with basic functionality and gradually add advanced features
+- **Slack** uses the included App Manifest plus a Bot Token, Signing Secret, and your Member ID. Invite the bot then use `/aivah`.
+- **WhatsApp** uses QR pairing – click Connect, scan the QR with WhatsApp → Linked Devices, and you're live.
 
-Your AI agent journey has just begun. Explore the platform, experiment with features, and create amazing experiences for your users! 🌟
+<Frame caption="Channels page – Slack and WhatsApp configurations side-by-side">
+  ![Channels page](/images/channels-page.png)
+</Frame>
+
+### Telephony
+
+Bring your own Twilio number (or mint a free Vapi number). The detail page splits into **Connection** (SIP URI + credentials) and **Interaction** (Language Model + Voice + System Prompt) tabs.
+
+<Frame caption="Telephony empty state – click Create Phone Number to add your first one">
+  ![Telephony empty state](/images/telephony-empty-state.png)
+</Frame>
+
+<Frame caption="Connection tab – Twilio SIP URI and credentials">
+  ![Telephony Connection config](/images/telephony-connection-config.png)
+</Frame>
+
+<Frame caption="Interaction tab – Language Model, Voice, and System Prompt for phone calls">
+  ![Telephony Interaction config](/images/telephony-interaction-config.png)
+</Frame>
+
+### Tasks – Cron jobs and Heartbeat
+
+Schedule recurring jobs (with a Channel column for Web, Slack, WhatsApp, etc.) or wire up heartbeat monitors. Anything created by you, or by the agent in response to a request, lands here.
+
+<Frame caption="Cron Jobs tab – a scheduled reminder running on the Web channel">
+  ![Cron jobs](/images/tasks-cron-jobs.png)
+</Frame>
+
+### Manage Memory
+
+Every long-term key/value the agent has stored, with timestamps and a **Download CSV** action. Use it for audit, GDPR exports, or quick edits when memories drift.
+
+<Frame caption="Manage Memory – every stored key/value pair with timestamps">
+  ![Manage Memory page](/images/manage-memory-page.png)
+</Frame>
+
+---
+
+## You're Live
+
+Your AIVAH agent is now:
+
+- Trained on your knowledge sources and showing as `completed`
+- Given a face (Avatar or Character) and a voice
+- Tested live in the Playground (text, avatar, and voice-only modes)
+- Shared with a public link, optional iframe / chat-bubble, and a lead form
+- Wired to MCP tools, Channels, Phone, Tasks, and Memory
+
+## What's next
+
+1. **[Best Practices](./best-practice)** – patterns we've learned from hundreds of agents in production
+2. **[Productivity – generate slides, podcasts, mind maps](/productivity/overview)** – turn the same agent into ready-to-share assets
+3. **[Insights](/insights/overview)** – track unique users, credits, chat logs, leads, and call logs
+4. **[Subscriptions and Credits](/platform-setup/subscriptions)** – pick a plan, top up credits, and manage billing

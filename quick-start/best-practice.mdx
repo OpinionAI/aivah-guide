@@ -32,14 +32,15 @@ Master the art of creating exceptional AI agents with these proven strategies, o
 
 ### Agent Configuration
 
-**Real-Time API Settings**
-- ✅ **Enable** for conversational agents requiring natural back-and-forth
-- ❌ **Disable** for simple Q&A or batch processing scenarios
-- **Performance Impact**: Real-time adds slight latency but dramatically improves conversation quality
+**Picking a Model**
+- ✅ **Use a Realtime model** (Grok Realtime, OpenAI Realtime, Gemini Live) when you want spoken conversations or sub-second back-and-forth.
+- ✅ **Use a standard model** (GPT-5.x, Gemini Flash, Grok 4.1) for cost-effective Q&A, document creation, and longer reasoning.
+- **Performance trade-off**: Realtime models cost more credits per minute but unlock the avatar chat experience and natural turn-taking.
 
-**Presentation Mode Usage**
+**Presenter Toggle Usage**
 - **Enable Only** when creating dedicated Presenter Agents
-- **Same Toolkit**: Presenters keep realtime, multimodal, and integration features—only the knowledge source changes to a single PDF
+- **Single-source content**: Presenters take a single PDF *or* video and align answers to the slide / timestamp
+- **Quiz Overlay**: Multiple-choice questions appear during avatar chat for instant comprehension checks
 - **Interactive Demos**: Perfect for product showcases and guided tours
 - **Sales Presentations**: Ideal for automated sales demonstrations
 - **Training Sessions**: Excellent for educational content delivery
@@ -69,11 +70,14 @@ Master the art of creating exceptional AI agents with these proven strategies, o
 
 ### Voice Selection Strategy
 
+Voices are filtered automatically by the model you pick – OpenAI Realtime exposes its own voice list, Gemini Live exposes another, and so on. Aivah also lets you bring your own [voice clones](/avatars/voices) into every list.
+
 **Voice-Role Matching**
-- **Sales Agents**: Confident, energetic voices (Shimmer, Ballad, Sportsman, Zemo)
-- **Support Agents**: Calm, reassuring voices (Ash, Sage, Customer support)
-- **Professional Services**: Clear, articulate voices (Alloy, Verse, Sarah)
-- **Creative Roles**: Expressive, dynamic voices (Echo, Coral, Brooke, Katie)
+- **Sales Agents**: Confident, energetic voices (Ballad, Shimmer, Charon, Fenrir)
+- **Support Agents**: Calm, reassuring voices (Ash, Sage, Aoede, Kore)
+- **Professional Services**: Clear, articulate voices (Alloy, Verse, Marin, Leda)
+- **Creative Roles**: Expressive, dynamic voices (Echo, Coral, Cedar, Grace)
+- **Branded Personas**: Use a [voice clone](/avatars/voices) trained on a 30–60 second sample of your spokesperson
 
 **Multi-Agent Voice Differentiation**
 - Use distinct voices for different agents to create unique personalities
@@ -81,10 +85,15 @@ Master the art of creating exceptional AI agents with these proven strategies, o
 - Test voice quality across different devices and connection speeds
 
 ### Realtime Media Best Practices
-- **Prompt Clarity**: Specify style, lighting, and subject to guide Google Nano Banana, Veo 3.1, or Sora 2.
+- **Prompt Clarity**: Specify style, lighting, and subject to guide image and video generation.
 - **Iterative Workflow**: Generate image variations before asking for the final video output.
-- **Asset Management**: Label iterations in chat so it’s easy to identify them later in AI Drive.
+- **Asset Management**: Label iterations in chat so it's easy to identify them later in [AI Drive](/integration/ai-drive).
 - **Performance Awareness**: Longer clips may take additional seconds—let the agent finish processing before prompting again.
+
+### Productivity Asset Best Practices
+- **Slides**: Pick *Academic* for source-heavy decks, *Doraemon* for friendlier, more visual takes, and *Custom* when you want to dictate the tone yourself.
+- **Podcasts**: Pair a curious **Host** voice with a clear **Expert** voice; use the optional **Focus** field to steer the conversation toward a specific chapter or theme.
+- **Mind maps**: Generate one before a meeting and use it as the agenda – the Avatar chat lets you click any node and dive deeper live.
 
 ### Character Development
 
@@ -103,7 +112,7 @@ Master the art of creating exceptional AI agents with these proven strategies, o
 
 ---
 
-## 🌟 Hub Interaction Optimization
+## 🌟 Playground Interaction Optimization
 
 ### Scene Selection Strategy
 
