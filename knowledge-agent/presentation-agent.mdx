@@ -61,11 +61,19 @@ Realtime Interactive Presenter Agents transform a single PDF deck (or a single v
     1. Enter a descriptive name (e.g., "Product Demo Presenter", "Compliance Training Deck"). The name becomes the slug (`@product-demo-presenter`).
     2. Turn the **Presenter** toggle on to switch from a knowledge-base agent to a presenter configuration.
     3. Write an **Agent prompt** and a **Persona** to set tone and behaviour.
+
+    <Frame caption="Presenter toggle ON – this constrains the agent to a single PDF or video">
+      ![Agent Presenter toggle](/images/agent-presenter-toggle.png)
+    </Frame>
   </Step>
   <Step title="Upload the Deck">
-    1. Open the **Add document** dropdown and choose **Add Files**.
+    1. Open the **Add document** dropdown. For presenter agents you only see the **Add PDF / Video** option.
     2. Add your PDF (or a single video). Wait for the confirmation message: "Document uploaded successfully. Delete the existing document to upload a new one."
     3. Click **Create agent** to publish.
+
+    <Frame caption="Presenter-only Add document menu – PDF or video only">
+      ![Presenter Add PDF/Video](/images/agent-presenter-add-pdf-video.png)
+    </Frame>
     
     <img
       className="block dark:hidden"
@@ -139,9 +147,18 @@ When you talk to a Presenter Agent in [Avatar chat](/interaction-hub/voice), a *
 
 - Step through multiple-choice questions defined on the agent's content
 - Check answers without leaving the conversation
+- Use the **Hint** button when stuck, then **Next** to progress
 - Re-open the overlay any time during the session
 
 The Quiz icon also appears next to qualifying agents in the **Agents** list (`/agents`) so you can preview the quiz outside of a live chat.
+
+<Frame caption="Quiz overlay during a presenter agent session – multiple-choice with Hint and Next">
+  ![Presenter quiz overlay](/images/presenter-quiz-overlay.png)
+</Frame>
+
+<Frame caption="Presentation scene rendering a slide while the avatar narrates in the bottom-right">
+  ![Presentation scene](/images/presentation-scene-aivah.png)
+</Frame>
 
 ## Delivering a Great Experience
 

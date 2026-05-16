@@ -17,9 +17,14 @@ Each row shows:
 
 - The cron expression and the human-readable next-run time
 - The action the job will take
+- The **channel** the job runs on (Web, Slack, WhatsApp, etc.)
 - Inline **Run now** and **Delete** controls
 
 Use Cron Jobs for any recurring action you want the agent to take on a schedule – sending a weekly summary, opening a daily standup thread, refreshing data sources, posting reminders, etc.
+
+<Frame caption="Cron Jobs tab – a reminder scheduled at `0 9 * * *` on the Web channel">
+  ![Cron jobs](/images/tasks-cron-jobs.png)
+</Frame>
 
 ### Manage cron jobs
 
@@ -33,10 +38,18 @@ Background tasks that need a regular heartbeat to remain healthy. If the heartbe
 
 The panel shows:
 
-- A **configuration card** describing how the heartbeat is wired up
-- A list of every heartbeat task with its **last heartbeat timestamp** so you can spot anything that has gone quiet
+- A **Heartbeat Monitor** card with the interval, channel, last beat, and next beat
+- A list of every heartbeat task with its priority, status, and creation timestamp
 
 Heartbeats are ideal for long-running monitors and watch-style integrations – think uptime checks, queue depth monitors, or external service health pings.
+
+<Frame caption="Heartbeat tab in its empty state, before any tasks have been wired up">
+  ![Heartbeat empty state](/images/tasks-heartbeat-empty.png)
+</Frame>
+
+<Frame caption="Heartbeat tab with an active monitor and one running task">
+  ![Heartbeat populated](/images/tasks-heartbeat-populated.png)
+</Frame>
 
 ## How tasks are created
 

@@ -7,6 +7,10 @@ description: "Create an agent (knowledge base or presenter)"
 
 This guide walks you through the complete process of creating an agent in Aivah's **Agents** workspace (`/agents/create`). Once your agent is created, Aivah automatically trains it on your added content, making it ready for use immediately.
 
+<Frame caption="Create agent form – Name, Agent Capabilities, Agent Prompt, Persona, and Documents">
+  ![Create agent form](/images/agent-create-form.png)
+</Frame>
+
 <img
   className="block dark:hidden"
   src="/knowledge-agent/Knoweldge  /Screenshot 2025-08-09 at 1.13.17 PM.png"
@@ -66,6 +70,10 @@ Choose your agent name carefully – it becomes the slug and is visible to users
 
 Open the **Add document** dropdown to attach knowledge sources. Knowledge-base agents accept any combination of the methods below; **Presenter** agents accept only a single PDF or video.
 
+<Frame caption="Add document dropdown – Add URL / Add Files / Create Text">
+  ![Add document dropdown](/images/agent-add-document-dropdown.png)
+</Frame>
+
 <Tabs>
   <Tab title="Add URL">
     **Web Content Integration**
@@ -73,6 +81,10 @@ Open the **Add document** dropdown to attach knowledge sources. Knowledge-base a
     1. Pick **Add URL** from the **Add document** dropdown.
     2. Paste a publicly accessible link – website pages, blog posts, YouTube/Vimeo videos, and public documentation all work.
     3. Aivah fetches and indexes the page automatically.
+
+    <Frame caption="Add URL modal">
+      ![Add URL modal](/images/agent-add-url-modal.png)
+    </Frame>
   </Tab>
   
   <Tab title="Add Files">
@@ -83,6 +95,10 @@ Open the **Add document** dropdown to attach knowledge sources. Knowledge-base a
        - **Documents**: `.pdf`, `.docx`, `.txt`, `.csv`, `.xlsx`, `.html`, `.md`, `.epub`, `.json`, `.xml`
        - **Media**: `.mp4`, `.mp3`, `.jpg`, `.png` and more
     3. Each file can be up to **21 MB**.
+
+    <Frame caption="Add Files modal with the full list of supported file types">
+      ![Add Files modal](/images/agent-add-files-modal.png)
+    </Frame>
   </Tab>
   
   <Tab title="Create Text">
@@ -91,6 +107,10 @@ Open the **Add document** dropdown to attach knowledge sources. Knowledge-base a
     1. Pick **Create Text** from the dropdown.
     2. Paste raw text content – ideal for FAQs, policies, or short informational snippets.
     3. The text is immediately processed.
+
+    <Frame caption="Create Text modal">
+      ![Create Text modal](/images/agent-create-text-modal.png)
+    </Frame>
   </Tab>
 </Tabs>
 

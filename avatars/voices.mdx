@@ -21,8 +21,12 @@ Voices are the speech engine for:
   - Provider / model family (so you know which LLMs it pairs with)
   - Playback controls to preview the voice
   - A *Set as default* action
-- A **Clone voice** button in the header for creating a new voice clone.
+- A **Create** button (top-right) for adding a new voice clone.
 - Search and pagination across the full library.
+
+<Frame caption="Voices page – built-in voices plus your private clones, each with playback and provider badge">
+  ![Voices list](/images/voices-list.png)
+</Frame>
 
 <Tip>
 Switching the LLM provider in the chat composer may filter the available voice list. For example, Gemini voices appear when a Gemini model is active, and OpenAI Realtime voices appear when an OpenAI Realtime model is active.
@@ -31,21 +35,36 @@ Switching the LLM provider in the chat composer may filter the available voice l
 ## Clone a voice
 
 <Steps>
-  <Step title="Click Clone voice">
-    Press **Clone voice** in the header. The clone dialog opens.
+  <Step title="Click Create">
+    Press **+ Create** in the header. The **Add voice** dialog opens.
+
+    <Frame caption="Add voice modal – Name, Language, Voice Sample, and Description">
+      ![Add voice modal](/images/voice-clone-modal.png)
+    </Frame>
   </Step>
-  <Step title="Upload a clean reference recording">
-    Upload a short, mono audio file with a single speaker. For best results:
+  <Step title="Pick the language">
+    Select the language the voice will primarily speak (English, French, German, Spanish, Portuguese, etc.).
+
+    <Frame caption="Language picker in the Add voice modal">
+      ![Voice clone language picker](/images/voice-clone-language-picker.png)
+    </Frame>
+  </Step>
+  <Step title="Upload a clean reference recording – or record one">
+    You can either **Upload File** (a short, mono audio file up to 10 MB) or **Record Audio** directly in the browser (up to 1 minute). For best results:
 
     - Keep the recording free of background noise, music, or other voices
     - Aim for natural pacing – read a short paragraph rather than a single sentence
     - Use a quality microphone and the highest-fidelity export available
+
+    <Frame caption="Record Audio mode – capture up to 1 minute right in the browser">
+      ![Voice clone record audio](/images/voice-clone-record-audio.png)
+    </Frame>
   </Step>
-  <Step title="Name the voice">
-    Give the voice a short, descriptive name (for example *Sarah – Casual*). This is what appears in pickers throughout Aivah.
+  <Step title="Name and describe the voice">
+    Give the voice a short, descriptive name (for example *Sarah – Casual*) and add a description of the voice characteristics. This is what appears in pickers throughout Aivah.
   </Step>
-  <Step title="Submit and wait for processing">
-    Click submit. The new voice enters processing. Once processed, it shows up in the list and can be selected wherever a voice can be picked.
+  <Step title="Add to my voice">
+    Click **Add to my voice**. The new voice enters processing. Once processed, it shows up in the list and can be selected wherever a voice can be picked.
   </Step>
 </Steps>
 

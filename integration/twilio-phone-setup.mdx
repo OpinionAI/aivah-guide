@@ -7,7 +7,9 @@ description: "Twilio phone setup guide"
 
 Connect your AIVAH agents to the Twilio telephony platform for seamless voice interactions. This guide will walk you through the complete setup process.
 
-![Twilio Integration Workflow](/integration/Integerations%20/Integeration%20with%20Telephony%20-%20Twillio%20%20Workflow%20.png)
+<Frame caption="Telephony empty state – click Create Phone Number to import from Twilio or Vonage, or mint a free Vapi number">
+  ![Telephony empty state](/images/telephony-empty-state.png)
+</Frame>
 
 ## 📋 Prerequisites
 
@@ -55,18 +57,33 @@ Available models span four provider families:
 
 ## Telephony Form Fields
 
-The Telephony page (`/integrations/telephony`) exposes a single form that ties everything together:
+Once a phone number is added you'll land on its detail page. The configuration is split across two tabs: **Connection** and **Interaction**.
+
+### Connection tab – wire up the number
 
 | Field | Notes |
 |---|---|
-| **LLM Model** | The model used during the call. Voices are filtered automatically by provider, so the voice list refreshes when you change the model. |
-| **Voice** | The voice the AI uses on the call. Includes Aivah's built-in voices and any [voice clones](/avatars/voices) you've added. |
-| **Phone number** | The Twilio E.164 number (for example `+14155551234`). |
-| **Twilio Termination SIP URI** | *Optional.* Used when you bring your own SIP trunk. |
-| **Twilio Username / Password** | Credentials for the SIP trunk (required only when using a custom termination URI). |
-| **Custom prompt** | Override the agent prompt during phone calls without changing the agent itself. |
+| **SIP URI** | The Twilio termination SIP URI (or the Vapi URI when you mint a free number). |
+| **Account SID / Username** | Your Twilio Account SID, or the username for a custom SIP trunk. |
+| **Auth Token / Password** | Your Twilio Auth Token, or the password for a custom SIP trunk. |
 
-Click **Save Configuration** to persist. The page also lets you **delete** any saved Twilio configuration. After saving, calls placed to the number are routed through Aivah's media servers and answered by your agent.
+<Frame caption="Connection tab – Provider Configuration with SIP URI and credentials">
+  ![Telephony Connection config](/images/telephony-connection-config.png)
+</Frame>
+
+### Interaction tab – pick the brain and voice
+
+| Field | Notes |
+|---|---|
+| **Language Model** | The model used during the call. Voices are filtered automatically by provider, so the voice list refreshes when you change the model. |
+| **Voice** | The voice the AI uses on the call. Includes Aivah's built-in voices and any [voice clones](/avatars/voices) you've added. |
+| **System Prompt** | Override the agent persona and instructions during phone calls without changing the agent itself. |
+
+<Frame caption="Interaction tab – Language Model, Voice, and System Prompt for the phone agent">
+  ![Telephony Interaction config](/images/telephony-interaction-config.png)
+</Frame>
+
+Click **Save Changes** to persist. The page also lets you **delete** any saved phone number. After saving, calls placed to the number are routed through Aivah's media servers and answered by your agent.
 
 ## 🔧 Authentication Setup
 

@@ -15,8 +15,8 @@ The Hub – also known as the **Playground** – is your primary interaction spa
 
 The home route (`/`) automatically loads your most recent conversation. If you don't have one yet, it redirects to **New chat**.
 
-![Hub Main Interface](/images/hub-main-interface.png)
-*Main Hub interface showing avatar selection, scene options, and interaction controls*
+![New chat composer](/images/new-chat-composer.png)
+*New chat with the welcome line and the chat composer pills for agent, character, model, and voice.*
 
 ## Hub Components
 
@@ -30,6 +30,18 @@ When you open **New chat** you see a welcome line and a single chat composer wit
 
 Type your first message and press **Enter**. Aivah creates a new conversation, redirects to its chat URL, and delivers the message. If any default cannot be loaded automatically you'll see a toast – set defaults from **Preferences** (palette icon).
 
+<Frame caption="Switching agent from the composer pill">
+  ![Agent picker in composer](/images/composer-agent-picker.png)
+</Frame>
+
+<Frame caption="LLM picker covers OpenAI, Gemini, Grok and OpenAI Realtime model families">
+  ![LLM model picker in composer](/images/composer-llm-picker.png)
+</Frame>
+
+<Frame caption="Voice picker filters to the voices supported by the active LLM">
+  ![Voice picker in composer](/images/composer-voice-picker.png)
+</Frame>
+
 ### Avatar / scene canvas (Avatar chat)
 On `/{conversationId}/avatar-chat` the page splits in two:
 
@@ -38,8 +50,20 @@ On `/{conversationId}/avatar-chat` the page splits in two:
 
 On smaller screens the layout switches to a vertical resizable split.
 
+<Frame caption="Avatar chat in a Zen scene with the productivity toolbar visible on the left rail">
+  ![Avatar chat zen scene](/images/avatar-chat-zen-scene.png)
+</Frame>
+
 ### Scene Selection
 The **palette icon** next to the composer opens **Preferences**, where you choose your default avatar and scene. The first time you visit Avatar chat without an avatar selected, Preferences opens automatically.
+
+<Frame caption="Preferences modal – Avatar tab">
+  ![Preferences avatar tab](/images/preferences-avatar-tab.png)
+</Frame>
+
+<Frame caption="Preferences modal – Scene tab">
+  ![Preferences scene tab](/images/preferences-scene-tab.png)
+</Frame>
 
 Available scenes:
 

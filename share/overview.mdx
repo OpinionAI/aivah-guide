@@ -23,26 +23,44 @@ The Shared list mirrors the regular avatar grid:
 - Click any card to see details
 - Each card shows the underlying agent, its current public link, and a copy button
 
+<Frame caption="Shared workspace – every published agent with its link type badge (direct, chat bubble, iframe)">
+  ![Shared agents grid](/images/shared-agents-grid.png)
+</Frame>
+
 ## Create a Shared Link
 
 <Steps>
   <Step title="Open the create flow">
-    Click the **+** icon in the Shared header to open `/shared/create`.
+    Click the **+** icon in the Shared header to open `/shared/create`. The form has two steps – **Persona** and **Experience**.
   </Step>
-  <Step title="Pick the agent">
-    Choose the agent you want to publish. Both knowledge-base and presenter agents can be shared.
+  <Step title="Persona step – pick the agent, model, voice, tools, and instructions">
+    Set the agent name, **Link Type** (Direct Link / Iframe / Chat Bubble), the **Model**, the **Voice** (filtered by Model), a **Knowledge Base**, optional **MCP Tools**, and freeform **Instructions**.
+
+    <Frame caption="Persona step of Create agent – Name, Link Type, Model, Voice, Knowledge Base, MCP Tools, Instructions, Lead capture">
+      ![Shared agent create form](/images/shared-agent-create-form.png)
+    </Frame>
   </Step>
-  <Step title="Configure the lead form">
+  <Step title="Configure the lead form (optional)">
     Add the fields you want to capture (name, email, phone, custom). For each field:
     - Mark as required or optional
     - Re-order fields with drag-and-drop
     - Remove fields that don't apply
+
+    See the [Lead Capture Forms](/share/lead-capture-form) guide for the full flow.
   </Step>
-  <Step title="Customize appearance (optional)">
-    Tune branding, suggested prompts, hide / show microphone, and any other public-chat options.
+  <Step title="Experience step – pick the avatar / character, scene, and branding">
+    On the **Experience** tab, choose a Companion Avatar or a Character, pick a scene, and decide what logo to show in the embed (Default Aivah mark, your own upload, or no logo).
+
+    <Frame caption="Experience step – Companion Avatars tab with scene picker and logo options">
+      ![Experience companion avatars](/images/shared-experience-avatars.png)
+    </Frame>
+
+    <Frame caption="Experience step – Characters tab to use a 2D character instead of a 3D avatar">
+      ![Experience characters](/images/shared-experience-characters.png)
+    </Frame>
   </Step>
   <Step title="Save">
-    Aivah generates a public URL plus a copy-ready embed snippet. The agent now appears in the Shared list.
+    Click **Publish**. Aivah generates a public URL plus a copy-ready embed snippet. The agent now appears in the Shared list.
   </Step>
 </Steps>
 
